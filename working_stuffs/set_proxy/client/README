@@ -4,7 +4,7 @@ o init client env
 
 o put the emailed files on client (these files are confidentail therefore they are not in the source control
         ~ cat ./ssh_config >> ~/.ssh/config ## or manually check and add the config section
-        ~ mv ./yxorp_user_tanfeng_rsa* ~/.ssh/ && chmod 400 ~/.ssh/yxorp_user_tanfeng_rsa*
+        ~ mv ./*_rsa* ~/.ssh/ && chmod 400 ~/.ssh/*_rsa*
 
 o test ssh connection (key auth)
 
