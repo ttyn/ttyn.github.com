@@ -1,0 +1,16 @@
+o init client
+        - brew install autossh 
+        or port install autossh
+o download proxy.pac & private.key
+: ${remote_host:="yxorp"}                                                                                                                                                            
+
+o test
+        ssh meme whoami
+        
+o Network Config
+        - System Preferences > Network > Edit Location >  * duplicate Location
+        > rename to "Proxied connection"
+        > Advanced > Proxies > Automatic Proxy Configuration >
+        - Proxy Configuration File
+
+
