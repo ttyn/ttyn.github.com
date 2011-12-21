@@ -6,11 +6,13 @@ function FindProxyForURL(url, host) {
             (host == "127.0.0.1")) {
                return "DIRECT";
         }
-        if (shExpMatch(host, ".twitter.com")) {
+        if (dnsDomainIs(host, ".twitter.com") || shExpMatch(host, "twitter.com")) {
+                return "SOCKS5 127.0.0.1:8989";
+        } else if (dnsDomainIs(host, ".youtube.com") || shExpMatch(host, "youtube.com")) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (dnsDomainIs(host, ".blogspot.com")) {
                 return "SOCKS5 127.0.0.1:8989";
-        } else if (shExpMatch(host, ".google.com")) {
+        } else if (dnsDomainIs(host, ".google.com") || shExpMatch(host, "google.com")) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, ".googleusercontent.com")) {
                 return "SOCKS5 127.0.0.1:8989";
@@ -24,8 +26,6 @@ function FindProxyForURL(url, host) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, ".google.cn")) {
                 return "SOCKS5 127.0.0.1:8989";
-        } else if (shExpMatch(host, "google.com")) {
-                return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, "whatismyip.org")) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, "feedburner.com")) {
@@ -35,8 +35,6 @@ function FindProxyForURL(url, host) {
         } else if (shExpMatch(host, "bit.ly")) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, "posterous.com")) {
-                return "SOCKS5 127.0.0.1:8989";
-        } else if (shExpMatch(host, "youtube.com")) {
                 return "SOCKS5 127.0.0.1:8989";
         } else if (shExpMatch(host, "ytimg.com")) {
                 return "SOCKS5 127.0.0.1:8989";
