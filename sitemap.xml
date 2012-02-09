@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>me@four oh four - </title>
-    <link rel="stylesheet" type="text/css" href="/assets/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
     <link href="/assets/favicon.ico" rel="shortcut icon">
     <meta name="generator" content="nanoc 3.2.4">
   </head>
@@ -16,7 +16,7 @@
     <lastmod>2012-02-09</lastmod></p>
 </url>
 <url>
-    <loc>http://me.local/assets/stylesheet/</loc>
+    <loc>http://me.local/assets/stylesheet.css</loc>
     <lastmod>2012-02-09</lastmod>
 </url>
 <url>
