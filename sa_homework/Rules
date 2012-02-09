@@ -35,9 +35,6 @@ route 'sitemap' do
         item.identifier.chop + '.xml'
 end
 
-route '/stylesheet/' do
-  '/assets/style.css'
-end
 
 route '*' do
   if item.binary?
