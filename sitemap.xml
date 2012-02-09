@@ -2,32 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>me@four oh four - i update me everyday</title>
+    <title>me@four oh four - </title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     <meta name="generator" content="nanoc 3.2.4">
   </head>
   <body>
     <div id="main">
-      <hr />
-<h3 style="color:blue;">2012-02-09</h3>
-<ul>
-	<li>current status<br />
-@heute ╰☆╮</li>
-</ul>
-<h3 style="color:blue;">todo</h3>
-<ul>
-	<li>redmine fork and git and failover<br />
--       source code control<br />
--       local mod<br />
--       backup file<br />
--       failover</li>
-	<li>nagios monitor<br />
--       or use alive for simple monitor<br />
--       or use parika for one-time monitor</li>
-	<li>sa homeworks<br />
--       <a href="/sa_homework/">current working doc</a></li>
-</ul>
-<hr />
+      <p>&lt;?xml version=&#8220;1.0&#8221; encoding=&#8220;<span class="caps">UTF</span>-8&#8221;?&gt;<br />
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
+  <url><br />
+    <loc>http://me.local/help/</loc><br />
+    <lastmod>2012-02-09</lastmod></p>
+</url>
+<url>
+    <loc>http://me.local/</loc>
+    <lastmod>2012-02-09</lastmod>
+</url>
+<url>
+    <loc>http://me.local/sa_homework/</loc>
+    <lastmod>2012-02-09</lastmod>
+</url>
+<url>
+    <loc>http://me.local/sitemap.xml</loc>
+    <lastmod>2012-02-09</lastmod>
+</url>
+<url>
+    <loc>http://me.local/style.css</loc>
+    <lastmod>2012-02-09</lastmod>
+</url>
+</urlset>
     </div>
     <div id="sidebar">
       <h2>Be there</h2>
