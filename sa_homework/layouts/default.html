@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>me@four oh four - <%= @item[:title] %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.2.4">
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <h2>Be there</h2>
+      <ul>
+        <li><a href="http://nanoc.stoneship.org/docs/">[ext]nanoc doc</a></li>
+        <li><a href="/blog/">[todo] log</a></li>
+        <li><a href="/">[todo] local doc</a></li>
+      </ul>
+      <h2>Read it</h2>
+      <ul>
+        <li><a href="http://docs.python.org/library/index.html">python doc</a></li>
+        <li><a href="http://git-scm.com/documentation">git doc</a></li>
+        <li><a href="http://safaribooksonline.com/">safaribooks</a></li>
+      </ul>
+      <h2>Use tools</h2>
+      <ul>
+        <li><a href="http://goo.gl/">url shortener</a></li>
+        <li><a href="https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en">currency ex rate</a></li>
+        <li><a href="http://autumnleaf.github.com/InstaList/">checklist</a></li>
+      </ul>
+      <h2>Do that</h2>
+      <ul>
+        <li>ego depletion</li>
+      </ul>
+     
+    </div>
+
+<!-- BEGIN google analytics --> 
+<script type="text/javascript">  
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27166915-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- END google analytics -->
+  </body>
+</html>
