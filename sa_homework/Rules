@@ -17,16 +17,27 @@ compile '/assets/' do
   # don’t filter or layout
 end
 
+compile '/blog/*' do
+    filter :erb
+    filter :redcloth
+    layout 'blog'
+end
+
+compile '/doc/*' do
+    filter :erb
+    filter :redcloth
+    layout 'documents'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
     filter :redcloth
-    layout 'default'
+    layout 'documents'
   end
 end
-
 compile 'sitemap' do
         filter :erb
 end
@@ -34,7 +45,6 @@ end
 route 'sitemap' do
         item.identifier.chop + '.xml'
 end
-
 
 route '*' do
   if item.binary?
@@ -45,5 +55,19 @@ route '*' do
     item.identifier + 'index.html'
   end
 end
+route '/blog/*/' do
+        '/blog/' + item.identifier.chop + '.' + item[:extension]  
+#    if $include_drafts or @item[:publish] then
+#        '/blog/' + @item.slug + '/index.html'
+#    end
+end
+
+route '/doc/*/' do
+        '/doc/' + item.identifier.chop + '.' + item[:extension]  
+#    if $include_drafts or @item[:publish] then
+#        '/blog/' + @item.slug + '/index.html'
+#    end
+end
+
 
 layout '*', :erb

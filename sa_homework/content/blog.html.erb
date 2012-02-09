@@ -1,0 +1,5 @@
+<% (@site.sorted_articles[0..20]).each do |post| %>
+  <p><strong> <%= link_to(post[:title], post.path) %> </strong></br>
+  <%= post[:created_at] %> 
+  <!-- <%= tags_for(post) %> <br/> --> </p>
+<% end %>
