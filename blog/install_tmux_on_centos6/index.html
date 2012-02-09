@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>me@four oh four - </title>
+    <title>me@four oh four - install tmux on centos6</title>
     <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
     <link href="/assets/favicon.ico" rel="shortcut icon">
     <link href="/assets/favicon.ico" rel="icon">
@@ -10,17 +10,19 @@
   </head>
   <body>
     <div id="main">
-        <p class="created_at"></p>
-        <p></p>
-        <p><strong> <a href="/blog/2012-02-09/">standing on the edge</a> </strong></br><br />
-  Thu Feb  9 14:59:03 <span class="caps">CST</span> 2012 <br />
-  <!-- <a href="http://technorati.com/tag/blog" rel="tag">blog</a>, <a href="http://technorati.com/tag/nanoc" rel="tag">nanoc</a>, <a href="http://technorati.com/tag/writing" rel="tag">writing</a> <br/> --> </p>
-  <p><strong> <a href="/blog/install_tmux_on_centos6/">install tmux on centos6</a> </strong></br><br />
-  Thu Feb 9 2012 <br />
-  <!-- <a href="http://technorati.com/tag/blog" rel="tag">blog</a>, <a href="http://technorati.com/tag/nanoc" rel="tag">nanoc</a>, <a href="http://technorati.com/tag/sa" rel="tag">sa</a>, <a href="http://technorati.com/tag/writing" rel="tag">writing</a> <br/> --> </p>
-  <p><strong> <a href="/blog/2012-02-09-02/">redo this</a> </strong></br><br />
-  Thu Feb  9 2012 <br />
-  <!-- <a href="http://technorati.com/tag/blog" rel="tag">blog</a>, <a href="http://technorati.com/tag/nanoc" rel="tag">nanoc</a>, <a href="http://technorati.com/tag/writing" rel="tag">writing</a> <br/> --> </p>
+        <p class="created_at">Thu Feb 9 2012</p>
+        <p>install tmux on centos6</p>
+      <h4 style="color:grey;">在centos 6.0 上安装tmux</h4>
+<ol>
+	<li>add RPMforge yum repo (64bit)<br />
+-       rpm &#8212;import http://apt.sw.be/<span class="caps">RPM</span>-<span class="caps">GPG</span>-<span class="caps">KEY</span>.dag.txt<br />
+-       wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.&#215;86_64.rpm<br />
+-       rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm</li>
+	<li>install prerequisite for tmux<br />
+-       yum install -y libevent</li>
+	<li>install tmux<br />
+-       yum &#8212;enablerepo rpmforge install -y tmux</li>
+</ol>
     </div>
     <div id="sidebar">
       <h2>Be there</h2>
