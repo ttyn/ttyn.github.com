@@ -1,0 +1,11 @@
+output
+tmp
+.bundle
+
+.sass-cache
+vendor/ruby
+Gemfile.lock
+*~
+*.swp
+.DS_Store
+output.diff
