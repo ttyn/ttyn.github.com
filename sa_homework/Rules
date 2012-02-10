@@ -26,6 +26,9 @@ end
 compile '/doc/*' do
     filter :erb
     filter :redcloth
+    filter :colorize_syntax,
+       :colorizers => { :ruby => :coderay },
+       :coderay    => { :line_numbers => :table }
     layout 'documents'
 end
 
