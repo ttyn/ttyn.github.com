@@ -11,6 +11,19 @@
   </head>
   <body>
     <div id="main">
+        <div id="main-top-div">
+        
+        
+                <a href="/">i update me everyday</a> 
+                 |  
+                
+                <a href="/sitemap.xml"></a> 
+                 
+                
+        
+        <hr>
+        </div>
+
       <p>&lt;?xml version=&#8220;1.0&#8221; encoding=&#8220;<span class="caps">UTF</span>-8&#8221;?&gt;<br />
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
@@ -19,7 +32,7 @@
 </url>
 <url>
     <loc>http://me.local/assets/favicon.ico</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
@@ -27,23 +40,23 @@
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09-02/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/install_tmux_on_centos6/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/help/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sandbox/</loc>
@@ -55,11 +68,11 @@
 </url>
 <url>
     <loc>http://me.local/sa_homework/</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2012-02-09</lastmod>
+    <lastmod>2012-02-10</lastmod>
 </url>
 </urlset>
     </div>
@@ -84,7 +97,7 @@
         <li><a href="https://github.com/autumnleaf/autumnleaf.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Thu Feb 09, 2012 @12:18:14 CST</div>
+    <div id="div_update">Fri Feb 10, 2012 @17:03:49 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
