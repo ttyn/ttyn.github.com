@@ -10,8 +10,17 @@
   </head>
   <body>
     <div id="main">
+        <div id="main-top-div">
+        <% unless @item.reps[0].path == "/" %>
+        <% breadcrumbs_trail.each do |b| %>
+                <%= link_to(  b[:title] , b.reps[0].path ) if b %>
+                <%= b != @item ? '|' : '' %>
+                <%end%>
+        <% end %>
+        <hr>
+        </div>
+
         <p class="created_at"><%= @item[:created_at] %></p>
-        <p><%= @item[:title] %></p>
       <%= yield %>
     </div>
     <div id="sidebar">
