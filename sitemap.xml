@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>me@four oh four - </title>
     <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/coderay.css" media="screen">
     <link href="/assets/favicon.ico" rel="shortcut icon">
     <link href="/assets/favicon.ico" rel="icon">
     <meta name="generator" content="nanoc 3.2.4">
@@ -13,8 +14,12 @@
       <p>&lt;?xml version=&#8220;1.0&#8221; encoding=&#8220;<span class="caps">UTF</span>-8&#8221;?&gt;<br />
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
-    <loc>http://me.local/assets/favicon.ico</loc><br />
-    <lastmod>2012-02-09</lastmod></p>
+    <loc>http://me.local/assets/coderay.css</loc><br />
+    <lastmod>2012-02-10</lastmod></p>
+</url>
+<url>
+    <loc>http://me.local/assets/favicon.ico</loc>
+    <lastmod>2012-02-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
@@ -37,8 +42,12 @@
     <lastmod>2012-02-09</lastmod>
 </url>
 <url>
-    <loc>http://me.local/help/</loc>
+    <loc>http://me.local/doc/help/</loc>
     <lastmod>2012-02-09</lastmod>
+</url>
+<url>
+    <loc>http://me.local/doc/sandbox/</loc>
+    <lastmod>2012-02-10</lastmod>
 </url>
 <url>
     <loc>http://me.local/</loc>
