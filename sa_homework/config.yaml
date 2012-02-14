@@ -1,5 +1,5 @@
 --- 
-output_dir: output
+output_dir: sa_homework_output
 data_sources: 
 - type: filesystem_unified
   items_root: /
