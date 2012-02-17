@@ -23,6 +23,10 @@ compile '/blog/*' do
     layout 'blog'
 end
 
+compile '/txt/*' do
+  # don’t filter or layout
+end
+
 compile '/doc/*' do
     filter :erb
     filter :redcloth
@@ -43,6 +47,10 @@ compile '*' do
 end
 compile 'sitemap' do
         filter :erb
+end
+
+route '/txt/*' do
+        item.identifier.chop + '.txt'
 end
 
 route 'sitemap' do
