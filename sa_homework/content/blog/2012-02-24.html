@@ -12,16 +12,19 @@ author_name: andy
 status: publish
 ---
 
-h4{color:darkgrey}. 常规的安全审计考虑
+h4{color:darkgrey}. 逐步整理系统权限
 * sudo
         ** M0: 用户user
                 - 系统用户(backup, crontab user)
                 - dev 个人用户
                 *** 尽量直接使用个人帐号
                 *** 有权限问题时候可以用sudo，但是禁止切换为root
-                *** 逐步减少输入密码需要，逐步以长密码和key代替。
+                *** 减少输入密码需要，逐步以长密码和key代替。
         ** M1: sudoer/visudo
                 - 只用来界定执行的命令组权限
+                *** 禁用sudo su 切换root
+                *** cleanup sudoers 让它实际可用
+                *** 定义一些系统命令，谨慎关闭sudo权限
         ** M2: disable root
 * sshd_config
         ** M1: 根据用户客户端系统尽量普及key验证登录
