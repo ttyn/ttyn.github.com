@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>me@four oh four - i update me everyday</title>
+    <title>me@four oh four - 常规安全审计</title>
     <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/assets/coderay.css" media="screen">
     <link href="/assets/favicon.ico" rel="shortcut icon">
     <link href="/assets/favicon.ico" rel="icon">
     <meta name="generator" content="nanoc 3.2.4">
@@ -13,38 +12,59 @@
     <div id="main">
         <div id="main-top-div">
         
+        
+                <a href="/">i update me everyday</a>
+                |
+                
+                <a href="/blog/"></a>
+                |
+                
+                <a href="/blog/2012-02-24/">常规安全审计</a>
+                
+                
+        
         <hr>
         </div>
 
-      <h3 style="color:blue;">2012-02-24</h3>
+        <p class="created_at">Fri Feb 24 16:45:48 CST 2012</p>
+      <h4 style="color:darkgrey;">常规的安全审计考虑</h4>
 <ul>
-	<li>current status<br />
-@heute ╰☆╮<br />
-thank god it is friday again.</li>
+	<li>sudo
+	<ul>
+		<li>M0: 用户user<br />
+                &#8211; 系统用户(backup, crontab user)<br />
+                &#8211; dev 个人用户
+		<ul>
+			<li>尽量直接使用个人帐号</li>
+			<li>有权限问题时候可以用sudo，但是禁止切换为root</li>
+			<li>逐步减少输入密码需要，逐步以长密码和key代替。</li>
+		</ul></li>
+		<li>M1: sudoer/visudo<br />
+                &#8211; 只用来界定执行的命令组权限</li>
+		<li>M2: disable root</li>
+	</ul></li>
+	<li>sshd_config
+	<ul>
+		<li>M1: 根据用户客户端系统尽量普及key验证登录</li>
+		<li>M2: 所有的系统用户和脚本强制使用key验证登录</li>
+		<li>M3: disable password login</li>
+	</ul></li>
+	<li>mysqld
+	<ul>
+		<li>M1: 使用${HOME}/.my.cnf, mysql帐号不要直接写入到脚本中</li>
+		<li>M2: clean up grant table</li>
+	</ul></li>
+	<li><span class="caps">DNS</span>/Host/Monitor
+	<ul>
+		<li>M1: 在/etc/hosts中使用内网ip/hostname对照</li>
+		<li>M2: 公网ip解析和连接作为特殊需求单独考虑</li>
+	</ul></li>
 </ul>
-<h3 style="color:blue;">todo</h3>
-<ul>
-	<li>redmine fork and git and failover<br />
--       source code control<br />
--       local mod<br />
--       backup file<br />
--       failover</li>
-	<li>nagios monitor<br />
--       or use alive for simple monitor<br />
--       or use paramiko for one-time monitor<br />
-        or use onall for one-time task executor</li>
-	<li>sa homeworks<br />
--       <a href="/sa_homework/">current working doc</a></li>
-	<li>more homework: dig into zeromq</li>
-</ul>
-<hr />
-<p>- working on it.</p>
     </div>
     <div id="sidebar">
       <h2>Be there</h2>
       <ul>
         <li><a href="/blog/">log</a></li>
-        <li><a href="/doc/">doc</a></li>
         <li><a href="/">home</a></li>
       </ul>
       <h2>Read it</h2>
@@ -58,11 +78,14 @@ thank god it is friday again.</li>
         <li><a href="http://goo.gl/">url shortener</a></li>
         <li><a href="https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en">currency ex rate</a></li>
         <li><a href="http://autumnleaf.github.com/InstaList/">checklist</a></li>
-        <li><a href="https://github.com/autumnleaf/autumnleaf.github.com/fork_select">fork me</a></li>
       </ul>
-
-    <div id="div_update">Fri Feb 24, 2012 @16:57:52 CST</div>
+      <h2>Do that</h2>
+      <ul>
+        <li>ego depletion</li>
+      </ul>
+      <div id="div_update">Fri February 24, 2012 @16:54:41 CST</div>
     </div>
+
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
   var _gaq = _gaq || [];
