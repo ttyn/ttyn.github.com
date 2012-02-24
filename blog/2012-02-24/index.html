@@ -27,7 +27,7 @@
         </div>
 
         <p class="created_at">Fri Feb 24 16:45:48 CST 2012</p>
-      <h4 style="color:darkgrey;">常规的安全审计考虑</h4>
+      <h4 style="color:darkgrey;">逐步整理系统权限</h4>
 <ul>
 	<li>sudo
 	<ul>
@@ -37,10 +37,15 @@
 		<ul>
 			<li>尽量直接使用个人帐号</li>
 			<li>有权限问题时候可以用sudo，但是禁止切换为root</li>
-			<li>逐步减少输入密码需要，逐步以长密码和key代替。</li>
+			<li>减少输入密码需要，逐步以长密码和key代替。</li>
 		</ul></li>
 		<li>M1: sudoer/visudo<br />
-                &#8211; 只用来界定执行的命令组权限</li>
+                &#8211; 只用来界定执行的命令组权限
+		<ul>
+			<li>禁用sudo su 切换root</li>
+			<li>cleanup sudoers 让它实际可用</li>
+			<li>定义一些系统命令，谨慎关闭sudo权限</li>
+		</ul></li>
 		<li>M2: disable root</li>
 	</ul></li>
 	<li>sshd_config
@@ -83,7 +88,7 @@
       <ul>
         <li>ego depletion</li>
       </ul>
-      <div id="div_update">Fri February 24, 2012 @16:54:41 CST</div>
+      <div id="div_update">Fri February 24, 2012 @17:44:26 CST</div>
     </div>
 
 <!-- BEGIN google analytics --> 
