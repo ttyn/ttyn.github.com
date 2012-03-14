@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>me@four oh four - git notes</title>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
+    <link href="/assets/favicon.ico" rel="shortcut icon">
+    <link href="/assets/favicon.ico" rel="icon">
+    <meta name="generator" content="nanoc 3.2.4">
+  </head>
+  <body>
+    <div id="main">
+        <div id="main-top-div">
+        
+        
+                <a href="/">i update me everyday</a>
+                |
+                
+                <a href="/blog/"></a>
+                |
+                
+                <a href="/blog/2012-03-14-gitnotes/">git notes</a>
+                
+                
+        
+        <hr>
+        </div>
+
+        <p class="created_at">Wed Mar 14 16:00:27 CST 2012</p>
+      <h4 style="color:darkred;">git notes | git 笔记</h4>
+<p>o ref and tutorials<br />
+                &#8211; 20个每天够用的git命令<br />
+                        http://schacon.github.com/git/everyday.html<br />
+                        part of git official manual<br />
+                        这个想办法通读一遍吧。下个周末我把在github上的不超过10k字的全都翻译个中文出来。<br />
+                &#8211; progit<br />
+                        http://progit.org/book/<br />
+                        Scott Chacon@github<br />
+                        有中文版<br />
+                &#8211; git community book<br />
+                        http://book.git-scm.com/<br />
+                        Scott Chacon@github<br />
+                        全面，有各种级别的使用教程</p>
+<ol>
+	<li><del>-</del> 以上为绝对够用并且经典的git教程。</li>
+	<li><del>-</del> 以下为一些零散但是还值得一读的git参考资料</li>
+	<li><del>-</del> 原则上都不长，所以如果对git很感兴趣，或者</li>
+	<li><del>-</del> 有些希望能深入讨论的问题，都可以查阅以下。</li>
+</ol>
+- git reference
+<p>- git reference<br />
+                        http://gitref.org/index.html<br />
+                        <code>github
+                        比较精简的快速查询
+                - git questions
+                        http://stackoverflow.com/questions/tagged/git
+                        @stackoverflow
+                        平时实际使用会遇到的问题与解答
+                - git for computer scientiests
+                        http://eagain.net/articles/git-for-computer-scientists/
+                        Tommi Virtanen</code>eagain (Gitosis作者)<br />
+                        git 的工作机制（可以在开始branch协作之前快速了解并根据它制定branch策略)<br />
+                &#8211; git magic<br />
+                        http://www-cs-students.stanford.edu/~blynn/gitmagic/<br />
+                        Ben Lynn@stanford<br />
+                        一共十页的文档，比较适合阅读的排版<br />
+                &#8211; git windows 使用图解<br />
+                        http://nathanj.github.com/gitguide/index.html<br />
+                        nathanj@github<br />
+                        带有截图的专门叙述如何用windows+git<br />
+                &#8211; 给designer用的git教程<br />
+- 给designer用的git教程<br />
+                        http://hoth.entp.com/output/git_for_designers.html<br />
+                        也有截图，并且比较短。<br />
+                &#8211; git 分支图解<br />
+                        http://marklodato.github.com/visual-git-guide/index-en.html<br />
+                        Mark Lodato@github<br />
+                        一页包括非常清晰的图解。<br />
+                &#8211; git和svn对比 [kernel.org官方文档]<br />
+                        http://git.or.cz/course/svn.html<br />
+                        Petr Baudis@suse<br />
+                        每个svn命令和git命令对照和解说<br />
+                &#8211; 理解git概念<br />
+                        http://www.eecs.harvard.edu/~cduan/technical/git/<br />
+                        Charles Duan@harvard<br />
+                        讲得非常清晰得git概念<br />
+                &#8211; git官方帮助手册<br />
+                        http://schacon.github.com/git/git.html<br />
+                        Junio C Hamano<br />
+                        如果不习惯查看linux man手册就不用看了。</p>
+<hr />
+<p>- %git <span class="caps">LAQ</span></p>
+<p><del>- 这里面存在很多问题，需要解决，现在先列出暂时想到的<br />
+    -</del>&#8212;&#8212; 建議至少讀完Pro Git再做決策<br />
+<del>- redmine对git支持是否全面？现在了解的是，redmine貌似还不支持git branch<br />
+    -</del>&#8212;&#8212; yes，目前的svn版本已經支持<br />
+    <del>-</del>&#8212;   可以考慮http://codeslife.com/2011/01/27/alm-redmine-integration-with-git-well-done/<br />
+<del>- 是否能方便的从外网访问到内网的git？最好能做到和svn一样，通过改hosts就能从外网访问<br />
+    -</del>&#8212;&#8212; could do &#8211; checkout github, github能做的事情原則上我們都可以實現<br />
+<del>- 从svn迁移到git的成本多高？<br />
+    -</del>&#8212;&#8212; depends on dev team，建議大家至少讀一遍Pro Git<br />
+    <del>-</del>&#8212;- 開發team的工作流程需要明確的定義: <br />
+            <del>-</del>- : 任何人都可以push到master<br />
+            <del>-</del>- : 直接發佈master<br />
+            <del>-</del>- 這兩條工作協議不能同時存在。一開始還是鼓勵大家多checkout和多進行<br />
+            push練習，等我們熟練以後可以調整到比較靈活使用git merge, git rebate<br />
+            等特性。<br />
+<del>- git如何能做到自动将branch代码直接同步到252这样的测试服务器上？git有比svn更强大的hook，理论上肯定没问题<br />
+    -</del>&#8212;&#8212; could do，事實上應該用tag 發佈<br />
+<del>- git如何生成“干净”的diff，即只显示branch中为这个issue所开发的内容？<br />
+    -</del>&#8212;&#8212; could almost do<br />
+        <del>-</del>- ref: http://blog.enjoyrails.com/2008/12/30/git%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/<br />
+        <del>-</del>- o branch的使用實際上只包括它從哪個點checkout和我們計劃將<br />
+        它的哪些改動集合merge回master (假設我們始終要用master tag發佈)<br />
+        <del>-</del>- o git fetch之後進行code review再做git merge最保險，可以參考android的開發<br />
+        流程，ref:gerrit<br />
+<del>- 自动将branch同步到master或上线用的分支有哪些风险？<br />
+    -</del>&#8212;&#8212; 同上，取決於開發流程 http://progit.org/book/zh/ch3-4.html<br />
+        <del>-</del>- 根據我的理解，git的使用協議更focus在merge上，開設branch是一個類似於<br />
+        subversion中checkout一樣的常規開發行為。也可以理解為git的工作粒度可以很<br />
+        細，為每個milestone/issue開一個branch都可以<br />
+        但是大家需要有足夠的共識－比如哪個branch的內容需要所有其它branch主動去merge。</p>
+
+<p><del>- 是否有什么功能git弱于svn？<br />
+    -</del>- 權限控制－需要獨立的repo 給不同的權限組織<br />
+            <del>-</del>- : 可以用git fetch來包含不同版本庫repo的內容作為本地lib使用<br />
+    <del>-</del> 沒有全局的version number &#8211; 只有修訂記錄，沒有順序的版本號碼。<br />
+            <del>-</del>- : 原則上都用tag 來手工標示發佈版本<br />
+    <del>-</del> 工作協議<br />
+            <del>-</del>- : 大的項目需要預先定義好工作協議並且確定發佈方式，當然也可以<br />
+              從新開個remote master進行發佈。。不過那就浪費了git的快速和<br />
+              靈活了。所以也不建議使用gitsvn等中和方式，因為切換到git的<br />
+              主要目標之一就是為了讓source control可以和實際的work flow<br />
+              比較切合，而不是生成更多的工作。<br />
+              ref: http://stackoverflow.com/questions/540784/how-much-of-the-power-of-git-is-lost-by-using-git-svn-and-a-shared-subversion-mai<br />
+    <del>-</del> 不能加入empty folder<br />
+            <del>-</del>- : https://git.wiki.kernel.org/index.php/GitFaq#Can_I_add_empty_directories.3F<br />
+            <del>-</del>- : http://stackoverflow.com/questions/115983/how-do-i-add-an-empty-directory-to-a-git-repository<br />
+<del>- 擴展<br />
+    -</del>- 適合做code review的gerrit<br />
+            <del>-</del>- : http://blog.ossxp.com/2010/11/2059/<br />
+            <del>-</del>- : http://code.google.com/p/gerrit/<br />
+    <del>-</del> [中文] Windows下使用Git<br />
+            <del>-</del>- : http://www.worldhello.net/2010/12/31/2282.html<br />
+    <del>-</del> [英文] 從svn轉到git工作<br />
+            <del>-</del>- : http://git.or.cz/course/svn.html<br />
+    <del>-</del> [英文] git的工作原理圖解 (很簡單)<br />
+            <del>-</del>- : http://eagain.net/articles/git-for-computer-scientists/</p>
+<hr />
+<p>- @readinglist<br />
+    <del>- [中文] 快速入門 http://www.ibm.com/developerworks/cn/linux/l-git/<br />
+    -</del> [英文] 快速入門 http://linux.yyz.us/git-howto.html<br />
+    <del>- [中文] git全面介紹(Pro git) http://progit.org/book/zh/<br />
+    -</del> [英文] 原版Pro Git http://progit.org/book/<br />
+    <del>- [中文] git命令細述 http://blog.enjoyrails.com/2008/12/30/git%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/<br />
+    -</del> [中文] git於svn詳細比較 http://hi.baidu.com/leolance/blog/item/c7887912b2e9fb5921a4e933.html<br />
+       <del>-</del> (太詳細了，沒看完，不一定都考譜)<br />
+    <del>- [中文] 群英彙的git admin文擋 http://www.ossxp.com/doc/git/gitolite.html<br />
+    -</del> [中文] 基於git的cheatsheets http://www.robinlu.com/blog/archives/199<br />
+    <del>- [code] 生成svn patch https://gist.github.com/559473<br />
+    -</del> [英文] 使用git deploy 網站 http://philsturgeon.co.uk/news/2010/02/Deploying-websites-with-Git<br />
+    <del>- [討論] 將已有的svn repo轉換為git repo <br />
+        -</del>-http://stackoverflow.com/questions/79165/how-to-migrate-svn-with-history-to-a-new-git-repository<br />
+        <del>&#8212;http://www.jonmaddox.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/<br />
+    -</del> [app] 傳說中不錯得windows git客戶端軟件 http://www.syntevo.com/smartgit/download.html</p>
+    </div>
+    <div id="sidebar">
+      <h2>Be there</h2>
+      <ul>
+        <li><a href="/blog/">log</a></li>
+        <li><a href="/">home</a></li>
+      </ul>
+      <h2>Read it</h2>
+      <ul>
+        <li><a href="http://docs.python.org/library/index.html">python doc</a></li>
+        <li><a href="http://git-scm.com/documentation">git doc</a></li>
+        <li><a href="http://safaribooksonline.com/">safaribooks</a></li>
+      </ul>
+      <h2>Use tools</h2>
+      <ul>
+        <li><a href="http://goo.gl/">url shortener</a></li>
+        <li><a href="https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en">currency ex rate</a></li>
+        <li><a href="http://ttyn.github.com/InstaList/">checklist</a></li>
+      </ul>
+      <h2>Do that</h2>
+      <ul>
+        <li>ego depletion</li>
+      </ul>
+      <div id="div_update">Wed March 14, 2012 @17:06:11 CST</div>
+    </div>
+
+<!-- BEGIN google analytics --> 
+<script type="text/javascript">  
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7206667-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- END google analytics -->
+  </body>
+</html>
