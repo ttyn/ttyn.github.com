@@ -28,63 +28,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
     <loc>http://me.local/404/</loc><br />
-    <lastmod>2012-03-09</lastmod></p>
+    <lastmod>2012-03-12</lastmod></p>
 </url>
 <url>
     <loc>http://me.local/assets/coderay.css</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/favicon.ico</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09-02/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-24/</loc>
-    <lastmod>2012-02-24</lastmod>
+    <lastmod>2012-03-12</lastmod>
+</url>
+<url>
+    <loc>http://me.local/blog/2012-03-14-screencast/</loc>
+    <lastmod>2012-03-14</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/install_tmux_on_centos6/</loc>
-    <lastmod>2012-02-24</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/help/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sandbox/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/</loc>
-    <lastmod>2012-03-09</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/sa_homework/</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2012-02-10</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2012-02-17</lastmod>
+    <lastmod>2012-03-12</lastmod>
 </url>
 </urlset>
     </div>
@@ -109,7 +113,7 @@
         <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Fri Feb 10, 2012 @19:00:20 CST</div>
+    <div id="div_update">Mon Mar 12, 2012 @15:26:10 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
