@@ -24,7 +24,13 @@ compile '/blog/*' do
 end
 
 compile '/txt/*' do
-  # don’t filter or layout
+        # txt files
+end
+compile '/ref/*' do
+        # refs from other places cc credit
+end
+compile '/files/*' do
+        # random files to be used
 end
 
 compile '/doc/*' do
@@ -51,6 +57,14 @@ end
 
 route '/txt/*' do
         item.identifier.chop + '.txt'
+end
+
+route '/ref/*' do
+        item.identifier.chop + '.' + item[:extension]
+end
+
+route '/files/*' do
+        item.identifier.chop + '.' + item[:extension]
 end
 
 route 'sitemap' do
