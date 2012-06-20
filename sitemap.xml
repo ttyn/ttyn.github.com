@@ -83,16 +83,28 @@
     <lastmod>2012-03-26</lastmod>
 </url>
 <url>
+    <loc>http://me.local/doc/sa_homework/</loc>
+    <lastmod>2012-03-26</lastmod>
+</url>
+<url>
     <loc>http://me.local/doc/sandbox/</loc>
     <lastmod>2012-03-26</lastmod>
 </url>
 <url>
-    <loc>http://me.local/</loc>
-    <lastmod>2012-06-19</lastmod>
+    <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
+    <lastmod>2012-06-20</lastmod>
 </url>
 <url>
-    <loc>http://me.local/sa_homework/</loc>
-    <lastmod>2012-03-26</lastmod>
+    <loc>http://me.local/files.html</loc>
+    <lastmod>2012-06-20</lastmod>
+</url>
+<url>
+    <loc>http://me.local/</loc>
+    <lastmod>2012-06-20</lastmod>
+</url>
+<url>
+    <loc>http://me.local/ref/unixtoolbox.html</loc>
+    <lastmod>2012-06-20</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
@@ -101,10 +113,6 @@
 <url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
     <lastmod>2012-03-26</lastmod>
-</url>
-<url>
-    <loc>http://me.local/txt/unixtoolbox.txt</loc>
-    <lastmod>2012-06-13</lastmod>
 </url>
 </urlset>
     </div>
