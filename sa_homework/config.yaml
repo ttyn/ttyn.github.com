@@ -16,23 +16,23 @@ deploy:
     options: ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
 
 # domain to which this site is deployed
-base_url: http://me.local
+base_url: http://ttyn.github.me
 
 google_analytics:
-  domain: autumnleaf.github.com
+  domain: ttyn.github.me
   site_id: UA-7206667-1
 
 # currently used by logo
 site_name: me@fourohfour
 
 # number of full featured posts to display on front
-featured_count: 0
+featured_count: 1
 
 # number of excerpted posts to display on front
-excerpt_count: 6
+excerpt_count: 0
 
 # number of other articles to reference at bottom of each article
-other_articles_max: 3
+other_articles_max: 0
 
 # DISQUS Site Shortname. Comment out to disable.
 # disqus_shortname: 

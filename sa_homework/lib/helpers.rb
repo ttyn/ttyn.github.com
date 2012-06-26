@@ -79,7 +79,8 @@ end
 
 # Copy static assets outside of content instead of having nanoc3 process them.
 def copy_static
-  FileUtils.cp_r 'static/.', 'output/' 
+  #FileUtils.cp_r 'static/.', 'output/' 
+  FileUtils.cp_r 'static/.', @config[:output_dir]
 end
 
 def partial(identifier_or_item)

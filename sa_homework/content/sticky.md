@@ -2,5 +2,5 @@
 is_hidden: true
 ---
 <div class="screencast">
-    <div>sticky bit</div>
+    <div>not a bit</div>
 </div>
