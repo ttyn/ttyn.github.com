@@ -4,4 +4,5 @@ tmp
 
 .sass-cache
 vendor/ruby
+vendor
 Gemfile.lock
