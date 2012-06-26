@@ -7,4 +7,4 @@ tags: [misc]
 title: "Hello World"
 ---
 
-TODO: Add content to `content/2012/06-26-hello_world.md.`
+世事漫隨流水 算來一夢浮生

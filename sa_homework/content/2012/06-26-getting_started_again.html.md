@@ -1,7 +1,7 @@
 ---
 title: Getting Started Again With nanoc3_blog 
 kind: article
-tags: [haml, nanoc3, sass]
+tags: [nanoc3]
 created_at: 2012/06/26
 excerpt: yes i started it again
 keywords: personal
@@ -10,7 +10,7 @@ _:
 
 ## Prerequisites
 
-Know how to use `terminal, Ruby, HAML, SASS` and `Markdown`.
+i am getting back to `the world`.
 
 
 ## 使用方法
