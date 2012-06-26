@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://ttyn.github.me/</id>
+  <title>mgutz.com Syndication</title>
+  <updated>2012-06-25T16:00:00Z</updated>
+  <link rel="alternate" href="http://ttyn.github.me/"/>
+  <link rel="self" href="http://ttyn.github.me/atom.xml"/>
+  <author>
+    <name>Mario Gutierrez</name>
+    <uri>http://mgutz.com</uri>
+  </author>
+  <entry>
+    <id>tag:ttyn.github.me,2012-06-26:/2012/06/26/hello_world.html</id>
+    <title type="html">Hello World</title>
+    <published>2012-06-25T16:00:00Z</published>
+    <updated>2012-06-26T11:25:46Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2012/06/26/hello_world.html"/>
+    <content type="html">&lt;p&gt;世事漫隨流水 算來一夢浮生&lt;/p&gt;
+</content>
+    <summary type="html">this is racked start</summary>
+  </entry>
+  <entry>
+    <id>tag:ttyn.github.me,2012-06-26:/2012/06/26/getting_started_again.html</id>
+    <title type="html">Getting Started Again With nanoc3_blog</title>
+    <published>2012-06-25T16:00:00Z</published>
+    <updated>2012-06-26T11:24:39Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2012/06/26/getting_started_again.html"/>
+    <content type="html">&lt;h2&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;i am getting back to &lt;code&gt;the world&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;使用方法&lt;/h2&gt;
+
+&lt;p&gt;nanoc compile on it. 不一定要用bundle&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    % bundle install is for preparing 準備 only
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;From the command line&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% gem install bundler
+% git clone git://github.com/mgutz/nanoc3_blog.git your_blog
+% cd your_blog
+% bundle install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Previewing the Site&lt;/h2&gt;
+
+&lt;p&gt;Compile the site&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cleans output/ directory. `rm -rf output` works just as well
+% rake clean 
+
+# compiles content/* and copies static/* to output/
+% nanoc compile
+
+# runs preview server and autocompile on page refresh
+% nanoc aco
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Preview the site on &lt;code&gt;http://localhost:3000&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;Customizing Existing Content&lt;/h2&gt;
+
+&lt;p&gt;Edit these two files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;content/about.md
+content/sticky.md # box content on front page
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Delete articles to remove them from site. Then, recompile and restart server.&lt;/p&gt;
+
+&lt;p&gt;To change the front page: &lt;code&gt;content/index.haml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To change the site layout: &lt;code&gt;layouts/default.haml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To style the site: &lt;code&gt;content/assets/style.sass&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;Adding Content&lt;/h2&gt;
+
+&lt;p&gt;Edit the Markdown file created by running this command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# filename is written to console
+% rake create:article title='Hello world'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After compiling or refresh in preview mode, view your page from the front page, archives link and tags link
+if you entered tags.&lt;/p&gt;
+
+&lt;h2&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;Edit the configuration files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.yaml
+content/atom.xml.erb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Deployment&lt;/h2&gt;
+
+&lt;p&gt;Transfer &lt;code&gt;output/*&lt;/code&gt; to your hosted web server. If use rsync, then
+edit the settings in &lt;code&gt;config.yaml&lt;/code&gt; and execute&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% rake deploy:rsync
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <summary type="html">yes i started it again</summary>
+  </entry>
+  <entry>
+    <id>tag:ttyn.github.me,2010-01-14:/2010/01/14/markdown/test.html</id>
+    <title type="html">Markdown Test</title>
+    <published>2010-01-13T16:00:00Z</published>
+    <updated>2010-06-15T22:14:42Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2010/01/14/markdown/test.html"/>
+    <content type="html">&lt;p&gt;Testing markdown filter.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Link to &lt;a href="http://www.wowcubator.com"&gt;wowcubator&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">Article example using Markdown syntax</summary>
+  </entry>
+  <entry>
+    <id>tag:ttyn.github.me,2010-01-13:/2010/01/13/erb/markdown/test.html</id>
+    <title type="html">ERB Markdown Test</title>
+    <published>2010-01-12T16:00:00Z</published>
+    <updated>2010-06-15T22:14:42Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2010/01/13/erb/markdown/test.html"/>
+    <content type="html">&lt;p&gt;Item identifier: /2010/01-13-erb-markdown-test/&lt;/p&gt;
+
+&lt;p&gt;Testing markdown filter.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</content>
+    <summary type="html">Example using ERB, then Markdown</summary>
+  </entry>
+  <entry>
+    <id>tag:ttyn.github.me,2010-01-03:/2010/01/03/stylesheet_article.html</id>
+    <title type="html">Stylesheet Article</title>
+    <published>2010-01-02T16:00:00Z</published>
+    <updated>2010-06-15T22:14:42Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2010/01/03/stylesheet_article.html"/>
+    <content type="html">&lt;div class='body'&gt;
+  &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+  &lt;pre&gt;body&amp;#x000A;  background-color: #fff&amp;#x000A;&lt;/pre&gt;
+  &lt;p&gt;becomes&lt;/p&gt;
+  &lt;pre&gt;/* 45678901234567890123456789012345678901234567890123456789012345678901234567 */&amp;#x000A;body {&amp;#x000A;  background-color: #fff;&amp;#x000A;}&lt;/pre&gt;
+&lt;/div&gt;
+</content>
+    <summary type="html">About different stylesheet processors</summary>
+  </entry>
+</feed>
