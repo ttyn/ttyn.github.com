@@ -1,5 +1,9 @@
 # nanoc3_blog
 
+---
+keep the original documentation.
+---
+
 This is a [nanoc3](http://nanoc.stoneship.org/) blog starter kit. FreeBSD licensed.
 
 View this project on [nanoc3-blog.mgutz.com](http://nanoc3-blog.mgutz.com/).
