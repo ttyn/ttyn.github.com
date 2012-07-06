@@ -72,6 +72,15 @@ _colon_ after paragraphs doesnt work with my version
  
 this is this ![alt][thisimg] king!
 
+
+* Shorthands to use linkies
+        autolink: <http://example.com/>
+        
+        [google]: http://google.com/        "Google"
+        [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+        [msn]:    http://search.msn.com/    "MSN Search"
+
+
  
 
 
