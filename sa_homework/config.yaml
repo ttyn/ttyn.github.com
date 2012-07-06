@@ -16,10 +16,10 @@ deploy:
     options: ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
 
 # domain to which this site is deployed
-base_url: http://ttyn.github.me
+base_url: http://ttyn.me
 
 google_analytics:
-  domain: ttyn.github.me
+  domain: ttyn.me
   site_id: UA-7206667-1
 
 # currently used by logo

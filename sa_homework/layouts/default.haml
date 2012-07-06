@@ -34,6 +34,7 @@
     %link(href="/assets/css/reset.css" rel="stylesheet" type="text/css")
     %link(href="/assets/css/style.css" media="screen" rel="stylesheet" type="text/css")
     %link(href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon")
+    %link(href="/assets/favicon.ico" rel="icon" type="image/x-icon")
 
   %body
     -# needed since some content render <pre> blocks
@@ -47,8 +48,6 @@
             != link_unless_current "about"
             != link_unless_current "archives"
             != link_unless_current "tags"
-            %li
-              %a(href='/atom.xml') rss
             %li
               %a(href='/license.html') license
       .clear

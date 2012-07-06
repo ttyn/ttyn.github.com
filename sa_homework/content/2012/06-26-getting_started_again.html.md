@@ -5,6 +5,7 @@ tags: [nanoc3]
 created_at: 2012/06/26
 excerpt: yes i started it again
 keywords: personal
+publish: false
 _:
 ---
 

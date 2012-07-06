@@ -3,6 +3,7 @@ title: ERB Markdown Test
 kind: article
 tags: [markdown]
 excerpt: Example using ERB, then Markdown
+publish: false
 ---
 
 Item identifier: <%= @item.identifier %>
