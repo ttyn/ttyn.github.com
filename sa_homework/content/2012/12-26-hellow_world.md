@@ -1,9 +1,9 @@
 ---
-created_at: 2012-06-26
-excerpt: this is racked start
+created_at: 2012-12-26
+excerpt: this is ...
 kind: article
 publish: true
-tags: [misc]
+tags: []
 title: "Hello World"
 ---
 

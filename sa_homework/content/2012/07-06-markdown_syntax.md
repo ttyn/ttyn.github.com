@@ -83,7 +83,8 @@ this is this ![alt][thisimg] king!
 * [wikipedia markdown syntax [EN]](http://en.wikipedia.org/wiki/Markdown#Syntax_examples)
 
 
-## current status: DONE
+
+# current status: DONE
 ## The End | 文檔終點
 
 back to [home](http://ttyn.me)  
