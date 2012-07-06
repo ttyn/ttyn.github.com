@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-06:/2012/07/06/markdown_syntax.html</id>
     <title type="html">markdown syntax</title>
     <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-06T07:26:04Z</updated>
+    <updated>2012-07-06T11:19:14Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/06/markdown_syntax.html"/>
     <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
 
@@ -108,6 +108,18 @@
 
 
 &lt;p&gt;this is this &lt;img src="/files/img/tuxs.jpg" title="Title" alt="alt" /&gt; king!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Shorthands to use linkies
+
+&lt;pre&gt;&lt;code&gt;  autolink: &amp;lt;http://example.com/&amp;gt;
+
+  [google]: http://google.com/        "Google"
+  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+  [msn]:    http://search.msn.com/    "MSN Search"
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
 
