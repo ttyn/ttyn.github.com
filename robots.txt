@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /assets/
 
-Sitemap: http://ttyn.github.me/sitemap.xml
+Sitemap: http://ttyn.me/sitemap.xml
