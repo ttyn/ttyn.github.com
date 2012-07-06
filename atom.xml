@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://ttyn.github.me/</id>
   <title>mgutz.com Syndication</title>
-  <updated>2012-07-05T16:00:00Z</updated>
+  <updated>2012-12-25T16:00:00Z</updated>
   <link rel="alternate" href="http://ttyn.github.me/"/>
   <link rel="self" href="http://ttyn.github.me/atom.xml"/>
   <author>
@@ -10,10 +10,20 @@
     <uri>http://mgutz.com</uri>
   </author>
   <entry>
+    <id>tag:ttyn.github.me,2012-12-26:/2012/12/26/hellow_world.html</id>
+    <title type="html">Hello World</title>
+    <published>2012-12-25T16:00:00Z</published>
+    <updated>2012-07-06T07:28:29Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2012/12/26/hellow_world.html"/>
+    <content type="html">&lt;p&gt;世事漫隨流水 算來一夢浮生&lt;/p&gt;
+</content>
+    <summary type="html">this is ...</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.github.me,2012-07-06:/2012/07/06/markdown_syntax.html</id>
     <title type="html">markdown syntax</title>
     <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-06T07:20:20Z</updated>
+    <updated>2012-07-06T07:26:04Z</updated>
     <link rel="alternate" href="http://ttyn.github.me/2012/07/06/markdown_syntax.html"/>
     <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
 
@@ -107,7 +117,7 @@
 &lt;/ul&gt;
 
 
-&lt;h2&gt;current status: DONE&lt;/h2&gt;
+&lt;h1&gt;current status: DONE&lt;/h1&gt;
 
 &lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
 
@@ -163,16 +173,6 @@
 &lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
 </content>
     <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.github.me,2012-06-26:/2012/06/26/hello_world.html</id>
-    <title type="html">Hello World</title>
-    <published>2012-06-25T16:00:00Z</published>
-    <updated>2012-06-26T11:25:46Z</updated>
-    <link rel="alternate" href="http://ttyn.github.me/2012/06/26/hello_world.html"/>
-    <content type="html">&lt;p&gt;世事漫隨流水 算來一夢浮生&lt;/p&gt;
-</content>
-    <summary type="html">this is racked start</summary>
   </entry>
   <entry>
     <id>tag:ttyn.github.me,2012-06-26:/2012/06/26/getting_started_again.html</id>
