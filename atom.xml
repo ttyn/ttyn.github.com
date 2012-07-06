@@ -2,13 +2,168 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://ttyn.github.me/</id>
   <title>mgutz.com Syndication</title>
-  <updated>2012-06-25T16:00:00Z</updated>
+  <updated>2012-07-05T16:00:00Z</updated>
   <link rel="alternate" href="http://ttyn.github.me/"/>
   <link rel="self" href="http://ttyn.github.me/atom.xml"/>
   <author>
     <name>Mario Gutierrez</name>
     <uri>http://mgutz.com</uri>
   </author>
+  <entry>
+    <id>tag:ttyn.github.me,2012-07-06:/2012/07/06/markdown_syntax.html</id>
+    <title type="html">markdown syntax</title>
+    <published>2012-07-05T16:00:00Z</published>
+    <updated>2012-07-06T07:20:20Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2012/07/06/markdown_syntax.html"/>
+    <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;created by: John Gruber &amp;amp; Aaron Swartz&lt;/li&gt;
+&lt;li&gt;target: easy to read AND easy to write plain text format&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Syntax | 語法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Headings - hashes before text&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  ### with hash made this my heading
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Paragraphs - no indent&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  without any indent this is just a paragraph 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Paragraphs - two spaces to end the paragraphs &lt;br/&gt;
+&lt;em&gt;colon&lt;/em&gt; after paragraphs doesnt work with my version&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  here we have two spaces hidden behind    
+  so this is two paragraphs
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lists - bullted with * and enumerated with number&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  * my list item 1
+  * my list item 2
+      * sublist item indent with four spaces
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Code span - with backticks&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  `&amp;lt;code me blue&amp;gt;`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;code me blue&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Code block - formatted with four spaces prefixed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  In [2]: fabric?
+  Type:       module
+
+  Base Class: &amp;lt;type 'module'&amp;gt;
+  String Form:&amp;lt;module 'fabric' from '/Users/ttyn/.virtualenvs/dailysa/lib/python2.7/site-packages/fabric/__init__.pyc'&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Blockquotes&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;gt; this would flow everthing like this: Where past and future are gathered. Neither movement from nor towards,
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horizontal lines - triple stars, dashes&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  ---
+  * * *
+  - - - -
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manual line breaks - two or more spaces hidden behind.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  i made a line break here /spaces/  
+  with two spaces
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Phrase Emphasis - star or underscore&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  *star me to be italic*
+  ** double star me to be bold **
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Linkiefy - squarebracket the notation and bracket the link&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  short: [home](http://ttyn.me)  
+  full: [home](http://ttyn.me "Title: HOME")  
+  use reference style: this is [home][linkid] yes it is
+  ref(put it lateR): [linkid]: http://ttyn.me "Title: HOME"  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Inline image - almost same as linkie with an "!" in front&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  short: ![i am image](/files/img/tuxs.jpg)
+  full: ![alt shelter](/files/img/tuxs.jpg "Gimme shelter")
+  ref style: [thisimgid]: /files/img/tuxs.jpg "Title"
+  use the ref: this is ![an img][thisimid] yes it is
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;this is this &lt;img src="/files/img/tuxs.jpg" title="Title" alt="alt" /&gt; king!&lt;/p&gt;
+
+&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax/"&gt;original markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples"&gt;wikipedia markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;current status: DONE&lt;/h2&gt;
+
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">my own documentation for standard markdown syntax</summary>
+  </entry>
+  <entry>
+    <id>tag:ttyn.github.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
+    <title type="html">open vpn server on ec2 for android client</title>
+    <published>2012-07-05T16:00:00Z</published>
+    <updated>2012-07-06T04:09:33Z</updated>
+    <link rel="alternate" href="http://ttyn.github.me/2012/07/06/android_vpn_client_and_server.html"/>
+    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
+
+&lt;h3&gt;Env | 環境&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    % amazon ec2 micro instance
+    % CentOS 5.6
+            % sudo yum install -y openswan ppp xl2tpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Conf | 配置&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    % /etc/xl2tpd/xl2tpd.conf
+    % /etc/ppp/options.xl2tpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Run | 運行&lt;/h3&gt;
+
+&lt;h2&gt;The Client | 客戶端&lt;/h2&gt;
+
+&lt;h3&gt;Conf | 配置&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    % 
+    % 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Run | 運行&lt;/h3&gt;
+
+&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.luojs.com/2011/03/31/android-vpn-one/"&gt;android配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
+  </entry>
   <entry>
     <id>tag:ttyn.github.me,2012-06-26:/2012/06/26/hello_world.html</id>
     <title type="html">Hello World</title>
@@ -120,35 +275,5 @@ edit the settings in &lt;code&gt;config.yaml&lt;/code&gt; and execute&lt;/p&gt;
 &lt;p&gt;Link to &lt;a href="http://www.wowcubator.com"&gt;wowcubator&lt;/a&gt;&lt;/p&gt;
 </content>
     <summary type="html">Article example using Markdown syntax</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.github.me,2010-01-13:/2010/01/13/erb/markdown/test.html</id>
-    <title type="html">ERB Markdown Test</title>
-    <published>2010-01-12T16:00:00Z</published>
-    <updated>2010-06-15T22:14:42Z</updated>
-    <link rel="alternate" href="http://ttyn.github.me/2010/01/13/erb/markdown/test.html"/>
-    <content type="html">&lt;p&gt;Item identifier: /2010/01-13-erb-markdown-test/&lt;/p&gt;
-
-&lt;p&gt;Testing markdown filter.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</content>
-    <summary type="html">Example using ERB, then Markdown</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.github.me,2010-01-03:/2010/01/03/stylesheet_article.html</id>
-    <title type="html">Stylesheet Article</title>
-    <published>2010-01-02T16:00:00Z</published>
-    <updated>2010-06-15T22:14:42Z</updated>
-    <link rel="alternate" href="http://ttyn.github.me/2010/01/03/stylesheet_article.html"/>
-    <content type="html">&lt;div class='body'&gt;
-  &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-  &lt;pre&gt;body&amp;#x000A;  background-color: #fff&amp;#x000A;&lt;/pre&gt;
-  &lt;p&gt;becomes&lt;/p&gt;
-  &lt;pre&gt;/* 45678901234567890123456789012345678901234567890123456789012345678901234567 */&amp;#x000A;body {&amp;#x000A;  background-color: #fff;&amp;#x000A;}&lt;/pre&gt;
-&lt;/div&gt;
-</content>
-    <summary type="html">About different stylesheet processors</summary>
   </entry>
 </feed>

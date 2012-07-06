@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>open vpn server on ec2 for android client</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content=', misc, doc' name='keywords' />
+    <meta content='draft documentation over how to setup vpn server on aws ec2 vm' name='description' />
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div class='logo'>
+          <a href='/'>&laquo; me@fourohfour</a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li><a href='/about.html'>about</a></li>
+            <li><a href='/archives.html'>archives</a></li>
+            <li><a href='/tags.html'>tags</a></li>
+            <li>
+              <a href='/atom.xml'>rss</a>
+            </li>
+            <li>
+              <a href='/license.html'>license</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='article'>
+  <h1>
+    open vpn server on ec2 for android client
+  </h1>
+  <div class='meta'>
+    <ul class='tags'>
+      <li>Jul 06, 2012</li>
+      <li>&middot;</li>
+      <li>
+        <a class='tag' href='/tags/doc/'>
+          doc
+        </a>
+      </li>
+      <li>
+        <a class='tag' href='/tags/misc/'>
+          misc
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class='body'>
+    <h2>The Server | 服務端</h2>
+
+<h3>Env | 環境</h3>
+
+<pre><code>    % amazon ec2 micro instance&#x000A;    % CentOS 5.6&#x000A;            % sudo yum install -y openswan ppp xl2tpd&#x000A;</code></pre>
+
+<h3>Conf | 配置</h3>
+
+<pre><code>    % /etc/xl2tpd/xl2tpd.conf&#x000A;    % /etc/ppp/options.xl2tpd&#x000A;</code></pre>
+
+<h3>Run | 運行</h3>
+
+<h2>The Client | 客戶端</h2>
+
+<h3>Conf | 配置</h3>
+
+<pre><code>    % &#x000A;    % &#x000A;</code></pre>
+
+<h3>Run | 運行</h3>
+
+<h2>The Ref | 參考文檔</h2>
+
+<ul>
+<li><a href="http://www.luojs.com/2011/03/31/android-vpn-one/">android配置[中文]</a></li>
+<li><a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/">android和server配置[中文]</a></li>
+<li><a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients">server config [english]</a></li>
+<li><a href="http://www.howtoforge.com/racoon_roadwarrior_vpn">racoon server config[EN]</a></li>
+</ul>
+
+
+<h2>The End | 文檔終點</h2>
+
+<p>back to <a href="http://ttyn.me">home</a></p>
+  </div>
+</div>
+      <div id='other-articles'>
+        <div class='older'>
+          <ul>
+          </ul>
+        </div>
+        <div class='newer'>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='clear'></div>
+    </div>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-7206667-1");
+          pageTracker._setDomainName(".ttyn.github.me");
+          pageTracker._setAllowHash(false);
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>
