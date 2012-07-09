@@ -88,8 +88,12 @@ this is this ![alt][thisimg] king!
 
 ## The Ref | 參考文檔
         
-* [original markdown syntax [EN]](http://daringfireball.net/projects/markdown/syntax/)
-* [wikipedia markdown syntax [EN]](http://en.wikipedia.org/wiki/Markdown#Syntax_examples)
+* [original markdown syntax [EN]][ref1]
+* [wikipedia markdown syntax [EN]][ref2]
+
+
+[ref1]: http://daringfireball.net/projects/markdown/syntax/ "original markdown sytax"
+[ref2]: http://en.wikipedia.org/wiki/Markdown#Syntax_examples "syntax on wiki
 
 
 
