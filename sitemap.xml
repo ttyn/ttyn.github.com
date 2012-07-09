@@ -28,103 +28,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
     <loc>http://me.local/404/</loc><br />
-    <lastmod>2012-07-06</lastmod></p>
+    <lastmod>2012-07-09</lastmod></p>
 </url>
 <url>
     <loc>http://me.local/assets/coderay.css</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/favicon.ico</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09-02/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-09/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-02-24/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-03-14-gitnotes/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-03-14-screencast/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-06-06-ssh-key/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/2012-06-13-docs-to-write/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/install_tmux_on_centos6/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/help/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sa_homework/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sandbox/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/files.html</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/ref/unixtoolbox.html</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/nginx_self_certificate.txt</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/unixtoolbox.txt</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/vim_doc_sample_command-t.txt</loc>
-    <lastmod>2012-07-06</lastmod>
+    <lastmod>2012-07-09</lastmod>
 </url>
 </urlset>
     </div>
@@ -151,7 +151,7 @@
         <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Fri Jul 06, 2012 @15:40:03 CST</div>
+    <div id="div_update">Mon Jul 09, 2012 @11:56:14 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
