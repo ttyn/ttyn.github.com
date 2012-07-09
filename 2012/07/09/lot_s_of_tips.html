@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>lots of tips</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content=', doc, tip, updating' name='keywords' />
+    <meta content='my own documentation of lots of tips' name='description' />
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div class='logo'>
+          <a href='/'>&laquo; me@fourohfour</a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li><a href='/about.html'>about</a></li>
+            <li><a href='/archives.html'>archives</a></li>
+            <li><a href='/tags.html'>tags</a></li>
+            <li>
+              <a href='/license.html'>license</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='article'>
+  <h1>
+    lots of tips
+  </h1>
+  <div class='meta'>
+    <ul class='tags'>
+      <li>Jul 09, 2012</li>
+      <li>&middot;</li>
+      <li>
+        <a class='tag' href='/tags/doc/'>
+          doc
+        </a>
+      </li>
+      <li>
+        <a class='tag' href='/tags/tip/'>
+          tip
+        </a>
+      </li>
+      <li>
+        <a class='tag' href='/tags/updating/'>
+          updating
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class='body'>
+    <h3>cmd | 命令行</h3>
+
+<ul>
+<li>repeat last command argument
+
+<pre><code>  !$ last argument&#x000A;  !* all argument&#x000A;</code></pre></li>
+<li>notify cmd line this is the end of options
+
+<pre><code>  --&#x000A;</code></pre></li>
+<li>readline
+
+<pre><code>  Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k&#x000A;  Ctrl-w  delete a word backwards&#x000A;  Ctrl-x Ctrl-e actually editing the command line&#x000A;  Esc-f/Esc-b&#x000A;</code></pre></li>
+<li>get public ip
+
+<pre><code>  curl http://ip4.me 2&gt;/dev/null | sed -e 's#&lt;[^&gt;]*&gt;##g' | grep '^[0-9]'&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>text process | 文本處理</h3>
+
+<ul>
+<li>print a line in file
+
+<pre><code>  $ sed -n 4p $file_name &#x000A;  -n switch turns off default output&#x000A;  $ sed -n 3,60p $file_name&#x000A;  $ sed -n -e 3,60p -e 1p $file_name&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>vim | basic vim</h3>
+
+<ul>
+<li>directory and files
+
+<pre><code>  - open directory listing in vim&#x000A;  :e.&#x000A;  - open file in this directory listing&#x000A;  o&#x000A;</code></pre></li>
+<li>fix sudo
+
+<pre><code>  :w !sudo tee %&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>app | 應用</h3>
+
+<ul>
+<li>chrome
+
+<pre><code>  - keybinding to next tab in chrome: Ctrl-Tab&#x000A;  - keybinding to next window in chrome: Cmd-`&#x000A;</code></pre></li>
+<li><p>curl</p>
+
+<pre><code>  - debug it: curl -vv https://s3.amazonaws.com/&#x000A;</code></pre></li>
+<li><p>combine two images (merge)</p>
+
+<pre><code>  $&gt; convert +append a.png b.png c.png&#x000A;  $&gt; montage -geometry 100% left.jpg right.jpg merged.jpg&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>git | just git</h3>
+
+<ul>
+<li>git remove deleted files
+
+<pre><code>  git status |grep deleted |awk '{print $3}' | xargs git rm&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>tools | 工具箱</h3>
+
+<ul>
+<li>centos/yum</li>
+<li>brew</li>
+<li>python
+
+<pre><code>  fabric&#x000A;  ipython&#x000A;  gunicorn&#x000A;</code></pre>
+
+<p><a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements">requirements.txt</a></p></li>
+</ul>
+
+
+<h3>spartan life hacks (which i dont want to forget)</h3>
+
+<ul>
+<li>mental
+
+<pre><code>  mental dicipline&#x000A;  modest and sincere&#x000A;  dont judge 不下結論&#x000A;</code></pre></li>
+<li>physical
+
+<pre><code>  balance/cadence/flex&#x000A;  @sleeping crunch/lay-biking/ab round/ab breathe&#x000A;  @standing backkick/ab breathe 腹式呼吸&#x000A;  @running correct overstriding&#x000A;  @eating water/vegie&#x000A;</code></pre></li>
+</ul>
+
+
+<h3>links | 總是有用的連接</h3>
+
+<ul>
+<li><a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox">unix toolbox</a></li>
+</ul>
+
+
+<hr />
+
+<p>go <a href="http://ttyn.me" title="Title: HOME">home</a> lets go back back to <a href="http://ttyn.me" title="Title: HOME">home</a></p>
+  </div>
+</div>
+      <div id='other-articles'>
+        <div class='older'>
+          <ul>
+          </ul>
+        </div>
+        <div class='newer'>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='clear'></div>
+    </div>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-7206667-1");
+          pageTracker._setDomainName(".ttyn.me");
+          pageTracker._setAllowHash(false);
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>

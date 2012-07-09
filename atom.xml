@@ -20,10 +20,151 @@
     <summary type="html">this is ...</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
+    <title type="html">lots of tips</title>
+    <published>2012-07-08T16:00:00Z</published>
+    <updated>2012-07-09T08:04:53Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
+    <content type="html">&lt;h3&gt;cmd | 命令行&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;repeat last command argument
+
+&lt;pre&gt;&lt;code&gt;  !$ last argument
+  !* all argument
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;notify cmd line this is the end of options
+
+&lt;pre&gt;&lt;code&gt;  --
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;readline
+
+&lt;pre&gt;&lt;code&gt;  Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k
+  Ctrl-w  delete a word backwards
+  Ctrl-x Ctrl-e actually editing the command line
+  Esc-f/Esc-b
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;get public ip
+
+&lt;pre&gt;&lt;code&gt;  curl http://ip4.me 2&amp;gt;/dev/null | sed -e 's#&amp;lt;[^&amp;gt;]*&amp;gt;##g' | grep '^[0-9]'
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;text process | 文本處理&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;print a line in file
+
+&lt;pre&gt;&lt;code&gt;  $ sed -n 4p $file_name 
+  -n switch turns off default output
+  $ sed -n 3,60p $file_name
+  $ sed -n -e 3,60p -e 1p $file_name
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;vim | basic vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;directory and files
+
+&lt;pre&gt;&lt;code&gt;  - open directory listing in vim
+  :e.
+  - open file in this directory listing
+  o
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;fix sudo
+
+&lt;pre&gt;&lt;code&gt;  :w !sudo tee %
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;app | 應用&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;chrome
+
+&lt;pre&gt;&lt;code&gt;  - keybinding to next tab in chrome: Ctrl-Tab
+  - keybinding to next window in chrome: Cmd-`
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;curl&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - debug it: curl -vv https://s3.amazonaws.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;combine two images (merge)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $&amp;gt; convert +append a.png b.png c.png
+  $&amp;gt; montage -geometry 100% left.jpg right.jpg merged.jpg
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;git | just git&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;git remove deleted files
+
+&lt;pre&gt;&lt;code&gt;  git status |grep deleted |awk '{print $3}' | xargs git rm
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;tools | 工具箱&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;centos/yum&lt;/li&gt;
+&lt;li&gt;brew&lt;/li&gt;
+&lt;li&gt;python
+
+&lt;pre&gt;&lt;code&gt;  fabric
+  ipython
+  gunicorn
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;spartan life hacks (which i dont want to forget)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mental
+
+&lt;pre&gt;&lt;code&gt;  mental dicipline
+  modest and sincere
+  dont judge 不下結論
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;physical
+
+&lt;pre&gt;&lt;code&gt;  balance/cadence/flex
+  @sleeping crunch/lay-biking/ab round/ab breathe
+  @standing backkick/ab breathe 腹式呼吸
+  @running correct overstriding
+  @eating water/vegie
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;links | 總是有用的連接&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox"&gt;unix toolbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">my own documentation of lots of tips</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-07-06:/2012/07/06/markdown_syntax.html</id>
     <title type="html">markdown syntax</title>
     <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-06T11:19:14Z</updated>
+    <updated>2012-07-09T02:49:08Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/06/markdown_syntax.html"/>
     <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
 
@@ -124,7 +265,7 @@
 &lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax/"&gt;original markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax/" title="original markdown sytax"&gt;original markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples"&gt;wikipedia markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
