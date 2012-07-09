@@ -11,6 +11,8 @@ title: "lots of tips"
 * repeat last command argument
         !$ last argument
         !* all argument
+* notify cmd line this is the end of options
+        --
 * readline
         Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k
         Ctrl-w  delete a word backwards
@@ -18,6 +20,7 @@ title: "lots of tips"
         Esc-f/Esc-b
 * get public ip
         curl http://ip4.me 2>/dev/null | sed -e 's#<[^>]*>##g' | grep '^[0-9]'
+
  
 
 ### text process | 文本處理
@@ -32,19 +35,26 @@ title: "lots of tips"
 * directory and files      
         - open directory listing in vim
         :e.
-  
         - open file in this directory listing
         o
+* fix sudo
+        :w !sudo tee %
 
 
 ### app | 應用
 * chrome
         - keybinding to next tab in chrome: Ctrl-Tab
         - keybinding to next window in chrome: Cmd-`
+* curl
+        - debug it: curl -vv https://s3.amazonaws.com/
+
+* combine two images (merge)
+        $> convert +append a.png b.png c.png
+        $> montage -geometry 100% left.jpg right.jpg merged.jpg
         
         
 
-### git | 
+### git | just git
 * git remove deleted files 
         git status |grep deleted |awk '{print $3}' | xargs git rm
 
@@ -54,23 +64,23 @@ title: "lots of tips"
 * python
         fabric
         ipython
-[link_pipbasic][requirements.txt]
+        gunicorn
+[requirements.txt][link_pipbasic]
         
         
 
 
-### life hacks (which i dont want to forget) 
+### spartan life hacks (which i dont want to forget) 
 * mental
         mental dicipline
         modest and sincere
         dont judge 不下結論
 * physical
-        ab breathe 腹式呼吸
-        cadence
-        @smoke backkick
-        @before sleep crunch and lay-biking
-        @sleep belly round
-        @eat water and vegie
+        balance/cadence/flex
+        @sleeping crunch/lay-biking/ab round/ab breathe
+        @standing backkick/ab breathe 腹式呼吸
+        @running correct overstriding
+        @eating water/vegie
         
         
 
