@@ -48,6 +48,9 @@ title: "lots of tips"
 * curl
         - debug it: curl -vv https://s3.amazonaws.com/
 
+* mac osx
+        - screenshot screen capture ⌘ ⇧ 3
+
 * combine two images (merge)
         $> convert +append a.png b.png c.png
         $> montage -geometry 100% left.jpg right.jpg merged.jpg
@@ -68,7 +71,12 @@ title: "lots of tips"
 [requirements.txt][link_pipbasic]
         
         
-
+### ideas | 思路
+* http stack
+        http request > web server > router > data handling > response
+* python webapp stack
+        django + flask + nginx +uWSGI
+       
 
 ### spartan life hacks (which i dont want to forget) 
 * mental
