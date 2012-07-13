@@ -97,8 +97,8 @@ this is this ![alt][thisimg] king!
 
 
 
-# current status: DONE
-## The End | 文檔終點
+## current status: DONE
+### The End | 文檔終點
 
 back to [home](http://ttyn.me)  
 [thisimg]: /files/img/tuxs.jpg "Title"
