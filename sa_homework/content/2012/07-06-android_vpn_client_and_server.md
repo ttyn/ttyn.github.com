@@ -42,6 +42,7 @@ title: "open vpn server on ec2 for android client"
 * [server config [english]](http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_\(64-bit\)_for_use_with_Android_ICS_and_iOS_5_Clients)  
 * [racoon server config[EN]](http://www.howtoforge.com/racoon_roadwarrior_vpn)  
 * [android配置pptpd[EN]](http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/)
+* [strongswan in aws vps[EN]](http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc)
 
 
 

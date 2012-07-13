@@ -7,7 +7,7 @@ tags: [doc, tip, updating]
 title: "lots of tips"
 ---
 
-### cmd | 命令行
+### __cmd | 命令行__
 * repeat last command argument
         !$ last argument
         !* all argument
@@ -23,7 +23,7 @@ title: "lots of tips"
 
  
 
-### text process | 文本處理
+### __text process | 文本處理__
 * print a line in file
         $ sed -n 4p $file_name 
         -n switch turns off default output
@@ -31,8 +31,8 @@ title: "lots of tips"
         $ sed -n -e 3,60p -e 1p $file_name
 
 
-### vim | basic vim
-* directory and files      
+### __vim | basic vim__
+* directory and files
         - open directory listing in vim
         :e.
         - open file in this directory listing
@@ -41,7 +41,7 @@ title: "lots of tips"
         :w !sudo tee %
 
 
-### app | 應用
+### __app | 應用__
 * chrome
         - keybinding to next tab in chrome: Ctrl-Tab
         - keybinding to next window in chrome: Cmd-`
@@ -57,11 +57,11 @@ title: "lots of tips"
         
         
 
-### git | just git
+### __git | just git__
 * git remove deleted files 
         git status |grep deleted |awk '{print $3}' | xargs git rm
 
-### tools | 工具箱
+### __tools | 工具箱__
 * centos/yum
 * brew
 * python
@@ -69,16 +69,18 @@ title: "lots of tips"
         ipython
         gunicorn
 [requirements.txt][link_pipbasic]
+* aws
+        boto
         
         
-### ideas | 思路
+### __ideas | 思路__
 * http stack
         http request > web server > router > data handling > response
 * python webapp stack
         django + flask + nginx +uWSGI
        
 
-### spartan life hacks (which i dont want to forget) 
+### __spartan life hacks__ (which i dont want to forget) 
 * mental
         mental dicipline
         modest and sincere
@@ -94,13 +96,13 @@ title: "lots of tips"
 
 
 
-### links | 總是有用的連接
+### __links | 總是有用的連接__
 * [unix toolbox][link_toolbox]
 
 
 --- 
 
-go [home][link_home] lets go back back to [home][link_home]
+__go [home][link_home] lets go back back to [home][link_home]__
 [link_home]: http://ttyn.me "Title: HOME"
 [link_toolbox]: http://ttyn.github.com/ref/unixtoolbox.html "Title: unixtoolbox"
 [link_pipbasic]: http://ttyn.github.com/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
