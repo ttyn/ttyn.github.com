@@ -23,9 +23,9 @@
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-09T10:49:17Z</updated>
+    <updated>2012-07-13T03:37:16Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
-    <content type="html">&lt;h3&gt;cmd | 命令行&lt;/h3&gt;
+    <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;repeat last command argument
@@ -51,7 +51,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;text process | 文本處理&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;text process | 文本處理&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;print a line in file
@@ -64,7 +64,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;vim | basic vim&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;vim | basic vim&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;directory and files
@@ -81,7 +81,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;app | 應用&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;app | 應用&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;chrome
@@ -105,7 +105,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;git | just git&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;git | just git&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;git remove deleted files
@@ -115,7 +115,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;tools | 工具箱&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;tools | 工具箱&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;centos/yum&lt;/li&gt;
@@ -128,10 +128,14 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;aws
+
+&lt;pre&gt;&lt;code&gt;  boto
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h3&gt;ideas | 思路&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;ideas | 思路&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;http stack
@@ -145,7 +149,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;spartan life hacks (which i dont want to forget)&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;spartan life hacks&lt;/strong&gt; (which i dont want to forget)&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;mental
@@ -165,7 +169,7 @@
 &lt;/ul&gt;
 
 
-&lt;h3&gt;links | 總是有用的連接&lt;/h3&gt;
+&lt;h3&gt;&lt;strong&gt;links | 總是有用的連接&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox"&gt;unix toolbox&lt;/a&gt;&lt;/li&gt;
@@ -174,7 +178,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
     <summary type="html">my own documentation of lots of tips</summary>
   </entry>
@@ -300,7 +304,7 @@
     <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
     <title type="html">open vpn server on ec2 for android client</title>
     <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-06T04:09:33Z</updated>
+    <updated>2012-07-12T02:54:34Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/06/android_vpn_client_and_server.html"/>
     <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
 
@@ -336,6 +340,8 @@
 &lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/"&gt;android配置pptpd[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc"&gt;strongswan in aws vps[EN]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
