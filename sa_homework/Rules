@@ -19,7 +19,7 @@ end
 
 compile '/blog/*' do
     filter :erb
-    filter :redcloth
+    filter :kramdown
     layout 'blog'
 end
 
