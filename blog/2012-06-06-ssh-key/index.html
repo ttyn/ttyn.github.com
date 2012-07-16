@@ -27,73 +27,70 @@
         </div>
 
         <p class="created_at">Wed Jun 6 2012</p>
-      <h3 style="color:grey;">配置和使用ssh key auth驗證登陸</h3>
+      <p>h3{color:grey}. 配置和使用ssh key auth驗證登陸</p>
+
 <hr />
-<ul style="vertical-align:middle;">
-	<li>客戶機器為 client_server</li>
-	<li>需要提供登陸的服務器為 host_server</li>
-	<li>在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</li>
-</ul>
-<h4 style="color:darkblue;">第一步 @client_server</h4>
+<pre><code>    * 客戶機器為 client_server
+    * 需要提供登陸的服務器為 host_server
+    * 在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}
+</code></pre>
+
+<p>h4{color:darkblue}. 第一步 @client_server</p>
+
 <ul>
-	<li>local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P
-	<ul>
-		<li>[如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</li>
-	</ul></li>
+  <li>
+    <p>local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P 
+** [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</p>
+  </li>
+  <li>
+    <p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub </p>
+  </li>
 </ul>
-<ul>
-	<li>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub</li>
-</ul>
 
-	<ul>
-		<li>- 2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上</li>
-		<li>- 2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件</li>
-	</ul><p>o 權限設置</p>
+<p>**    - 2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上
+**    - 2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件</p>
 
-	<ul>
-		<li>local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh</li>
-		<li>local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot*</li>
-	</ul><h4 style="color:darkblue;">第二步 @host_server</h4>
+<p>o 權限設置 
+**        local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh
+**        local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot*</p>
 
-	<ul>
-		<li>local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh</li>
-	</ul>
-	<ul>
-		<li>粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys<br />
-**（如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行</li>
-	</ul>
-	<ul>
-		<li>local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys</li>
-		<li>local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys</li>
-	</ul><h4 style="color:darkblue;">第三步測試和dbug</h4>
+<p>h4{color:darkblue}. 第二步 @host_server</p>
 
-	<ul>
-		<li>local_conn_bot@client_server$ ssh host_server uptime ### 測試</li>
-		<li>local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug</li>
-	</ul><h4 style="color:darkblue;">第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</h4>
+<p>**        local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh</p>
 
-	<ul>
-		<li>local_conn_bot@client_server$ cat ~/.ssh/config</li>
-	</ul><p><code class="language-ruby"></p>
+<p>** 粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys
+**（如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行 </p>
 
-	<ol>
-		<li><del>-</del> start of sample ssh config<br />
-Host host_server_01<br />
-        Hostname 192.168.2.1<br />
-Host 30.20.10.0<br />
-        Port 28<br />
-        IdentityFile ~/.ssh/temp-local_conn_bot<br />
-Host *<br />
-        User local_conn_bot<br />
-        ForwardAgent yes<br />
-        Port 22<br />
-        IdentityFile ~/.ssh/2012-local_conn_bot<br />
-        UsePrivilegedPort no<br />
-        ServerAliveInterval 240<br />
-        ServerAliveCountMAx 9999</li>
-		<li><del>-</del> end of sample ssh config<br />
-</code></li>
-	</ol>
+<p>**        local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys
+**        local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys</p>
+
+<p>h4{color:darkblue}. 第三步測試和dbug</p>
+
+<p>**        local_conn_bot@client_server$ ssh host_server uptime ### 測試
+**        local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug</p>
+
+<p>h4{color:darkblue}. 第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</p>
+
+<p>**        local_conn_bot@client_server$ cat ~/.ssh/config</p>
+
+<p><code class="language-ruby">
+## --- start of sample ssh config
+Host host_server_01
+        Hostname 192.168.2.1
+Host 30.20.10.0
+        Port 28
+        IdentityFile ~/.ssh/temp-local_conn_bot
+Host *
+        User local_conn_bot
+        ForwardAgent yes
+        Port 22
+        IdentityFile ~/.ssh/2012-local_conn_bot
+        UsePrivilegedPort no
+        ServerAliveInterval 240
+        ServerAliveCountMAx 9999
+## --- end of sample ssh config
+</code></p>
+
     </div>
     <div id="sidebar">
       <h2>Be there</h2>
@@ -120,7 +117,7 @@ Host *<br />
       <ul>
         <li>ego depletion</li>
       </ul>
-      <div id="div_update">Mon July 09, 2012 @16:07:21 CST</div>
+      <div id="div_update">Mon July 16, 2012 @11:39:16 CST</div>
     </div>
 
 <!-- BEGIN google analytics --> 

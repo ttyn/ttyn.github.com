@@ -27,44 +27,31 @@
         </div>
 
         <p class="created_at">Fri Feb 24 16:45:48 CST 2012</p>
-      <h4 style="color:darkgrey;">逐步整理系统权限</h4>
-<ul>
-	<li>sudo
-	<ul>
-		<li>M0: 用户user<br />
-                &#8211; 系统用户(backup, crontab user)<br />
-                &#8211; dev 个人用户
-		<ul>
-			<li>尽量直接使用个人帐号</li>
-			<li>有权限问题时候可以用sudo，但是禁止切换为root</li>
-			<li>减少输入密码需要，逐步以长密码和key代替。</li>
-		</ul></li>
-		<li>M1: sudoer/visudo<br />
-                &#8211; 只用来界定执行的命令组权限
-		<ul>
-			<li>禁用sudo su 切换root</li>
-			<li>cleanup sudoers 让它实际可用</li>
-			<li>定义一些系统命令，谨慎关闭sudo权限</li>
-		</ul></li>
-		<li>M2: disable root</li>
-	</ul></li>
-	<li>sshd_config
-	<ul>
-		<li>M1: 根据用户客户端系统尽量普及key验证登录</li>
-		<li>M2: 所有的系统用户和脚本强制使用key验证登录</li>
-		<li>M3: disable password login</li>
-	</ul></li>
-	<li>mysqld
-	<ul>
-		<li>M1: 使用${HOME}/.my.cnf, mysql帐号不要直接写入到脚本中</li>
-		<li>M2: clean up grant table</li>
-	</ul></li>
-	<li><span class="caps">DNS</span>/Host/Monitor
-	<ul>
-		<li>M1: 在/etc/hosts中使用内网ip/hostname对照</li>
-		<li>M2: 公网ip解析和连接作为特殊需求单独考虑</li>
-	</ul></li>
-</ul>
+      <p>h4{color:darkgrey}. 逐步整理系统权限
+* sudo
+        ** M0: 用户user
+                - 系统用户(backup, crontab user)
+                - dev 个人用户
+                <em>** 尽量直接使用个人帐号
+                **</em> 有权限问题时候可以用sudo，但是禁止切换为root
+                <em>** 减少输入密码需要，逐步以长密码和key代替。
+        ** M1: sudoer/visudo
+                - 只用来界定执行的命令组权限
+                **</em> 禁用sudo su 切换root
+                <em>** cleanup sudoers 让它实际可用
+                **</em> 定义一些系统命令，谨慎关闭sudo权限
+        ** M2: disable root
+* sshd_config
+        ** M1: 根据用户客户端系统尽量普及key验证登录
+        ** M2: 所有的系统用户和脚本强制使用key验证登录 
+        ** M3: disable password login
+* mysqld
+        ** M1: 使用${HOME}/.my.cnf, mysql帐号不要直接写入到脚本中
+        ** M2: clean up grant table
+* DNS/Host/Monitor
+        ** M1: 在/etc/hosts中使用内网ip/hostname对照
+        ** M2: 公网ip解析和连接作为特殊需求单独考虑</p>
+
     </div>
     <div id="sidebar">
       <h2>Be there</h2>
@@ -91,7 +78,7 @@
       <ul>
         <li>ego depletion</li>
       </ul>
-      <div id="div_update">Mon July 09, 2012 @16:07:21 CST</div>
+      <div id="div_update">Mon July 16, 2012 @11:39:16 CST</div>
     </div>
 
 <!-- BEGIN google analytics --> 
