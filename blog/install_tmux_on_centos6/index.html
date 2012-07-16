@@ -27,15 +27,29 @@
         </div>
 
         <p class="created_at">Thu Feb 9 2012</p>
-      <p>h4{color:grey}. 在centos 6.0 上安装tmux
-# add RPMforge yum repo (64bit)
--       rpm –import http://apt.sw.be/RPM-GPG-KEY.dag.txt
--       wget http://apt.sw.be/redhat/el6/en/x86<em>64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86</em>64.rpm
--       rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm
-# install prerequisite for tmux
--       yum install -y libevent
-# install tmux
--       yum –enablerepo rpmforge install -y tmux</p>
+      <h3 id="centos-60-tmux">在centos 6.0 上安装tmux</h3>
+<ul>
+  <li>
+    <p>add RPMforge yum repo (64bit)</p>
+
+    <pre><code>          rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  
+          wget http://apt.sw.be/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  
+          rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  
+</code></pre>
+  </li>
+  <li>
+    <p>install prerequisite for tmux</p>
+
+    <pre><code>          yum install -y libevent
+</code></pre>
+  </li>
+  <li>
+    <p>install tmux</p>
+
+    <pre><code>          yum --enablerepo rpmforge install -y tmux
+</code></pre>
+  </li>
+</ul>
 
     </div>
     <div id="sidebar">
@@ -63,7 +77,7 @@
       <ul>
         <li>ego depletion</li>
       </ul>
-      <div id="div_update">Mon July 16, 2012 @11:39:16 CST</div>
+      <div id="div_update">Mon July 16, 2012 @15:19:08 CST</div>
     </div>
 
 <!-- BEGIN google analytics --> 
