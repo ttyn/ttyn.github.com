@@ -57,8 +57,6 @@ title: "lots of tips"
 * curl
         - debug it: curl -vv https://s3.amazonaws.com/
 
-* pip
-        - update pip: curl http://python-distribute.org/distribute_setup.py | sudo python
 
 * tty
 
@@ -77,12 +75,16 @@ title: "lots of tips"
 
 ### __tools | 工具箱__
 * centos/yum
-- env
 * brew
 * python
         fabric
         ipython
         gunicorn
+* pip
+        curl -O http://python-distribute.org/distribute_setup.py
+        python distribute_setup.py
+        easy_install pip
+
 [requirements.txt][link_pipbasic]
 * virtualization
         chef/puppet/vagrant/cucumber/aws/ec2/boto
