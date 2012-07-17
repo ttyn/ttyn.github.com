@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-13T03:37:16Z</updated>
+    <updated>2012-07-17T07:05:32Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -47,6 +47,22 @@
 &lt;li&gt;get public ip
 
 &lt;pre&gt;&lt;code&gt;  curl http://ip4.me 2&amp;gt;/dev/null | sed -e 's#&amp;lt;[^&amp;gt;]*&amp;gt;##g' | grep '^[0-9]'
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;lock tty
+
+&lt;pre&gt;&lt;code&gt;  clear &amp;amp;&amp;amp; vlock -c 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;real path
+
+&lt;pre&gt;&lt;code&gt;  pwd -P
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;grep and highlight finds in full file
+
+&lt;pre&gt;&lt;code&gt;  grep --color -E "test|$" yourfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;awk check characters at certain position
+
+&lt;pre&gt;&lt;code&gt;  awk -F '' '$25 == "a"' input &amp;gt;output
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -78,6 +94,10 @@
 
 &lt;pre&gt;&lt;code&gt;  :w !sudo tee %
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;read outline from cmd
+
+&lt;pre&gt;&lt;code&gt;  :r!date
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -93,6 +113,11 @@
 
 &lt;pre&gt;&lt;code&gt;  - debug it: curl -vv https://s3.amazonaws.com/
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pip&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - update pip: curl http://python-distribute.org/distribute_setup.py | sudo python
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;tty&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;mac osx&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  - screenshot screen capture ⌘ ⇧ 3
@@ -119,6 +144,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;centos/yum&lt;/li&gt;
+&lt;li&gt;env&lt;/li&gt;
 &lt;li&gt;brew&lt;/li&gt;
 &lt;li&gt;python
 
@@ -128,9 +154,9 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;aws
+&lt;li&gt;virtualization
 
-&lt;pre&gt;&lt;code&gt;  boto
+&lt;pre&gt;&lt;code&gt;  chef/puppet/vagrant/cucumber/aws/ec2/boto
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

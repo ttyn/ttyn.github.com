@@ -69,6 +69,18 @@
 <li>get public ip
 
 <pre><code>  curl http://ip4.me 2&gt;/dev/null | sed -e 's#&lt;[^&gt;]*&gt;##g' | grep '^[0-9]'&#x000A;</code></pre></li>
+<li>lock tty
+
+<pre><code>  clear &amp;&amp; vlock -c &#x000A;</code></pre></li>
+<li>real path
+
+<pre><code>  pwd -P&#x000A;</code></pre></li>
+<li>grep and highlight finds in full file
+
+<pre><code>  grep --color -E "test|$" yourfile&#x000A;</code></pre></li>
+<li>awk check characters at certain position
+
+<pre><code>  awk -F '' '$25 == "a"' input &gt;output&#x000A;</code></pre></li>
 </ul>
 
 
@@ -90,6 +102,9 @@
 <li>fix sudo
 
 <pre><code>  :w !sudo tee %&#x000A;</code></pre></li>
+<li>read outline from cmd
+
+<pre><code>  :r!date&#x000A;</code></pre></li>
 </ul>
 
 
@@ -102,6 +117,10 @@
 <li><p>curl</p>
 
 <pre><code>  - debug it: curl -vv https://s3.amazonaws.com/&#x000A;</code></pre></li>
+<li><p>pip</p>
+
+<pre><code>  - update pip: curl http://python-distribute.org/distribute_setup.py | sudo python&#x000A;</code></pre></li>
+<li><p>tty</p></li>
 <li><p>mac osx</p>
 
 <pre><code>  - screenshot screen capture ⌘ ⇧ 3&#x000A;</code></pre></li>
@@ -124,15 +143,16 @@
 
 <ul>
 <li>centos/yum</li>
+<li>env</li>
 <li>brew</li>
 <li>python
 
 <pre><code>  fabric&#x000A;  ipython&#x000A;  gunicorn&#x000A;</code></pre>
 
 <p><a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements">requirements.txt</a></p></li>
-<li>aws
+<li>virtualization
 
-<pre><code>  boto&#x000A;</code></pre></li>
+<pre><code>  chef/puppet/vagrant/cucumber/aws/ec2/boto&#x000A;</code></pre></li>
 </ul>
 
 
