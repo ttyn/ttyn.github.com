@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-17T07:05:32Z</updated>
+    <updated>2012-07-17T07:08:37Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -113,10 +113,6 @@
 
 &lt;pre&gt;&lt;code&gt;  - debug it: curl -vv https://s3.amazonaws.com/
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;pip&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - update pip: curl http://python-distribute.org/distribute_setup.py | sudo python
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;tty&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;mac osx&lt;/p&gt;
 
@@ -144,22 +140,27 @@
 
 &lt;ul&gt;
 &lt;li&gt;centos/yum&lt;/li&gt;
-&lt;li&gt;env&lt;/li&gt;
 &lt;li&gt;brew&lt;/li&gt;
 &lt;li&gt;python
 
 &lt;pre&gt;&lt;code&gt;  fabric
   ipython
   gunicorn
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;pip
 
-&lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;virtualization
-
-&lt;pre&gt;&lt;code&gt;  chef/puppet/vagrant/cucumber/aws/ec2/boto
+&lt;pre&gt;&lt;code&gt;  curl -O http://python-distribute.org/distribute_setup.py
+  python distribute_setup.py
+  easy_install pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+
+&lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;
+* virtualization&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    chef/puppet/vagrant/cucumber/aws/ec2/boto
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3&gt;&lt;strong&gt;ideas | 思路&lt;/strong&gt;&lt;/h3&gt;
 
