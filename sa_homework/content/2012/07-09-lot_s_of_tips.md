@@ -77,15 +77,15 @@ title: "lots of tips"
 
 ### __tools | 工具箱__
 * centos/yum
+- env
 * brew
 * python
         fabric
         ipython
         gunicorn
 [requirements.txt][link_pipbasic]
-* aws
-        boto
-        
+* virtualization
+        chef/puppet/vagrant/cucumber/aws/ec2/boto
         
 ### __ideas | 思路__
 * http stack
