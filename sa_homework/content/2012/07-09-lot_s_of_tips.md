@@ -20,6 +20,14 @@ title: "lots of tips"
         Esc-f/Esc-b
 * get public ip
         curl http://ip4.me 2>/dev/null | sed -e 's#<[^>]*>##g' | grep '^[0-9]'
+* lock tty 
+        clear && vlock -c 
+* real path
+        pwd -P
+* grep and highlight finds in full file
+        grep --color -E "test|$" yourfile
+* awk check characters at certain position
+        awk -F '' '$25 == "a"' input >output
 
  
 
@@ -39,7 +47,8 @@ title: "lots of tips"
         o
 * fix sudo
         :w !sudo tee %
-
+* read outline from cmd
+        :r!date
 
 ### __app | 應用__
 * chrome
@@ -47,6 +56,11 @@ title: "lots of tips"
         - keybinding to next window in chrome: Cmd-`
 * curl
         - debug it: curl -vv https://s3.amazonaws.com/
+
+* pip
+        - update pip: curl http://python-distribute.org/distribute_setup.py | sudo python
+
+* tty
 
 * mac osx
         - screenshot screen capture ⌘ ⇧ 3
