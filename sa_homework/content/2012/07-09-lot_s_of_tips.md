@@ -57,7 +57,8 @@ title: "lots of tips"
 * curl
         - debug it: curl -vv https://s3.amazonaws.com/
 
-
+* tmux
+        - [un]synchronize: setw synchronize-panes
 * tty
 
 * mac osx
