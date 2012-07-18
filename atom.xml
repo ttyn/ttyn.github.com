@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-17T07:08:37Z</updated>
+    <updated>2012-07-18T09:35:12Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -112,6 +112,10 @@
 &lt;li&gt;&lt;p&gt;curl&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  - debug it: curl -vv https://s3.amazonaws.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;tmux&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - [un]synchronize: setw synchronize-panes
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;tty&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;mac osx&lt;/p&gt;
