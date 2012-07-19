@@ -43,38 +43,6 @@
     <lastmod>2012-07-19</lastmod>
 </url>
 <url>
-    <loc>http://me.local/blog/2012-02-09-02/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-02-09/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-02-24/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-03-14-gitnotes/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-03-14-screencast/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-06-06-ssh-key/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/2012-06-13-docs-to-write/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/install_tmux_on_centos6/</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
     <loc>http://me.local/blog/</loc>
     <lastmod>2012-07-19</lastmod>
 </url>
@@ -111,19 +79,7 @@
     <lastmod>2012-07-19</lastmod>
 </url>
 <url>
-    <loc>http://me.local/txt/nginx_self_certificate.txt</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/txt/unixtoolbox.txt</loc>
-    <lastmod>2012-07-19</lastmod>
-</url>
-<url>
-    <loc>http://me.local/txt/vim_doc_sample_command-t.txt</loc>
     <lastmod>2012-07-19</lastmod>
 </url>
 </urlset>
@@ -150,7 +106,7 @@
         <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Thu Jul 19, 2012 @11:10:58 CST</div>
+    <div id="div_update">Thu Jul 19, 2012 @14:23:35 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
