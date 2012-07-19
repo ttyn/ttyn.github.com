@@ -7,7 +7,7 @@ toc: true
 kind: article
 created_at: Wed Jun 6 2012
 author_name: andy
-excerpt: [zh_cn] ssh key setup 
+excerpt: -zh_cn- ssh key setup 
 status: publish
 ---
 

@@ -9,6 +9,11 @@ preprocess do
   add_update_item_attributes
 end
 
+
+compile '/txt/*' do
+  item[:layout] = "none"
+end
+
 compile '/assets/css/*/' do
   filter :sass
 end
@@ -32,6 +37,10 @@ compile '*' do
   item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
 
   layout 'default' unless item[:layout] == "none"
+end
+
+route '/txt/*' do
+  route_path(item)
 end
 
 route '/assets/css/*/' do

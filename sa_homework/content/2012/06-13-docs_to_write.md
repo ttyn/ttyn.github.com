@@ -45,6 +45,6 @@ status: publish
 
 
         
-[nginx]: /txt/nginx_self_certificate.txt        "Nginx self signed cert"
-[vim]:  /txt/vim_doc_sample_command-t.txt  "vim documentation as an example"
-[unixtool]: /txt/unixtoolbox.txt        "unix toolbox"
+[nginx]: /files/txt/d/nginx_self_certificate.txt        "Nginx self signed cert"
+[vim]:  /files/txt/cc/vim_doc_sample_command-t.txt  "vim documentation as an example"
+[unixtool]: /files/txt/cc/unixtoolbox.txt        "unix toolbox"

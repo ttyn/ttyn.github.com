@@ -1,15 +1,14 @@
 ---
 tags:
-- blog
-- nanoc
-- sa
-- writing
+- tools
+- doc
 permalink: install_tmux_on_centos6.html
 title: install tmux on centos6
 toc: true
 kind: article
 created_at: Thu Feb 9 2012
 author_name: andy
+excerpt: tmux on centos6
 status: publish
 ---
 

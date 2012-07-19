@@ -1,8 +1,5 @@
 ---
 tags:
-- blog
-- nanoc
-- writing
 - opensource
 - tools
 permalink: 2012-03-14-screencast
@@ -11,6 +8,7 @@ toc: true
 kind: article
 created_at: Wed Mar 14 14:52:47 CST 2012
 author_name: andy
+excerpt: screen tools collection
 status: publish
 ---
 
