@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>常规安全审计</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content=', doc, draft' name='keywords' />
+    <meta content='auditing' name='description' />
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div class='logo'>
+          <a href='/'>&laquo; me@fourohfour</a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li><a href='/about.html'>about</a></li>
+            <li><a href='/archives.html'>archives</a></li>
+            <li><a href='/tags.html'>tags</a></li>
+            <li>
+              <a href='/tags/doc/'>docs</a>
+            </li>
+            <li>
+              <a href='/license.html'>license</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='article'>
+        <h1>
+          常规安全审计
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Feb 25, 2012</li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/draft/'>
+                draft
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h2>逐步整理系统权限</h2>
+          
+          <ul>
+          <li>sudo
+          
+          <ul>
+          <li>M0: 用户user
+          
+          <ul>
+          <li>系统用户(backup, crontab user)</li>
+          <li>dev 个人用户</li>
+          <li>尽量直接使用个人帐号</li>
+          <li>有权限问题时候可以用sudo，但是禁止切换为root</li>
+          <li>减少输入密码需要，逐步以长密码和key代替。</li>
+          </ul>
+          </li>
+          <li>M1: sudoer/visudo
+          
+          <ul>
+          <li>只用来界定执行的命令组权限</li>
+          <li>禁用sudo su 切换root</li>
+          <li>cleanup sudoers 让它实际可用</li>
+          <li>定义一些系统命令，谨慎关闭sudo权限</li>
+          </ul>
+          </li>
+          <li>M2: disable root</li>
+          </ul>
+          </li>
+          <li>sshd_config
+          
+          <ul>
+          <li>M1: 根据用户客户端系统尽量普及key验证登录</li>
+          <li>M2: 所有的系统用户和脚本强制使用key验证登录</li>
+          <li>M3: disable password login</li>
+          </ul>
+          </li>
+          <li>mysqld
+          
+          <ul>
+          <li>M1: 使用${HOME}/.my.cnf, mysql帐号不要直接写入到脚本中</li>
+          <li>M2: clean up grant table</li>
+          </ul>
+          </li>
+          <li>DNS/Host/Monitor
+          
+          <ul>
+          <li>M1: 在/etc/hosts中使用内网ip/hostname对照</li>
+          <li>M2: 公网ip解析和连接作为特殊需求单独考虑</li>
+          </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div id='other-articles'>
+        <div class='older'>
+          <ul>
+          </ul>
+        </div>
+        <div class='newer'>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='clear'></div>
+    </div>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-7206667-1");
+          pageTracker._setDomainName(".ttyn.me");
+          pageTracker._setAllowHash(false);
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>

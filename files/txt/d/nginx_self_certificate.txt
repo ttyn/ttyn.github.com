@@ -1,0 +1,29 @@
+# --- summary: generate nginx certificate
+# --- Last modified: 2012-07-03
+
+export this_domain='sample-domain.com'
+export this_day=`date  +\%y_\%m_\%d`
+key_prefix=${this_domain}-${this_day}
+# generate key
+openssl genrsa -des3 -out ${key_prefix}.key 2048
+# generate crs
+openssl req -new -key ${key_prefix}.key -out ${key_prefix}.csr
+
+# remove passphrase
+# openssl rsa -in ${key_prefix}.key.with_pass -out ${key_prefix}.key
+# generate certificate
+openssl x509 -req -days 365 -in ${key_prefix}.csr -signkey ${key_prefix}.key -out ${key_prefix}.crt
+
+
+common_name: *.litb-inc.com
+
+# --- nginx conf
+# --- include conf.d/ssl.conf
+# --- ssl.conf
+
+
+        #listen   443;
+        ssl    on;
+        ssl_certificate         certs/domain.crt; #domain.pem
+        ssl_certificate_key     certs/domain.key; 
+

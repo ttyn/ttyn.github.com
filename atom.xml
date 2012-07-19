@@ -10,11 +10,11 @@
     <uri>http://mgutz.com</uri>
   </author>
   <entry>
-    <id>tag:ttyn.me,2012-12-26:/2012/12/26/hellow_world.html</id>
+    <id>tag:ttyn.me,2012-12-26:/2012/12/26/hello_world.html</id>
     <title type="html">Hello World</title>
     <published>2012-12-25T16:00:00Z</published>
-    <updated>2012-07-06T07:28:29Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/12/26/hellow_world.html"/>
+    <updated>2012-07-19T03:54:15Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/12/26/hello_world.html"/>
     <content type="html">&lt;p&gt;世事漫隨流水 算來一夢浮生&lt;/p&gt;
 </content>
     <summary type="html">this is ...</summary>
@@ -214,6 +214,60 @@
     <summary type="html">my own documentation of lots of tips</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
+    <title type="html">open vpn server on ec2 for android client</title>
+    <published>2012-07-05T16:00:00Z</published>
+    <updated>2012-07-19T05:14:44Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/07/06/android_vpn_client_and_server.html"/>
+    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Env | 環境&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  % amazon ec2 micro instance
+  % CentOS 5.6
+          % sudo yum install -y openswan ppp xl2tpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  % /etc/xl2tpd/xl2tpd.conf
+  % /etc/ppp/options.xl2tpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;The Client | 客戶端&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  % 
+  % 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;The Ref | 參考文檔&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.luojs.com/2011/03/31/android-vpn-one/"&gt;android配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/"&gt;android配置pptpd[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc"&gt;strongswan in aws vps[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-07-06:/doc/perm/markdown_syntax.html</id>
     <title type="html">markdown syntax</title>
     <published>2012-07-05T16:00:00Z</published>
@@ -332,73 +386,58 @@
     <summary type="html">my own documentation for standard markdown syntax</summary>
   </entry>
   <entry>
-    <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
-    <title type="html">open vpn server on ec2 for android client</title>
-    <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-12T02:54:34Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/07/06/android_vpn_client_and_server.html"/>
-    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
+    <id>tag:ttyn.me,2012-06-13:/2012/06/13/docs_to_write.html</id>
+    <title type="html">想要在夏天寫一些文檔</title>
+    <published>2012-06-12T16:00:00Z</published>
+    <updated>2012-07-19T05:34:49Z</updated>
+    <author>
+      <name>andy</name>
+      <uri>http://mgutz.com</uri>
+    </author>
+    <link rel="alternate" href="http://ttyn.me/2012/06/13/docs_to_write.html"/>
+    <content type="html">&lt;p&gt;包括一些值得永久記住的和一些隨時翻閱的&lt;/p&gt;
 
-&lt;h3&gt;Env | 環境&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;    % amazon ec2 micro instance
-    % CentOS 5.6
-            % sudo yum install -y openswan ppp xl2tpd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Conf | 配置&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;    % /etc/xl2tpd/xl2tpd.conf
-    % /etc/ppp/options.xl2tpd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Run | 運行&lt;/h3&gt;
-
-&lt;h2&gt;The Client | 客戶端&lt;/h2&gt;
-
-&lt;h3&gt;Conf | 配置&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;    % 
-    % 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Run | 運行&lt;/h3&gt;
-
-&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
+&lt;h3&gt;永久文檔&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.luojs.com/2011/03/31/android-vpn-one/"&gt;android配置[中文]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/"&gt;android配置pptpd[EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc"&gt;strongswan in aws vps[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;happy stuff list
+
+&lt;ul&gt;
+&lt;li&gt;tmux, vi, pip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;eating list&lt;/li&gt;
+&lt;li&gt;everyday workout list&lt;/li&gt;
+&lt;li&gt;quick command useful to me like unix_toolbox&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+&lt;h3&gt;夏天參考文檔&lt;/h3&gt;
 
-&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aws SA&lt;/li&gt;
+&lt;li&gt;quick python site&lt;/li&gt;
+&lt;li&gt;redmine&lt;/li&gt;
+&lt;li&gt;git basic branching&lt;/li&gt;
+&lt;li&gt;easy nanoc documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;半成品文檔 --- working on them&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/files/txt/d/nginx_self_certificate.txt" title="Nginx self signed cert"&gt;nginx 自製證書&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;別人的文檔&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/files/txt/cc/vim_doc_sample_command-t.txt" title="vim documentation as an example"&gt;vim文本範例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/files/txt/cc/unixtoolbox.txt" title="unix toolbox"&gt;unix toolbox文本版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 </content>
-    <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.me,2012-05-20:/2012/05/20/story_obstacle.html</id>
-    <title type="html">Obstacle</title>
-    <published>2012-05-19T16:00:00Z</published>
-    <updated>2012-07-09T10:11:09Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/05/20/story_obstacle.html"/>
-    <content type="html">&lt;h2&gt;小故事之障碍&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;    我实在太生气了，所有的糖挤在一起都已经融化失去形状，几只红蚂蚁匆匆地从破碎的外
-    包装上爬过。你看着我和手中的糖，可能是觉得抱歉，催促我把它们扔掉，并最后一次叮
-    嘱我不要再带糖给你，你不爱吃糖。我把糖扔在你脸上，不看你的表情，转身就跑。
-
-    以后几年我努力工作。从新闻和朋友们那里偶尔听说你混得不错－你早该告诉我不爱吃糖。
-    我的脾气变得温柔平和，没有一丝过去的暴躁。还戒了煙酒，虽然难以制止自己如同梦游
-    半夜爬起，偷偷从冰箱掏一粒糖，它和所有的糖一样甜。
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-    <summary type="html">story-07</summary>
+    <summary type="html">documentation to write</summary>
   </entry>
 </feed>

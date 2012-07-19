@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>open vpn server on ec2 for android client</title>
+    <title>install tmux on centos6</title>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', misc, doc' name='keywords' />
-    <meta content='draft documentation over how to setup vpn server on aws ec2 vm' name='description' />
+    <meta content=', tools, doc' name='keywords' />
+    <meta content='tmux on centos6' name='description' />
     <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
     <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
     <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
@@ -33,11 +33,11 @@
       <div class='clear'></div>
       <div class='article'>
   <h1>
-    open vpn server on ec2 for android client
+    install tmux on centos6
   </h1>
   <div class='meta'>
     <ul class='tags'>
-      <li>Jul 06, 2012</li>
+      <li>Feb 09, 2012</li>
       <li>&middot;</li>
       <li>
         <a class='tag' href='/tags/doc/'>
@@ -45,51 +45,26 @@
         </a>
       </li>
       <li>
-        <a class='tag' href='/tags/misc/'>
-          misc
+        <a class='tag' href='/tags/tools/'>
+          tools
         </a>
       </li>
     </ul>
   </div>
   <div class='body'>
-    <h2>The Server | 服務端</h2>
+    <h4>在centos 6.0 上安装tmux</h4>
 
 <ul>
-<li><p>Env | 環境</p>
+<li><p>add RPMforge yum repo (64bit)</p>
 
-<pre><code>  % amazon ec2 micro instance&#x000A;  % CentOS 5.6&#x000A;          % sudo yum install -y openswan ppp xl2tpd&#x000A;</code></pre></li>
-<li><p>Conf | 配置</p>
+<pre><code>          rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  &#x000A;          wget http://apt.sw.be/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  &#x000A;          rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  &#x000A;</code></pre></li>
+<li><p>install prerequisite for tmux</p>
 
-<pre><code>  % /etc/xl2tpd/xl2tpd.conf&#x000A;  % /etc/ppp/options.xl2tpd&#x000A;</code></pre></li>
-<li><p>Run | 運行</p></li>
+<pre><code>          yum install -y libevent&#x000A;</code></pre></li>
+<li><p>install tmux</p>
+
+<pre><code>          yum --enablerepo rpmforge install -y tmux&#x000A;</code></pre></li>
 </ul>
-
-
-<h3>The Client | 客戶端</h3>
-
-<ul>
-<li><p>Conf | 配置</p>
-
-<pre><code>  % &#x000A;  % &#x000A;</code></pre></li>
-<li><p>Run | 運行</p></li>
-</ul>
-
-
-<h3>The Ref | 參考文檔</h3>
-
-<ul>
-<li><a href="http://www.luojs.com/2011/03/31/android-vpn-one/">android配置[中文]</a></li>
-<li><a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/">android和server配置[中文]</a></li>
-<li><a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients">server config [english]</a></li>
-<li><a href="http://www.howtoforge.com/racoon_roadwarrior_vpn">racoon server config[EN]</a></li>
-<li><a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/">android配置pptpd[EN]</a></li>
-<li><a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc">strongswan in aws vps[EN]</a></li>
-</ul>
-
-
-<h2>The End | 文檔終點</h2>
-
-<p>back to <a href="http://ttyn.me">home</a></p>
   </div>
 </div>
       <div id='other-articles'>

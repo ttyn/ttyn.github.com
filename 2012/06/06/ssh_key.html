@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>setup and use ssh key pairs auth</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content=', doc' name='keywords' />
+    <meta content='-zh_cn- ssh key setup' name='description' />
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div class='logo'>
+          <a href='/'>&laquo; me@fourohfour</a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li><a href='/about.html'>about</a></li>
+            <li><a href='/archives.html'>archives</a></li>
+            <li><a href='/tags.html'>tags</a></li>
+            <li>
+              <a href='/tags/doc/'>docs</a>
+            </li>
+            <li>
+              <a href='/license.html'>license</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='article'>
+  <h1>
+    setup and use ssh key pairs auth
+  </h1>
+  <div class='meta'>
+    <ul class='tags'>
+      <li>Jun 06, 2012</li>
+      <li>&middot;</li>
+      <li>
+        <a class='tag' href='/tags/doc/'>
+          doc
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class='body'>
+    <h3>配置和使用ssh key auth驗證登陸</h3>
+
+<ul>
+<li><p>概念
+  客戶機器為 client_server
+  需要提供登陸的服務器為 host_server
+  在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</p></li>
+<li><p>第一步 @client_server</p>
+
+<p>  local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P
+  [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</p>
+
+<ul>
+<li><p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub</p>
+
+<pre><code>        2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上&#x000A;        2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件&#x000A;</code></pre></li>
+<li><p>權限設置</p>
+
+<pre><code>        local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh&#x000A;        local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot&#x000A;</code></pre></li>
+</ul>
+</li>
+<li><p>第二步 @host_server</p>
+
+<pre><code>          local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh&#x000A;</code></pre>
+
+<ul>
+<li>粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys</li>
+<li><p>(如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行</p>
+
+<pre><code>      local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys&#x000A;      local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys&#x000A;</code></pre></li>
+</ul>
+</li>
+<li><p>第三步測試和dbug</p>
+
+<pre><code>          local_conn_bot@client_server$ ssh host_server uptime ### 測試&#x000A;          local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug&#x000A;</code></pre></li>
+<li><p>第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</p>
+
+<pre><code>  local_conn_bot@client_server$ cat ~/.ssh/config&#x000A;&#x000A;          ## --- start of sample ssh config&#x000A;          Host host_server_01&#x000A;                  Hostname 192.168.2.1&#x000A;          Host 30.20.10.0&#x000A;                  Port 28&#x000A;                  IdentityFile ~/.ssh/temp-local_conn_bot&#x000A;          Host *&#x000A;                  User local_conn_bot&#x000A;                  ForwardAgent yes&#x000A;                  Port 22&#x000A;                  IdentityFile ~/.ssh/2012-local_conn_bot&#x000A;                  UsePrivilegedPort no&#x000A;                  ServerAliveInterval 240&#x000A;                  ServerAliveCountMAx 9999&#x000A;          ## --- end of sample ssh config&#x000A;</code></pre></li>
+</ul>
+  </div>
+</div>
+      <div id='other-articles'>
+        <div class='older'>
+          <ul>
+          </ul>
+        </div>
+        <div class='newer'>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='clear'></div>
+    </div>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-7206667-1");
+          pageTracker._setDomainName(".ttyn.me");
+          pageTracker._setAllowHash(false);
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>
