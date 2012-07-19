@@ -1,15 +1,13 @@
 ---
 tags:
-- blog
-- nanoc
-- sa
-- writing
+- doc
 permalink: ssh_key_setup.html
 title: setup and use ssh key pairs auth
 toc: true
 kind: article
 created_at: Wed Jun 6 2012
 author_name: andy
+excerpt: [zh_cn] ssh key setup 
 status: publish
 ---
 

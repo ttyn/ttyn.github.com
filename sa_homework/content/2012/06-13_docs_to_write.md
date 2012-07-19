@@ -1,15 +1,15 @@
 ---
 tags:
-- blog
-- nanoc
-- sa
-- writing
+- editing
+- doc
+- draft
 permalink: docs_to_write_in_summer
 title: 想要在夏天寫一些文檔
 toc: true
 kind: article
 created_at: Wed Jun 13 2012
 author_name: andy
+excerpt: documentation to write
 status: publish
 ---
 

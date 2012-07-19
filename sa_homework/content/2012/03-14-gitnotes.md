@@ -1,8 +1,6 @@
 ---
 tags:
-- blog
-- nanoc
-- writing
+- doc
 - opensource
 - tools
 - git
@@ -12,6 +10,7 @@ toc: true
 kind: article
 created_at: Wed Mar 14 16:00:27 CST 2012
 author_name: andy
+excerpt: git info
 status: publish
 ---
 

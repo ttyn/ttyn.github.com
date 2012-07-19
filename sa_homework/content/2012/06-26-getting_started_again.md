@@ -1,10 +1,11 @@
 ---
 title: Getting Started Again With nanoc3_blog 
 kind: article
-tags: [nanoc3]
+tags: [draft, doc]
 created_at: 2012/06/26
 excerpt: yes i started it again
 keywords: personal
+excerpt: setup nanoc3 env
 publish: false
 _:
 ---

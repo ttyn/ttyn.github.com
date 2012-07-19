@@ -1,13 +1,13 @@
 ---
 tags:
-- blog
-- nanoc
-- writing
+- doc
+- draft
 permalink: 2012-02-24-notitl
 title: 常规安全审计
 toc: true
 kind: article
 created_at: Fri Feb 24 16:45:48 CST 2012
+excerpt: auditing
 author_name: andy
 status: publish
 ---

@@ -9,33 +9,33 @@ title: "open vpn server on ec2 for android client"
 
 ## The Server | 服務端
 
-### Env | 環境
+* Env | 環境
 
         % amazon ec2 micro instance
         % CentOS 5.6
                 % sudo yum install -y openswan ppp xl2tpd
 
-### Conf | 配置
+* Conf | 配置
 
         % /etc/xl2tpd/xl2tpd.conf
         % /etc/ppp/options.xl2tpd
 
-### Run | 運行
+* Run | 運行
         
 
 
-## The Client | 客戶端
+### The Client | 客戶端
 
-### Conf | 配置
+* Conf | 配置
 
         % 
         % 
 
-### Run | 運行
+* Run | 運行
         
 
 
-## The Ref | 參考文檔
+### The Ref | 參考文檔
         
 * [android配置[中文]](http://www.luojs.com/2011/03/31/android-vpn-one/)  
 * [android和server配置[中文]](http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/)  
