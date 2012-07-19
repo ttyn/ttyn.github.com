@@ -13,6 +13,7 @@ $link_hover_color: #e0115f
 $link_bg: white
 
 $tag_color: $link_color
+$shadow_color:#dbdbdb 
 
 $border_color: #bbbbbb
 
@@ -230,6 +231,12 @@ a.tag
   padding: 0 0.1em 0
   &:hover
     color: $link_hover_color !important
+
+a.shadow
+  color: $shadow_color !important
+  border-bottom: none
+  &:link, &:visited
+    color: $shadow_color !important
 
 .tags
   text-transform: lowercase

@@ -115,6 +115,7 @@ title: "lots of tips"
 
 ### __links | 總是有用的連接__
 * [unix toolbox][link_toolbox]
+* [ex:coloer picking][link_colorlover]
 
 
 --- 
@@ -122,6 +123,7 @@ title: "lots of tips"
 __go [home][link_home] lets go back back to [home][link_home]__
 [link_home]: http://ttyn.me "Title: HOME"
 [link_toolbox]: http://ttyn.github.com/ref/unixtoolbox.html "Title: unixtoolbox"
+[link_colorlover]: http://www.colourlovers.com/ "Title: colorlover"
 [link_pipbasic]: http://ttyn.github.com/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
 
 
