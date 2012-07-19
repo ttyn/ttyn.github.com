@@ -27,31 +27,29 @@
         </div>
 
         <p class="created_at">Wed Jun 6 2012</p>
-      <ul>
-  <li>
-    <p>配置和使用ssh key auth驗證登陸</p>
+      <h3 id="ssh-key-auth">配置和使用ssh key auth驗證登陸</h3>
 
-    <ul>
-      <li>客戶機器為 client_server</li>
-      <li>需要提供登陸的服務器為 host_server</li>
-      <li>在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</li>
-    </ul>
+<ul>
+  <li>
+    <p>概念
+  客戶機器為 client_server
+  需要提供登陸的服務器為 host_server
+  在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</p>
   </li>
   <li>
     <p>第一步 @client_server</p>
 
-    <pre><code>          local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P 
-          [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]
-</code></pre>
-  </li>
-  <li>
-    <p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub </p>
-
-    <pre><code>          - 2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上
-          - 2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件
-</code></pre>
+    <p>local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P 
+  [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</p>
 
     <ul>
+      <li>
+        <p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub </p>
+
+        <pre><code>        2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上
+        2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件
+</code></pre>
+      </li>
       <li>
         <p>權限設置 </p>
 
@@ -135,7 +133,7 @@
       <ul>
         <li>ego depletion</li>
       </ul>
-      <div id="div_update">Thu July 19, 2012 @10:19:04 CST</div>
+      <div id="div_update">Thu July 19, 2012 @11:20:46 CST</div>
     </div>
 
 <!-- BEGIN google analytics --> 
