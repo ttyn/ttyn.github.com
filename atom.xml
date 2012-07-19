@@ -20,6 +20,146 @@
     <summary type="html">this is ...</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-07-19:/2012/07/19/nanoc_github_website_intro.html</id>
+    <title type="html">使用nanoc和github架設網站checklist</title>
+    <published>2012-07-18T16:00:00Z</published>
+    <updated>2012-07-19T11:02:03Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/07/19/nanoc_github_website_intro.html"/>
+    <content type="html">&lt;h2&gt;summary | 簡述&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;文檔提供一個使用第三方服務建立簡單網站的checklist
+其中OPT標記的部分都可以省略。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;service | 服務&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;☐ domain via registrar | 域名註冊 [$][OPT]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.namecheap.com"&gt;namecheap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.networksolutions.com"&gt;networksolutions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;或者通過 &lt;a href="https://www.google.com/a/cpanel/standard/new?hl=en"&gt;Google App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;或者使用github.com page功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ server | 服務器 [opt][$]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.linode.com/"&gt;linode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://aws.amazon.com/ec2/"&gt;aws ec2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ Google Service | Google 服務&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="https://mail.google.com"&gt;Gmail&lt;/a&gt; [free]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="http://www.google.com/analytics/"&gt;Google Analytics&lt;/a&gt; [free]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="http://www.google.com/webmasters/"&gt;Google Webmasters&lt;/a&gt; [free]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="https://www.google.com/a/cpanel/standard/new?hl=en"&gt;Google App&lt;/a&gt; [free google app]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="http://www.google.com/enterprise/apps/business/pricing.html"&gt;Google App Paid&lt;/a&gt; [$]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ github | github 放置代碼/網站&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="https://github.com"&gt;github&lt;/a&gt; [free]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ DNS | 域名配置 [free]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ A紀錄 domain_name.com www.domain_name.com&lt;/li&gt;
+&lt;li&gt;☐ MX紀錄 使用&lt;a href="http://support.google.com/a/bin/answer.py?hl=en&amp;amp;answer=140034"&gt;Google App收郵件的配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☐ TXT紀錄 使用Google 服務的部分verification (case by case)&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="http://sitelutions.com/"&gt;sitelutions&lt;/a&gt; (比較靈活的第三方域名解析) [free][OPT]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ disqus | disqus 評論管理&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="http://disqus.com/"&gt;disqus&lt;/a&gt; [free]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Init | 初始化操作&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;這個步驟只操作一次
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ fork &lt;a href="https://github.com/mgutz/nanoc3_blog"&gt;nanoc3_blog 代碼&lt;/a&gt; 到本地的github帳號&lt;/li&gt;
+&lt;li&gt;☐ clone 到本地機器以備編輯和調試&lt;/li&gt;
+&lt;li&gt;☐ 配置nanoc3_blog 代碼加入網站信息
+
+&lt;ul&gt;
+&lt;li&gt;☐ website name 網站名稱&lt;/li&gt;
+&lt;li&gt;☐ disqus 帳號&lt;/li&gt;
+&lt;li&gt;☐ google analytics 帳號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ 在服務器上的 [OPT]
+
+&lt;ul&gt;
+&lt;li&gt;☐ 服務器基礎配置&lt;/li&gt;
+&lt;li&gt;☐ nginx 配置&lt;/li&gt;
+&lt;li&gt;☐ ruby/rvm 配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Maintain | 運營操作&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;以後可以長期操作的步驟
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ 在本地進行內容更新和調試 [OPT]&lt;/li&gt;
+&lt;li&gt;☐ 透過Google Analytics/Webmaster進行訪問數據查看&lt;/li&gt;
+&lt;li&gt;☐ 透過Github發佈內容更新&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Debug | 問題處理和其它&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;需要根據本地配置時常檢查的問題/部分問題自行補充
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ domain name過期續費 YY-MM-DD ______&lt;/li&gt;
+&lt;li&gt;☐ 設置gmail郵件備份&lt;/li&gt;
+&lt;li&gt;☐ 其它付費服務的續費
+
+&lt;ul&gt;
+&lt;li&gt;☐ ______&lt;/li&gt;
+&lt;li&gt;☐ ______&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ 其它延期服務的延期和有限制的服務的上限檢查
+
+&lt;ul&gt;
+&lt;li&gt;☐ ______&lt;/li&gt;
+&lt;li&gt;☐ ______&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ 如果包括dev流程和/或自行運營 [OPT]
+
+&lt;ul&gt;
+&lt;li&gt;☐ 研發基本流程 [需求/開發/測試/發佈]&lt;/li&gt;
+&lt;li&gt;☐ 運營基本點 [配置管理/健康和安全監控/容量評估/CAPEX預算]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
+</content>
+    <summary type="html">draft about building a website using nanoc and other pub tools then maint it.</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
@@ -215,60 +355,6 @@
     <summary type="html">my own documentation of lots of tips</summary>
   </entry>
   <entry>
-    <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
-    <title type="html">open vpn server on ec2 for android client</title>
-    <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-19T05:14:44Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/07/06/android_vpn_client_and_server.html"/>
-    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Env | 環境&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  % amazon ec2 micro instance
-  % CentOS 5.6
-          % sudo yum install -y openswan ppp xl2tpd
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  % /etc/xl2tpd/xl2tpd.conf
-  % /etc/ppp/options.xl2tpd
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;The Client | 客戶端&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  % 
-  % 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;The Ref | 參考文檔&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.luojs.com/2011/03/31/android-vpn-one/"&gt;android配置[中文]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/"&gt;android配置pptpd[EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc"&gt;strongswan in aws vps[EN]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
-
-&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
-</content>
-    <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
-  </entry>
-  <entry>
     <id>tag:ttyn.me,2012-07-06:/doc/perm/markdown_syntax.html</id>
     <title type="html">markdown syntax</title>
     <published>2012-07-05T16:00:00Z</published>
@@ -387,58 +473,57 @@
     <summary type="html">my own documentation for standard markdown syntax</summary>
   </entry>
   <entry>
-    <id>tag:ttyn.me,2012-06-13:/2012/06/13/docs_to_write.html</id>
-    <title type="html">想要在夏天寫一些文檔</title>
-    <published>2012-06-12T16:00:00Z</published>
-    <updated>2012-07-19T05:34:49Z</updated>
-    <author>
-      <name>andy</name>
-      <uri>http://ttyn.me</uri>
-    </author>
-    <link rel="alternate" href="http://ttyn.me/2012/06/13/docs_to_write.html"/>
-    <content type="html">&lt;p&gt;包括一些值得永久記住的和一些隨時翻閱的&lt;/p&gt;
-
-&lt;h3&gt;永久文檔&lt;/h3&gt;
+    <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
+    <title type="html">open vpn server on ec2 for android client</title>
+    <published>2012-07-05T16:00:00Z</published>
+    <updated>2012-07-19T05:14:44Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/07/06/android_vpn_client_and_server.html"/>
+    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;happy stuff list
+&lt;li&gt;&lt;p&gt;Env | 環境&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;tmux, vi, pip&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;eating list&lt;/li&gt;
-&lt;li&gt;everyday workout list&lt;/li&gt;
-&lt;li&gt;quick command useful to me like unix_toolbox&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;  % amazon ec2 micro instance
+  % CentOS 5.6
+          % sudo yum install -y openswan ppp xl2tpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  % /etc/xl2tpd/xl2tpd.conf
+  % /etc/ppp/options.xl2tpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h3&gt;夏天參考文檔&lt;/h3&gt;
+&lt;h3&gt;The Client | 客戶端&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;aws SA&lt;/li&gt;
-&lt;li&gt;quick python site&lt;/li&gt;
-&lt;li&gt;redmine&lt;/li&gt;
-&lt;li&gt;git basic branching&lt;/li&gt;
-&lt;li&gt;easy nanoc documentation&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conf | 配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  % 
+  % 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run | 運行&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h3&gt;半成品文檔 --- working on them&lt;/h3&gt;
+&lt;h3&gt;The Ref | 參考文檔&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/files/txt/d/nginx_self_certificate.txt" title="Nginx self signed cert"&gt;nginx 自製證書&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.luojs.com/2011/03/31/android-vpn-one/"&gt;android配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jfwhome.com/2012/01/29/ipsecl2tp-vpn-on-linode-ubuntu-server-for-iphoneandroid/"&gt;android和server配置[中文]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.nikoforge.org/L2TP/IPSec_VPN_Setup_on_Centos_6_(64-bit)_for_use_with_Android_ICS_and_iOS_5_Clients"&gt;server config [english]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.howtoforge.com/racoon_roadwarrior_vpn"&gt;racoon server config[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://noiseandheat.com/blog/2012/01/vpn-with-amazon-ec2-or-saving-your-phone-from-promiscuity/"&gt;android配置pptpd[EN]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.strongswan.org/projects/strongswan/wiki/AwsVpc"&gt;strongswan in aws vps[EN]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h3&gt;別人的文檔&lt;/h3&gt;
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="/files/txt/cc/vim_doc_sample_command-t.txt" title="vim documentation as an example"&gt;vim文本範例&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/files/txt/cc/unixtoolbox.txt" title="unix toolbox"&gt;unix toolbox文本版&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
 </content>
-    <summary type="html">documentation to write</summary>
+    <summary type="html">draft documentation over how to setup vpn server on aws ec2 vm</summary>
   </entry>
 </feed>
