@@ -65,7 +65,7 @@
       .clear
 
     -# disqus: inserts number of commments     
-    - if @config[:include_disqus_js] == true
+    - if disqus_shortname && !is_front_page?
       :javascript
         (function() {
           var links = document.getElementsByTagName('a');
