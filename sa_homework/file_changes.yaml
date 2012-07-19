@@ -79,3 +79,75 @@
   :created_at: '2012-07-06'
   :updated_at: 2012-07-18 14:01:51.000000000 +08:00
   :digest: 3ab541294138d49a4a8fffae00a0c81d4589a363
+:content/blog/2012-02-09-02.md:
+  :created_at: Thu Feb  9 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 5aa9131a91c595aaa8c174623bd3c76814071375
+:content/blog/2012-02-09.md:
+  :created_at: Thu Feb  9 14:59:03 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: c5665457afc0c547ff7d5f8c849bf72ea8d7c53e
+:content/blog/2012-02-24.md:
+  :created_at: Fri Feb 24 16:45:48 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 33d85a18f073912393bea6789e109c74a44b90e8
+:content/blog/2012-03-14-gitnotes.md:
+  :created_at: Wed Mar 14 16:00:27 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 8ae2b54193ba643884fcfd14ddd267d15ea24d17
+:content/blog/2012-03-14-screencast.md:
+  :created_at: Wed Mar 14 14:52:47 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: eb619aa5bb8318d3b4aea2b1fbe81f1bd53cd246
+:content/blog/2012-06-06-ssh-key.md:
+  :created_at: Wed Jun 6 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: fbca5d7f6ac55c4420a27ff369f435a47acf7cee
+:content/blog/2012-06-13-docs-to-write.md:
+  :created_at: Wed Jun 13 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 2b245ef5f4188c45961ae08923acbf44ece44d68
+:content/blog/install_tmux_on_centos6.md:
+  :created_at: Thu Feb 9 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: e6b8c33ce6082cd02459accd03db8a5a65fab077
+:content/blog/2012/2012-06_13_docs_to_write.md:
+  :created_at: Wed Jun 13 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 2b245ef5f4188c45961ae08923acbf44ece44d68
+:content/2012/02-09-02.md:
+  :created_at: Thu Feb  9 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 5aa9131a91c595aaa8c174623bd3c76814071375
+:content/2012/02-09-its_not_me.md:
+  :created_at: Thu Feb  9 14:59:03 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: c5665457afc0c547ff7d5f8c849bf72ea8d7c53e
+:content/2012/02-24-its_not_me2.md:
+  :created_at: Fri Feb 24 16:45:48 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 33d85a18f073912393bea6789e109c74a44b90e8
+:content/2012/03-14-gitnotes.md:
+  :created_at: Wed Mar 14 16:00:27 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 8ae2b54193ba643884fcfd14ddd267d15ea24d17
+:content/2012/06-06-ssh_key.md:
+  :created_at: Wed Jun 6 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: fbca5d7f6ac55c4420a27ff369f435a47acf7cee
+:content/2012/06_13_docs_to_write.md:
+  :created_at: Wed Jun 13 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: 2b245ef5f4188c45961ae08923acbf44ece44d68
+:content/2012/12-26-hello_world.md:
+  :created_at: '2012-12-26'
+  :updated_at: 2012-07-19 11:54:15.000000000 +08:00
+  :digest: 91ececd6e9abdd25e533da75535cd56ad442015d
+:content/doc/perm/install_tmux_on_centos6.md:
+  :created_at: Thu Feb 9 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: e6b8c33ce6082cd02459accd03db8a5a65fab077
+:content/doc/perm/screencast.md:
+  :created_at: Wed Mar 14 14:52:47 CST 2012
+  :updated_at: 2012-07-19 12:03:19.000000000 +08:00
+  :digest: eb619aa5bb8318d3b4aea2b1fbe81f1bd53cd246
