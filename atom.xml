@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://ttyn.me/</id>
-  <title>mgutz.com Syndication</title>
+  <title>ttyn Syndication</title>
   <updated>2012-12-25T16:00:00Z</updated>
   <link rel="alternate" href="http://ttyn.me/"/>
   <link rel="self" href="http://ttyn.me/atom.xml"/>
   <author>
-    <name>Mario Gutierrez</name>
-    <uri>http://mgutz.com</uri>
+    <name>andy</name>
+    <uri>http://ttyn.me</uri>
   </author>
   <entry>
     <id>tag:ttyn.me,2012-12-26:/2012/12/26/hello_world.html</id>
@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-18T09:35:12Z</updated>
+    <updated>2012-07-19T09:14:39Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -204,6 +204,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox"&gt;unix toolbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.colourlovers.com/" title="Title: colorlover"&gt;ex:coloer picking&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -392,7 +393,7 @@
     <updated>2012-07-19T05:34:49Z</updated>
     <author>
       <name>andy</name>
-      <uri>http://mgutz.com</uri>
+      <uri>http://ttyn.me</uri>
     </author>
     <link rel="alternate" href="http://ttyn.me/2012/06/13/docs_to_write.html"/>
     <content type="html">&lt;p&gt;包括一些值得永久記住的和一些隨時翻閱的&lt;/p&gt;

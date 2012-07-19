@@ -182,6 +182,12 @@ a.tag {
   a.tag:hover {
     color: #e0115f !important; }
 
+a.shadow {
+  color: #dbdbdb !important;
+  border-bottom: none; }
+  a.shadow:link, a.shadow:visited {
+    color: #dbdbdb !important; }
+
 .tags {
   text-transform: lowercase; }
 
