@@ -14,10 +14,13 @@ author_name: andy
 status: publish
 ---
 
-## list of screencasting tools mac 上演示工具
+### list of screencasting tools mac 上演示工具
 * Jing [screencast]
-  * @techsmith 
-  * http://www.techsmith.com/jing.html
+
+        @techsmith 
+        http://www.techsmith.com/jing.html
+
 * OmniDazzle [screen show]
-  * @omnigroup
-  * http://www.omnigroup.com/products/omnidazzle/
+
+        @omnigroup
+        http://www.omnigroup.com/products/omnidazzle/

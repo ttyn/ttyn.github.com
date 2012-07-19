@@ -31,3 +31,20 @@ status: publish
   * redmine 
   * git basic branching
   * easy nanoc documentation
+
+
+### 半成品文檔 --- working on them
+ 
+
+  * [nginx 自製證書][nginx]
+
+### 別人的文檔
+
+  * [vim文本範例][vim]
+  * [unix toolbox文本版][unixtool]
+
+
+        
+[nginx]: /txt/nginx_self_certificate.txt        "Nginx self signed cert"
+[vim]:  /txt/vim_doc_sample_command-t.txt  "vim documentation as an example"
+[unixtool]: /txt/unixtoolbox.txt        "unix toolbox"

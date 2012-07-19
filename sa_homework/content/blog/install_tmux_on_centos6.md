@@ -13,7 +13,7 @@ author_name: andy
 status: publish
 ---
 
-### 在centos 6.0 上安装tmux
+#### 在centos 6.0 上安装tmux
 * add RPMforge yum repo (64bit)
 
                 rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  
