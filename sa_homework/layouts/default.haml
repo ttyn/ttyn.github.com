@@ -14,7 +14,7 @@
     end
   end
   def link_unless_current(s)
-    "<li><a href='/#{s}.html'>#{s}</a></li>" if @item.identifier != "/#{s}/" 
+    "<li><a class='shadow' href='/#{s}.html'>#{s}</a></li>" if @item.identifier != "/#{s}/" 
   end
   def logo
     if is_front_page?
@@ -45,12 +45,14 @@
           = logo
         #nav
           %ul
-            != link_unless_current "about"
-            != link_unless_current "archives"
-            != link_unless_current "tags"
             %li
+              != link_unless_current "about"
+              != link_unless_current "archives"
+              != link_unless_current "tags"
               %a(href='/tags/doc/') docs
             %li
+              %a.shadow(href='http://ttyn.github.me') en
+              %a.shadow(href='/links.html') links
               %a.shadow(href='/license.html') license
       .clear
 
