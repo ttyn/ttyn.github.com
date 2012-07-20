@@ -1,12 +1,34 @@
 ---
-title: FreeBSD License
+title: link that tools
 is_hidden: true
 _:
 ---
 
-# links can use - use it later
+## links can use - use it later
+
+* home tools
+    * [google currency exchange](https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en)
+    * [google link shortener](http://goo.gl)
+    * [local time](http://time.is)
+    * [public ip](http://ip4.me)
+    * [color picker]()
+
+* linux tools
+    * [linux command tips]()
+    * [my own mostly linux tips]()
 
 
-[thisimg]: /files/img/tuxs.jpg "Title"
-[home]: http://ttyn.me "Title: Home"
-[home2]: http://ttyn.me "Title: Home2"
+* webtools
+    * [resize the window test](http://responsivepx.com/)
+
+* whatever tools
+    * [amazon ec2 price list](http://ec2instances.info)
+    
+
+* doc tools
+    * [python doc](http://docs.python.org/library/index.html)
+    * [git doc](http://git-scm.com/documentation)
+    * [markdown doc]()
+    * [safaribooks online](http://safaribooksonline.com/)
+    * [aws documentation]()
+
