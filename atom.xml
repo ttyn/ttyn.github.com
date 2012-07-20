@@ -23,7 +23,7 @@
     <id>tag:ttyn.me,2012-07-20:/2012/07/20/dev_env_checklist.html</id>
     <title type="html">開發環境必備checklist</title>
     <published>2012-07-19T16:00:00Z</published>
-    <updated>2012-07-20T06:31:13Z</updated>
+    <updated>2012-07-20T08:51:58Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/20/dev_env_checklist.html"/>
     <content type="html">&lt;h2&gt;summary | 簡述&lt;/h2&gt;
 
@@ -137,7 +137,7 @@ mysql
 
 &lt;ul&gt;
 &lt;li&gt;☐ install_yum_repo&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href=""&gt;yum_pack.txt&lt;/a&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;pip_requirements.txt&lt;/a&gt;
 
 &lt;pre&gt;&lt;code&gt;sysstat dstat ntop iotop screen nginx 
 git-all rsync openssl python26 w3m elinks wget
