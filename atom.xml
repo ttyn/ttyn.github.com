@@ -20,6 +20,141 @@
     <summary type="html">this is ...</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-07-20:/2012/07/20/dev_env_checklist.html</id>
+    <title type="html">開發環境必備checklist</title>
+    <published>2012-07-19T16:00:00Z</published>
+    <updated>2012-07-20T06:31:13Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/07/20/dev_env_checklist.html"/>
+    <content type="html">&lt;h2&gt;summary | 簡述&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;文檔提供基於linux/macosx環境下開發的個人必備配置
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;TODO&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;1. finish up the documentation
+2. get together the files linked and fix the links
+3. roll them together use chef or puppet or just shell.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;service | 服務&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ dotfiles | 環境
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.gitignore&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.vimrc&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.ssh/auth_keys&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.wgetrc&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.ssh/config&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.ssh/&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.bash_profile&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.ec2&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ servers | 服務器
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="http://www.linode.com/"&gt;linode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="http://aws.amazon.com/ec2/"&gt;aws ec2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ auth | 權限
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/etc/hosts"&gt;hosts&lt;/a&gt; [var]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/etc/ssh/sshd_config"&gt;sshd&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/etc/sudoers"&gt;visudo&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;dev | 開發環境&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ pip/distribute
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;pip_requirements.txt&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ipython, simplejson, boto, fabric&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ rvm/bundle
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;Gemfile&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nanoc3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;☐ service | 服務
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/nginx/"&gt;nginx&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/etc/spawn-fcgi"&gt;cgi&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/my.cnf"&gt;mysql&lt;/a&gt; [pub]&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href="${HOME}/.my.cnf"&gt;mysql client&lt;/a&gt; [pri]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;app | 應用&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ iterm2&lt;/li&gt;
+&lt;li&gt;☐ tmux
+
+&lt;ul&gt;
+&lt;li&gt;☐ gem install teamocil&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;${HOME}/.teamocil&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ brew&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;install_brew.sh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;brew_pack.txt&lt;/a&gt;
+
+&lt;pre&gt;&lt;code&gt;ec2-api-tools ec2-ami-tools dict netcat nethack
+sysstat dstat ntop iotop screen nginx 
+git curl rsync openssl python26 w3m elinks wget
+tree mutt dict spawn-fcgi autossh
+mysql
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ yum&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ install_yum_repo&lt;/li&gt;
+&lt;li&gt;☐ &lt;a href=""&gt;yum_pack.txt&lt;/a&gt;
+
+&lt;pre&gt;&lt;code&gt;sysstat dstat ntop iotop screen nginx 
+git-all rsync openssl python26 w3m elinks wget
+tree mutt dict spawn-fcgi autossh
+mysql
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;☐ yum cleanup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
+</content>
+    <summary type="html">my dev env checklist</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-07-19:/2012/07/19/nanoc_github_website_intro.html</id>
     <title type="html">使用nanoc和github架設網站checklist</title>
     <published>2012-07-18T16:00:00Z</published>
@@ -160,11 +295,11 @@
     <summary type="html">draft about building a website using nanoc and other pub tools then maint it.</summary>
   </entry>
   <entry>
-    <id>tag:ttyn.me,2012-07-09:/2012/07/09/lot_s_of_tips.html</id>
+    <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-19T09:14:39Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/07/09/lot_s_of_tips.html"/>
+    <updated>2012-07-20T07:27:07Z</updated>
+    <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -353,124 +488,6 @@
 &lt;p&gt;&lt;strong&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
     <summary type="html">my own documentation of lots of tips</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.me,2012-07-06:/doc/perm/markdown_syntax.html</id>
-    <title type="html">markdown syntax</title>
-    <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-18T06:01:51Z</updated>
-    <link rel="alternate" href="http://ttyn.me/doc/perm/markdown_syntax.html"/>
-    <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;created by: John Gruber &amp;amp; Aaron Swartz&lt;/li&gt;
-&lt;li&gt;target: easy to read AND easy to write plain text format&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Syntax | 語法&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Headings - hashes before text&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  ### with hash made this my heading
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Paragraphs - no indent&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  without any indent this is just a paragraph 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Paragraphs - two spaces to end the paragraphs &lt;br/&gt;
-&lt;em&gt;colon&lt;/em&gt; after paragraphs doesnt work with my version&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  here we have two spaces hidden behind    
-  so this is two paragraphs
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Lists - bullted with * and enumerated with number&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  * my list item 1
-  * my list item 2
-      * sublist item indent with four spaces
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Code span - with backticks&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  `&amp;lt;code me blue&amp;gt;`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;code me blue&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Code block - formatted with four spaces prefixed&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  In [2]: fabric?
-  Type:       module
-
-  Base Class: &amp;lt;type 'module'&amp;gt;
-  String Form:&amp;lt;module 'fabric' from '/Users/ttyn/.virtualenvs/dailysa/lib/python2.7/site-packages/fabric/__init__.pyc'&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Blockquotes&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  &amp;gt; this would flow everthing like this: Where past and future are gathered. Neither movement from nor towards,
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horizontal lines - triple stars, dashes&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  ---
-  * * *
-  - - - -
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Manual line breaks - two or more spaces hidden behind.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  i made a line break here /spaces/  
-  with two spaces
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Phrase Emphasis - star or underscore&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  *star me to be italic*
-  ** double star me to be bold **
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Linkiefy - squarebracket the notation and bracket the link&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  short: [home](http://ttyn.me)  
-  full: [home](http://ttyn.me "Title: HOME")  
-  use reference style: this is [home][linkid] yes it is
-  ref(put it lateR): [linkid]: http://ttyn.me "Title: HOME"  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Inline image - almost same as linkie with an "!" in front&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  short: ![i am image](/files/img/tuxs.jpg)
-  full: ![alt shelter](/files/img/tuxs.jpg "Gimme shelter")
-  ref style: [thisimgid]: /files/img/tuxs.jpg "Title"
-  use the ref: this is ![an img][thisimid] yes it is
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;this is this &lt;img src="/files/img/tuxs.jpg" title="Title" alt="alt" /&gt; king!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Shorthands to use linkies
-
-&lt;pre&gt;&lt;code&gt;  autolink: &amp;lt;http://example.com/&amp;gt;
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax/" title="original markdown sytax"&gt;original markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples"&gt;wikipedia markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;current status: DONE&lt;/h2&gt;
-
-&lt;h3&gt;The End | 文檔終點&lt;/h3&gt;
-
-&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
-</content>
-    <summary type="html">my own documentation for standard markdown syntax</summary>
   </entry>
   <entry>
     <id>tag:ttyn.me,2012-07-06:/2012/07/06/android_vpn_client_and_server.html</id>
