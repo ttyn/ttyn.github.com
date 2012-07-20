@@ -69,7 +69,7 @@ symbol: ☐ ☑ ☒
         
 * ☐ yum
     * ☐ install_yum_repo
-    * ☐ [yum_pack.txt]()
+    * ☐ [pip_requirements.txt]()
           sysstat dstat ntop iotop screen nginx 
           git-all rsync openssl python26 w3m elinks wget
           tree mutt dict spawn-fcgi autossh

@@ -23,6 +23,7 @@ _:
 
 * whatever tools
     * [amazon ec2 price list](http://ec2instances.info)
+    * [12 factor](http://www.12factor.net/)
     
 
 * doc tools
