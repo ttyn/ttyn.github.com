@@ -49,6 +49,9 @@ title: "lots of tips"
         :w !sudo tee %
 * read outline from cmd
         :r!date
+* read content from another file
+        :read other_file
+        :r other_file
 
 ### __app | 應用__
 * chrome
