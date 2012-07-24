@@ -52,6 +52,9 @@ title: "lots of tips"
 * read content from another file
         :read other_file
         :r other_file
+* edit and read the template
+        :e newfile.cpp | r template.cpp
+
 
 ### __app | 應用__
 * chrome
