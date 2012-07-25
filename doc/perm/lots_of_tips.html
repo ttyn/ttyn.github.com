@@ -116,6 +116,12 @@
 <li>read outline from cmd
 
 <pre><code>  :r!date&#x000A;</code></pre></li>
+<li>read content from another file
+
+<pre><code>  :read other_file&#x000A;  :r other_file&#x000A;</code></pre></li>
+<li>edit and read the template
+
+<pre><code>  :e newfile.cpp | r template.cpp&#x000A;</code></pre></li>
 </ul>
 
 
@@ -146,7 +152,10 @@
 <ul>
 <li>git remove deleted files
 
-<pre><code>  git status |grep deleted |awk '{print $3}' | xargs git rm&#x000A;</code></pre></li>
+<pre><code>  % git status |grep deleted |awk '{print $3}' | xargs git rm&#x000A;</code></pre></li>
+<li>git setup upstream default (to origin/master)
+
+<pre><code>  % git config branch.master.remote origin&#x000A;  % git config branch.master.merge refs/heads/master&#x000A;</code></pre></li>
 </ul>
 
 

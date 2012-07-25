@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-20T07:27:07Z</updated>
+    <updated>2012-07-25T03:32:55Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -373,6 +373,15 @@ mysql
 
 &lt;pre&gt;&lt;code&gt;  :r!date
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;read content from another file
+
+&lt;pre&gt;&lt;code&gt;  :read other_file
+  :r other_file
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;edit and read the template
+
+&lt;pre&gt;&lt;code&gt;  :e newfile.cpp | r template.cpp
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -410,7 +419,12 @@ mysql
 &lt;ul&gt;
 &lt;li&gt;git remove deleted files
 
-&lt;pre&gt;&lt;code&gt;  git status |grep deleted |awk '{print $3}' | xargs git rm
+&lt;pre&gt;&lt;code&gt;  % git status |grep deleted |awk '{print $3}' | xargs git rm
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;git setup upstream default (to origin/master)
+
+&lt;pre&gt;&lt;code&gt;  % git config branch.master.remote origin
+  % git config branch.master.merge refs/heads/master
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
