@@ -104,7 +104,6 @@ title: "lots of tips"
         python distribute_setup.py
         easy_install pip
 
-[requirements.txt][link_pipbasic]
 * virtualization
         chef/puppet/vagrant/cucumber/aws/ec2/boto
 * rvm/bundle
@@ -138,6 +137,7 @@ title: "lots of tips"
 * [12 factor for devop][link_12fac]
 * [pep][link_pep]
 * [rfc][link_rfc] or [ietf version of rfc][link_rfc2]
+* [my own devop requirements.txt][link_pipbasic]
 
 
 --- 
