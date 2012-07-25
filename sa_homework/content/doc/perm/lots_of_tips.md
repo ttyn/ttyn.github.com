@@ -77,11 +77,16 @@ title: "lots of tips"
         
 
 ### __git | just git__
-* git remove deleted files 
+* git checkout and track remote branch | git 檢出遠程的分支並track
+        % git checkout -t origin/remote_feature
+* git remove deleted files | git rm 刪除物理刪除的文件
         % git status |grep deleted |awk '{print $3}' | xargs git rm
-* git setup upstream default (to origin/master)
+* git setup upstream default (to origin/master) | git 設置缺省上行分支到 origin/master
         % git config branch.master.remote origin
         % git config branch.master.merge refs/heads/master
+* git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
+        % git config --global push.default tracking
+
 
 ### __tools | 工具箱__
 * centos/yum
@@ -98,6 +103,7 @@ title: "lots of tips"
 [requirements.txt][link_pipbasic]
 * virtualization
         chef/puppet/vagrant/cucumber/aws/ec2/boto
+* rvm/bundle
         
 ### __ideas | 思路__
 * http stack
@@ -125,6 +131,9 @@ title: "lots of tips"
 ### __links | 總是有用的連接__
 * [unix toolbox][link_toolbox]
 * [ex:coloer picking][link_colorlover]
+* [12 factor for devop][link_12fac]
+* [pep][link_pep]
+* [rfc][link_rfc] or [ietf version of rfc][link_rfc2]
 
 
 --- 
@@ -134,5 +143,10 @@ __go [home][link_home] lets go back back to [home][link_home]__
 [link_toolbox]: http://ttyn.github.com/ref/unixtoolbox.html "Title: unixtoolbox"
 [link_colorlover]: http://www.colourlovers.com/ "Title: colorlover"
 [link_pipbasic]: http://ttyn.github.com/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
+[link_12fac]: http://www.12factor.net/ "Title: 12 factor"
+[link_pep]: http://www.python.org/dev/peps/ "Title: python PEPs"
+[link_rfc]: http://www.faqs.org/rfcs/ "Title: RFC"
+[link_rfc2]: http://tools.ietf.org/html/ "Title: RFC2"
+
 
 
