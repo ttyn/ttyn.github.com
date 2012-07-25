@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-25T07:52:47Z</updated>
+    <updated>2012-07-25T09:02:28Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -433,6 +433,12 @@ mysql
 &lt;li&gt;git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
 
 &lt;pre&gt;&lt;code&gt;  % git config --global push.default tracking
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;git find mod between local and remote | git 檢查本地和遠程mod
+
+&lt;pre&gt;&lt;code&gt;  % git fetch
+  % git log ..@{u} --stat
+  % git log @{u}..
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
