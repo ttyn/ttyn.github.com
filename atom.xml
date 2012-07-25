@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-25T03:32:55Z</updated>
+    <updated>2012-07-25T07:52:47Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -417,14 +417,22 @@ mysql
 &lt;h3&gt;&lt;strong&gt;git | just git&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;git remove deleted files
+&lt;li&gt;git checkout and track remote branch | git 檢出遠程的分支並track
+
+&lt;pre&gt;&lt;code&gt;  % git checkout -t origin/remote_feature
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;git remove deleted files | git rm 刪除物理刪除的文件
 
 &lt;pre&gt;&lt;code&gt;  % git status |grep deleted |awk '{print $3}' | xargs git rm
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;git setup upstream default (to origin/master)
+&lt;li&gt;git setup upstream default (to origin/master) | git 設置缺省上行分支到 origin/master
 
 &lt;pre&gt;&lt;code&gt;  % git config branch.master.remote origin
   % git config branch.master.merge refs/heads/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
+
+&lt;pre&gt;&lt;code&gt;  % git config --global push.default tracking
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -454,6 +462,11 @@ mysql
 
 &lt;pre&gt;&lt;code&gt;    chef/puppet/vagrant/cucumber/aws/ec2/boto
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rvm/bundle&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h3&gt;&lt;strong&gt;ideas | 思路&lt;/strong&gt;&lt;/h3&gt;
 
@@ -494,6 +507,9 @@ mysql
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox"&gt;unix toolbox&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.colourlovers.com/" title="Title: colorlover"&gt;ex:coloer picking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.12factor.net/" title="Title: 12 factor"&gt;12 factor for devop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.python.org/dev/peps/" title="Title: python PEPs"&gt;pep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.faqs.org/rfcs/" title="Title: RFC"&gt;rfc&lt;/a&gt; or &lt;a href="http://tools.ietf.org/html/" title="Title: RFC2"&gt;ietf version of rfc&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
