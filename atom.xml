@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-25T09:02:28Z</updated>
+    <updated>2012-07-25T09:10:07Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -454,22 +454,16 @@ mysql
   ipython
   gunicorn
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;pip
+&lt;li&gt;&lt;p&gt;pip&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  curl -O http://python-distribute.org/distribute_setup.py
   python distribute_setup.py
   easy_install pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;virtualization&lt;/p&gt;
 
-
-&lt;p&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;requirements.txt&lt;/a&gt;
-* virtualization&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    chef/puppet/vagrant/cucumber/aws/ec2/boto
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
+&lt;pre&gt;&lt;code&gt;  chef/puppet/vagrant/cucumber/aws/ec2/boto
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;rvm/bundle&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -516,6 +510,7 @@ mysql
 &lt;li&gt;&lt;a href="http://www.12factor.net/" title="Title: 12 factor"&gt;12 factor for devop&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.python.org/dev/peps/" title="Title: python PEPs"&gt;pep&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.faqs.org/rfcs/" title="Title: RFC"&gt;rfc&lt;/a&gt; or &lt;a href="http://tools.ietf.org/html/" title="Title: RFC2"&gt;ietf version of rfc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;my own devop requirements.txt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
