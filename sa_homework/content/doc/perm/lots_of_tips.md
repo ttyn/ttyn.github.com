@@ -78,7 +78,10 @@ title: "lots of tips"
 
 ### __git | just git__
 * git remove deleted files 
-        git status |grep deleted |awk '{print $3}' | xargs git rm
+        % git status |grep deleted |awk '{print $3}' | xargs git rm
+* git setup upstream default (to origin/master)
+        % git config branch.master.remote origin
+        % git config branch.master.merge refs/heads/master
 
 ### __tools | 工具箱__
 * centos/yum
