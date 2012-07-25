@@ -86,6 +86,10 @@ title: "lots of tips"
         % git config branch.master.merge refs/heads/master
 * git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
         % git config --global push.default tracking
+* git find mod between local and remote | git 檢查本地和遠程mod
+        % git fetch
+        % git log ..@{u} --stat
+        % git log @{u}..
 
 
 ### __tools | 工具箱__
