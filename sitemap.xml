@@ -28,59 +28,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
     <loc>http://me.local/404/</loc><br />
-    <lastmod>2012-07-27</lastmod></p>
+    <lastmod>2012-07-30</lastmod></p>
 </url>
 <url>
     <loc>http://me.local/assets/coderay.css</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/favicon.ico</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/help/</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sa_homework/</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sandbox/</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/files.html</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/ref/unixtoolbox.html</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2012-07-27</lastmod>
+    <lastmod>2012-07-30</lastmod>
 </url>
 </urlset>
     </div>
@@ -106,7 +106,7 @@
         <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Fri Jul 27, 2012 @11:09:56 CST</div>
+    <div id="div_update">Mon Jul 30, 2012 @09:40:55 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
