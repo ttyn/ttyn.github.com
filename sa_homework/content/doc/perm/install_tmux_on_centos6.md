@@ -15,14 +15,14 @@ status: publish
 #### 在centos 6.0 上安装tmux
 * add RPMforge yum repo (64bit)
 
-                rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  
+                sudo rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  
                 wget http://apt.sw.be/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  
-                rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  
+                sudo rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  
 
 * install prerequisite for tmux
 
-                yum install -y libevent
+                sudo yum install -y libevent
 
 * install tmux
 
-                yum --enablerepo rpmforge install -y tmux
+                sudo yum --enablerepo rpmforge install -y tmux

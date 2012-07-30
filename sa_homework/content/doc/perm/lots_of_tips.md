@@ -28,6 +28,10 @@ title: "lots of tips"
         grep --color -E "test|$" yourfile
 * awk check characters at certain position
         awk -F '' '$25 == "a"' input >output
+* iptables
+        sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT
+        sudo iptables-save
+        
 
  
 
