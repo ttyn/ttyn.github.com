@@ -92,6 +92,9 @@
 <li>awk check characters at certain position
 
 <pre><code>  awk -F '' '$25 == "a"' input &gt;output&#x000A;</code></pre></li>
+<li>iptables
+
+<pre><code>  sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT&#x000A;  sudo iptables-save&#x000A;</code></pre></li>
 </ul>
 
 

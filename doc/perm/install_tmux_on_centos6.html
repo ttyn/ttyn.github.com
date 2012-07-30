@@ -65,13 +65,13 @@
 <ul>
 <li><p>add RPMforge yum repo (64bit)</p>
 
-<pre><code>          rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  &#x000A;          wget http://apt.sw.be/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  &#x000A;          rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  &#x000A;</code></pre></li>
+<pre><code>          sudo rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt  &#x000A;          wget http://apt.sw.be/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  &#x000A;          sudo rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm  &#x000A;</code></pre></li>
 <li><p>install prerequisite for tmux</p>
 
-<pre><code>          yum install -y libevent&#x000A;</code></pre></li>
+<pre><code>          sudo yum install -y libevent&#x000A;</code></pre></li>
 <li><p>install tmux</p>
 
-<pre><code>          yum --enablerepo rpmforge install -y tmux&#x000A;</code></pre></li>
+<pre><code>          sudo yum --enablerepo rpmforge install -y tmux&#x000A;</code></pre></li>
 </ul>
   </div>
 </div>

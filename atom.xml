@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-25T09:10:07Z</updated>
+    <updated>2012-07-30T08:19:10Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -338,6 +338,11 @@ mysql
 &lt;li&gt;awk check characters at certain position
 
 &lt;pre&gt;&lt;code&gt;  awk -F '' '$25 == "a"' input &amp;gt;output
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;iptables
+
+&lt;pre&gt;&lt;code&gt;  sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT
+  sudo iptables-save
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
