@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /assets/
+Disallow: /files/
 
 Sitemap: http://ttyn.me/sitemap.xml
