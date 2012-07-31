@@ -298,7 +298,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-07-30T08:19:10Z</updated>
+    <updated>2012-07-31T10:23:12Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -410,6 +410,10 @@ mysql
 &lt;li&gt;&lt;p&gt;mac osx&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  - screenshot screen capture ⌘ ⇧ 3
+  - networksetup 
+          -listallnetworkservices # 列表所有的interface/setup
+          -setautoproxyurl "Ethernet" http://ttyn.github.com/files/proxy.pac 
+          # 使用pacfile # need to disable "send all traffic over VPN connection" in VPN setup
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;combine two images (merge)&lt;/p&gt;
 
