@@ -73,6 +73,11 @@ title: "lots of tips"
 
 * mac osx
         - screenshot screen capture ⌘ ⇧ 3
+        - networksetup 
+                -listallnetworkservices # 列表所有的interface/setup
+                -setautoproxyurl "Ethernet" http://ttyn.github.com/files/proxy.pac 
+                # 使用pacfile # need to disable "send all traffic over VPN connection" in VPN setup
+        
 
 * combine two images (merge)
         $> convert +append a.png b.png c.png
