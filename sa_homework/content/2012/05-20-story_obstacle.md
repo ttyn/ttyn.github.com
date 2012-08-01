@@ -3,7 +3,7 @@ created_at: 2012-05-20
 excerpt: story-07
 kind: article
 publish: true
-tags: []
+tags: [story]
 title: "Obstacle"
 ---
 

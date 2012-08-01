@@ -3,7 +3,7 @@ created_at: 2010-07-30
 excerpt: story-09
 kind: article
 publish: true
-tags: []
+tags: [story]
 title: "trail running on 2020"
 ---
 
@@ -27,4 +27,3 @@ title: "trail running on 2020"
 
         這個夢太荒涼了，我就沒有繼續做下去。
 
-a

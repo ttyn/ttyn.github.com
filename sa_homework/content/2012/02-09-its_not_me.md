@@ -1,7 +1,6 @@
 ---
 tags:
-- blog
-- writing
+- rant
 permalink: 2012-02-09-notitl
 title: standing on the edge
 toc: true
