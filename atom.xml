@@ -20,6 +20,114 @@
     <summary type="html">this is ...</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-08-03:/2012/08/02/quantified_self.html</id>
+    <title type="html">quantify me</title>
+    <published>2012-08-02T17:14:48Z</published>
+    <updated>2012-08-02T05:39:50Z</updated>
+    <author>
+      <name>andy</name>
+      <uri>http://ttyn.me</uri>
+    </author>
+    <link rel="alternate" href="http://ttyn.me/2012/08/02/quantified_self.html"/>
+    <content type="html">&lt;h2&gt;inspired via &lt;a href="http://news.ycombinator.com/item?id=4325346"&gt;hn&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;idea
+
+&lt;ul&gt;
+&lt;li&gt;measure: define (metric)&lt;/li&gt;
+&lt;li&gt;tracking: input&lt;/li&gt;
+&lt;li&gt;charting: output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://feltron.com/about.html"&gt;nicholas felton&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;personal annual report&lt;/li&gt;
+&lt;li&gt;daytum for chroniclers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;apps&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://daytum.com/"&gt;daytum&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;get the total count of dones&lt;/li&gt;
+&lt;li&gt;iphone app&lt;/li&gt;
+&lt;li&gt;chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://didthis-actionwiki.appspot.com/"&gt;didthis&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nice charting&lt;/li&gt;
+&lt;li&gt;log everthing&lt;/li&gt;
+&lt;li&gt;easy define (and log)&lt;/li&gt;
+&lt;li&gt;web/iphone/android only (no cmdline)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eatery.massivehealth.com/"&gt;eatery&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;calories only&lt;/li&gt;
+&lt;li&gt;iphone app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.lucidtracker.com/"&gt;lucidtracker&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;more like bento - self define all metrics&lt;/li&gt;
+&lt;li&gt;web only&lt;/li&gt;
+&lt;li&gt;nice chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://your.flowingdata.com/"&gt;flowingdata&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;input data via twitter&lt;/li&gt;
+&lt;li&gt;got chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.chartmyself.com/"&gt;chartmyself&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;got chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://idonethis.com/"&gt;idonethis&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;via gmail/web/app&lt;/li&gt;
+&lt;li&gt;team&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;more normal tracking&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;accounting&lt;/li&gt;
+&lt;li&gt;sport tracking&lt;/li&gt;
+&lt;li&gt;timesheet/punchcard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;type of quantifiers [via lucidtracker]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Yes/no (boolean)&lt;/li&gt;
+&lt;li&gt;Quantity&lt;/li&gt;
+&lt;li&gt;Short answer&lt;/li&gt;
+&lt;li&gt;Open ended&lt;/li&gt;
+&lt;li&gt;Time of Day (calendar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+    <summary type="html">current quntify-me sites/app</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-07-20:/2012/07/20/dev_env_checklist.html</id>
     <title type="html">開發環境必備checklist</title>
     <published>2012-07-19T16:00:00Z</published>
@@ -528,123 +636,5 @@ mysql
 &lt;p&gt;&lt;strong&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
     <summary type="html">my own documentation of lots of tips</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.me,2012-07-06:/doc/perm/markdown_syntax.html</id>
-    <title type="html">markdown syntax</title>
-    <published>2012-07-05T16:00:00Z</published>
-    <updated>2012-07-18T06:01:51Z</updated>
-    <link rel="alternate" href="http://ttyn.me/doc/perm/markdown_syntax.html"/>
-    <content type="html">&lt;h3&gt;Literal | 一些背景&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;created by: John Gruber &amp;amp; Aaron Swartz&lt;/li&gt;
-&lt;li&gt;target: easy to read AND easy to write plain text format&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Syntax | 語法&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Headings - hashes before text&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  ### with hash made this my heading
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Paragraphs - no indent&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  without any indent this is just a paragraph 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Paragraphs - two spaces to end the paragraphs &lt;br/&gt;
-&lt;em&gt;colon&lt;/em&gt; after paragraphs doesnt work with my version&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  here we have two spaces hidden behind    
-  so this is two paragraphs
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Lists - bullted with * and enumerated with number&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  * my list item 1
-  * my list item 2
-      * sublist item indent with four spaces
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Code span - with backticks&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  `&amp;lt;code me blue&amp;gt;`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;code me blue&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Code block - formatted with four spaces prefixed&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  In [2]: fabric?
-  Type:       module
-
-  Base Class: &amp;lt;type 'module'&amp;gt;
-  String Form:&amp;lt;module 'fabric' from '/Users/ttyn/.virtualenvs/dailysa/lib/python2.7/site-packages/fabric/__init__.pyc'&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Blockquotes&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  &amp;gt; this would flow everthing like this: Where past and future are gathered. Neither movement from nor towards,
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horizontal lines - triple stars, dashes&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  ---
-  * * *
-  - - - -
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Manual line breaks - two or more spaces hidden behind.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  i made a line break here /spaces/  
-  with two spaces
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Phrase Emphasis - star or underscore&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  *star me to be italic*
-  ** double star me to be bold **
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Linkiefy - squarebracket the notation and bracket the link&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  short: [home](http://ttyn.me)  
-  full: [home](http://ttyn.me "Title: HOME")  
-  use reference style: this is [home][linkid] yes it is
-  ref(put it lateR): [linkid]: http://ttyn.me "Title: HOME"  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Inline image - almost same as linkie with an "!" in front&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  short: ![i am image](/files/img/tuxs.jpg)
-  full: ![alt shelter](/files/img/tuxs.jpg "Gimme shelter")
-  ref style: [thisimgid]: /files/img/tuxs.jpg "Title"
-  use the ref: this is ![an img][thisimid] yes it is
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;this is this &lt;img src="/files/img/tuxs.jpg" title="Title" alt="alt" /&gt; king!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Shorthands to use linkies
-
-&lt;pre&gt;&lt;code&gt;  autolink: &amp;lt;http://example.com/&amp;gt;
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/syntax/" title="original markdown sytax"&gt;original markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples"&gt;wikipedia markdown syntax [EN]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;current status: DONE&lt;/h2&gt;
-
-&lt;h3&gt;The End | 文檔終點&lt;/h3&gt;
-
-&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
-</content>
-    <summary type="html">my own documentation for standard markdown syntax</summary>
   </entry>
 </feed>
