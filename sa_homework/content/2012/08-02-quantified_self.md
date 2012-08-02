@@ -10,7 +10,7 @@ author_name: andy
 status: publish
 ---
 
-## quantify me
+## inspired via [hn](http://news.ycombinator.com/item?id=4325346)
 * idea
     * measure: define (metric)
     * tracking: input
