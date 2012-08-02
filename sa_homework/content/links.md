@@ -11,11 +11,11 @@ _:
     * [google link shortener](http://goo.gl)
     * [local time](http://time.is)
     * [public ip](http://ip4.me)
-    * [color picker]()
+    * [color picker][link_colorlover]
 
 * linux tools
-    * [linux command tips]()
-    * [my own mostly linux tips]()
+    * [linux command tips][link_toolbox]
+    * [my own mostly linux tips](http://ttyn.me/doc/perm/lots_of_tips.html)
 
 
 * webtools
@@ -23,13 +23,28 @@ _:
 
 * whatever tools
     * [amazon ec2 price list](http://ec2instances.info)
-    * [12 factor](http://www.12factor.net/)
+    * [12 factor][link_12fac]
+    * [my own devop requirements.txt][link_pipbasic]
     
 
 * doc tools
     * [python doc](http://docs.python.org/library/index.html)
     * [git doc](http://git-scm.com/documentation)
-    * [markdown doc]()
+    * [markdown doc](http://ttyn.me/perm/markdown_syntax.html)
     * [safaribooks online](http://safaribooksonline.com/)
     * [aws documentation]()
+    * [pep][link_pep]
+    * [rfc][link_rfc] or [ietf version of rfc][link_rfc2]
 
+
+---
+
+__go [home][link_home] lets go back back to [home][link_home]__
+[link_home]: http://ttyn.me "Title: HOME"
+[link_toolbox]: http://ttyn.github.com/ref/unixtoolbox.html "Title: unixtoolbox"
+[link_colorlover]: http://www.colourlovers.com/ "Title: colorlover"
+[link_pipbasic]: http://ttyn.github.com/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
+[link_12fac]: http://www.12factor.net/ "Title: 12 factor"
+[link_pep]: http://www.python.org/dev/peps/ "Title: python PEPs"
+[link_rfc]: http://www.faqs.org/rfcs/ "Title: RFC"
+[link_rfc2]: http://tools.ietf.org/html/ "Title: RFC2"
