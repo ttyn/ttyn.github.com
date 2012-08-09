@@ -1,5 +1,5 @@
 --- 
-output_dir: sa_homework_output
+output_dir: private_output
 data_sources: 
 - type: filesystem_unified
   items_root: /
@@ -23,7 +23,7 @@ google_analytics:
   site_id: UA-7206667-1
 
 # currently used by logo
-site_name: me@fourohfour
+site_name: it's not me@another universe
 
 # number of full featured posts to display on front
 featured_count: 1
@@ -35,4 +35,4 @@ excerpt_count: 0
 other_articles_max: 0
 
 # DISQUS Site Shortname. Comment out to disable.
-disqus_shortname: ttyn
+#disqus_shortname: ttyn
