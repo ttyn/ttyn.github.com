@@ -31,6 +31,9 @@ title: "lots of tips"
 * iptables
         sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT
         sudo iptables-save
+* mysqld
+        repair all the databases
+        mysqlcheck -Aor
         
 
  
