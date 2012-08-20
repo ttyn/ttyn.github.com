@@ -406,7 +406,7 @@ mysql
     <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
     <title type="html">lots of tips</title>
     <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-08-10T06:08:44Z</updated>
+    <updated>2012-08-20T03:57:45Z</updated>
     <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
     <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
 
@@ -430,6 +430,10 @@ mysql
 &lt;li&gt;get public ip
 
 &lt;pre&gt;&lt;code&gt;  curl http://ip4.me 2&amp;gt;/dev/null | sed -e 's#&amp;lt;[^&amp;gt;]*&amp;gt;##g' | grep '^[0-9]'
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;http request and response using curl
+
+&lt;pre&gt;&lt;code&gt;  curl -iv ${url}
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;lock tty
 

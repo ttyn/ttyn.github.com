@@ -80,6 +80,9 @@
 <li>get public ip
 
 <pre><code>  curl http://ip4.me 2&gt;/dev/null | sed -e 's#&lt;[^&gt;]*&gt;##g' | grep '^[0-9]'&#x000A;</code></pre></li>
+<li>http request and response using curl
+
+<pre><code>  curl -iv ${url}&#x000A;</code></pre></li>
 <li>lock tty
 
 <pre><code>  clear &amp;&amp; vlock -c &#x000A;</code></pre></li>
