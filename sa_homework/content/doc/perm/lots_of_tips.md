@@ -20,6 +20,8 @@ title: "lots of tips"
         Esc-f/Esc-b
 * get public ip
         curl http://ip4.me 2>/dev/null | sed -e 's#<[^>]*>##g' | grep '^[0-9]'
+* http request and response using curl
+        curl -iv ${url}
 * lock tty 
         clear && vlock -c 
 * real path
