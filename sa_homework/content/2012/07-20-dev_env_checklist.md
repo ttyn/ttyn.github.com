@@ -76,6 +76,21 @@ symbol: ☐ ☑ ☒
           mysql
     * ☐ yum cleanup
 
+## operation | 运营
+* ☐ backup | 备份
+    * ☐ public data | 公共数据
+        * ☐ public repos: github
+        * ☐ databases
+        * ☐ dot files
+        
+    * ☐ private data | 个人数据
+        * ☐ ssh keys
+        * ☐ mac os keychains
+        * ☐ personal repos: bitbucket
+        * ☐ databases
+        * ☐ dot files
+
+* ☐ 
 
 
 ## The Ref | 參考文檔
