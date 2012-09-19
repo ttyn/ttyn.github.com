@@ -1,0 +1,171 @@
+Crashlog created at 2012-09-19 18:44:23 +0800
+
+=== MESSAGE:
+
+RuntimeError: Found 2 content files for content/files/andy; expected 0 or 1
+
+=== COMPILATION STACK:
+
+  (empty)
+
+=== BACKTRACE:
+
+  0. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:164:in `block in all_split_files_in'
+  1. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:154:in `each_pair'
+  2. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:154:in `all_split_files_in'
+  3. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:78:in `load_objects'
+  4. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:37:in `items'
+  5. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:313:in `block in load_items'
+  6. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:312:in `each'
+  7. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:312:in `load_items'
+  8. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:246:in `load'
+  9. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:126:in `layouts'
+  10. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:185:in `dependency_tracker'
+  11. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/memoization.rb:56:in `block in memoize'
+  12. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:453:in `stores'
+  13. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:144:in `unload'
+  14. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:277:in `unload'
+  15. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:257:in `rescue in load'
+  16. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:261:in `load'
+  17. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:112:in `load'
+  18. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  19. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:57:in `compile'
+  20. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/commands/compile.rb:57:in `run'
+  21. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  22. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  23. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  24. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:13:in `call'
+  25. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  26. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  27. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  28. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  29. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  30. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli.rb:47:in `block in run'
+  31. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  32. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  33. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli.rb:44:in `run'
+  34. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/bin/nanoc:19:in `<top (required)>'
+  35. /Users/andyx/.rbenv/versions/1.9.2-p290/bin/nanoc:23:in `load'
+  36. /Users/andyx/.rbenv/versions/1.9.2-p290/bin/nanoc:23:in `<main>'
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.0 © 2007-2012 Denis Defreyne.
+Running ruby 1.9.2 (2011-07-09) on x86_64-darwin12.0.0 with RubyGems 1.8.23.
+
+=== INSTALLED GEMS:
+
+  RedCloth 4.2.9
+  activesupport 3.2.6
+  adsf 1.1.1
+  builder 3.0.0
+  bundler 1.1.5
+  coderay 1.0.7
+  colored 1.2
+  cri 2.3.0
+  haml 3.1.6
+  i18n 0.6.0
+  kramdown 0.13.7
+  mime-types 1.19
+  multi_json 1.3.6
+  nanoc 3.4.0
+  nokogiri 1.5.5
+  rack 1.4.1
+  rake 0.9.2.2
+  rdiscount 1.6.8
+  sass 3.1.19
+
+=== ENVIRONMENT:
+
+AUTOJUMP_DATA_DIR => "/Users/andyx/.local/share/autojump"
+AUTOJUMP_HOME => "/Users/andyx"
+AWS_CREDENTIAL_FILE => "/Users/andyx/.ec2/litb_aws-credentials-master"
+AWS_IAM_HOME => "/usr/local/Cellar/aws-iam-tools/1.5.0/jars"
+Apple_PubSub_Socket_Render => "/tmp/launch-KGZXQ4/Render"
+Apple_Ubiquity_Message => "/tmp/launch-hEKkA2/Apple_Ubiquity_Message"
+BREW_PYTHON => "/usr/local/share/python"
+BUNDLE_BIN_PATH => "/Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/bundler-1.1.5/bin/bundle"
+BUNDLE_GEMFILE => "/Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/Gemfile"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-tHf48I/org.macosforge.xquartz:0"
+EC2_CERT => "/Users/andyx/.ec2/cert-pub-litb_andy.pem"
+EC2_HOME => "/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
+EC2_PRIVATE_KEY => "/Users/andyx/.ec2/pk-litb_andy.pem"
+EC2_URL => "http://ec2.us-west-2.amazonaws.com"
+EDITOR => "vim"
+GEM_HOME => "/Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle"
+GEM_PATH => ""
+GIT_SSL_NO_VERIFY => "true"
+GREP_COLOR => "1;32"
+GREP_OPTIONS => "--exclude=\\*.svn\\* --exclude=\\*.swp\\* --color=always"
+HISTTIMEFORMAT => "%F %T "
+HOME => "/Users/andyx"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w0t0p0"
+JAVA_HOME => "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
+LANG => "en_US.UTF-8"
+LC_ALL => "en_US.UTF-8"
+LC_CTYPE => "en_US.UTF-8"
+LOGNAME => "andyx"
+NODE_PATH => "/usr/local/lib/node_modules"
+PATH => "/Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/bin:/Users/andyx/.rbenv/versions/1.9.2-p290/bin:/usr/local/Cellar/rbenv/0.3.0/libexec:/Users/andyx/.virtualenvs/dailysa/bin:/Users/andyx/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+PROMPT_COMMAND => "{ [[ \"$AUTOJUMP_HOME\" == \"$HOME\" ]] && (autojump -a \"$(pwd ${_PWD_ARGS})\"&)>/dev/null 2>>\"${AUTOJUMP_DATA_DIR}/.autojump_errors\";} 2>/dev/null ; :"
+PWD => "/Users/andyx/gitme/github.me.page/ttyn_github.git.nanoc_src/sa_homework"
+RBENV_DIR => "/Users/andyx/gitme/github.me.page/ttyn_github.git.nanoc_src/sa_homework"
+RBENV_HOOK_PATH => ":/Users/andyx/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d"
+RBENV_ROOT => "/Users/andyx/.rbenv"
+RUBYOPT => "-I/Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/bundler-1.1.5/lib -rbundler/setup"
+SHELL => "/bin/bash"
+SHLVL => "2"
+SSH_AUTH_SOCK => "/tmp/launch-aThfSt/Listeners"
+SVN_EDITOR => "/usr/bin/vim"
+TERM => "screen"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/3j/qtjvpv3j103gkjkl3dsgfsr80000gp/T/"
+TMUX => "/private/var/folders/3j/qtjvpv3j103gkjkl3dsgfsr80000gp/T/tmux-502/default,53474,0"
+TMUX_PANE => "%53"
+USER => "andyx"
+VIRTUALENVWRAPPER_HOOK_DIR => "/Users/andyx/.virtualenvs"
+VIRTUALENVWRAPPER_LOG_DIR => "/Users/andyx/.virtualenvs"
+VIRTUALENVWRAPPER_PROJECT_FILENAME => ".project"
+VIRTUAL_ENV => "/Users/andyx/.virtualenvs/dailysa"
+WORKON_HOME => "/Users/andyx/.virtualenvs"
+__CF_USER_TEXT_ENCODING => "0x1F6:0:0"
+shorturl => "i-81ea95b2"
+
+=== $LOAD_PATH:
+
+  0. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib
+  1. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/sass-3.1.19/lib
+  2. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/rdiscount-1.6.8/lib
+  3. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/nokogiri-1.5.5/lib
+  4. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/nanoc-3.4.0/lib
+  5. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/mime-types-1.19/lib
+  6. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/kramdown-0.13.7/lib
+  7. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/haml-3.1.6/lib
+  8. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/cri-2.3.0/lib
+  9. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/colored-1.2/lib
+  10. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/coderay-1.0.7/lib
+  11. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/bundler-1.1.5/gems/bundler-1.1.5/lib
+  12. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/builder-3.0.0/lib
+  13. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/adsf-1.1.1/lib
+  14. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/rack-1.4.1/lib
+  15. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/activesupport-3.2.6/lib
+  16. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/multi_json-1.3.6/lib
+  17. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/i18n-0.6.0/lib
+  18. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/RedCloth-4.2.9/lib
+  19. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/RedCloth-4.2.9/lib/case_sensitive_require
+  20. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/RedCloth-4.2.9/ext
+  21. /Users/andyx/2011winter/github/github.me.page/ttyn_github.git.nanoc_src/vendor/bundle/gems/rake-0.9.2.2/lib
+  22. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/colored-1.2/lib
+  23. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/cri-2.3.0/lib
+  24. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/nanoc-3.4.0/lib
+  25. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/bundler-1.1.5/lib
+  26. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/site_ruby/1.9.1
+  27. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/site_ruby/1.9.1/x86_64-darwin12.0.0
+  28. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/site_ruby
+  29. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/vendor_ruby/1.9.1
+  30. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin12.0.0
+  31. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/vendor_ruby
+  32. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1
+  33. /Users/andyx/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/x86_64-darwin12.0.0
