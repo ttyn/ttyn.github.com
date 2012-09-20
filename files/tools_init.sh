@@ -1,6 +1,6 @@
 #!/bin/bash
 YUM=/usr/bin/yum
-USERMOD=/usr/sbin/usrmod
+USERMOD=/usr/sbin/usermod
 ADDUSER=/usr/sbin/adduser
 MKDIR=/bin/mkdir
 CHMOD=/bin/chmod
@@ -25,9 +25,8 @@ $MKDIR -p "$ssh_path"
 $WGET -O $ssh_path/auth_keys "$ssh_auth_file"
 $LN "$ssh_path/auth_keys" "$ssh_path/authorized_keys"
 $CHMOD 700 "/home/$admin_user" "$ssh_path"
-$CHMOD 400 "$ssh_path/auth*" 
-$CHOWN "$admin_user":"$admin_user" /home/"$admin_user" "$ssh_path"
-$CHOWN "$admin_user":"$admin_user" /home/"$admin_user" "$ssh_path/*"
+$CHMOD 400 "$ssh_path/auth_keys" "$ssh_path/authorized_keys" 
+$CHOWN "$admin_user":"$admin_user" /home/"$admin_user" "$ssh_path" "$ssh_path/auth_keys" "$ssh_path/authorized_keys"
 $LS -l "$ssh_path/auth_keys"
 $USERMOD -G wheel "$admin_user" 
 $CP /etc/sudoers /etc/sudoers.ori
