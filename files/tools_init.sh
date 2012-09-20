@@ -23,7 +23,7 @@ default_sudoers='Defaults    !requiretty,!fqdn,!visiblepw'
 $YUM install -y $yum_basic_pack
 $ADDUSER "$admin_user"
 $MKDIR -p "$ssh_path"
-!( test -f "$ssh_path/auth_keys" ) && $WGET -O "$ssh_path/auth_keys" "$ssh_auth_file" || ls -l ~/.ssh/auth_keys
+!( test -f "$ssh_path/auth_keys" ) && $WGET -O "$ssh_path/auth_keys" "$ssh_auth_file" || ls -l "$ssh_path/auth_keys"
 $LN -s "$ssh_path/auth_keys" "$ssh_path/authorized_keys"
 $CHMOD 700 "/home/$admin_user" "$ssh_path"
 $CHMOD 400 "$ssh_path/auth_keys" "$ssh_path/authorized_keys" 
