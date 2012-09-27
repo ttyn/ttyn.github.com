@@ -56,7 +56,8 @@ compile 'sitemap' do
 end
 
 route '/txt/*' do
-        item.identifier.chop + '.txt'
+        #item.identifier.chop + '.txt'
+        item.identifier.chop + '.' + item[:extension]
 end
 
 route '/ref/*' do
