@@ -20,8 +20,6 @@ TEE="$sudo_switch /usr/bin/tee"
 ROUTE="$sudo_switch /sbin/route"
 IPTABLES="$sudo_switch /sbin/iptables"
 
-
-yum_essential_pack=" ntp ntpdate"
 yum_working_pack="openssh.x86_64 openssh-server.x86_64 openssh-clients.x86_64 pam_ssh_agent_auth.x86_64 jwhois.x86_64"
 yum_dev_pack=" w3m rsync nginx python26 python26-setuptools subversion wget curl git nmap.x86_64 keyutils.x86_64 fcgi.x86_64 spawn_fcgi.x86_64 mytop patch strace bzip2 curl-devel.x86_64"
 yum_remove_pack="sendmail"
@@ -38,6 +36,6 @@ $ECHO "
 $SED -i "s/\(MAILTO=.*$\)/MAILTO=/" $crontab_file
 $YUM erase -y $yum_remove_pack
 $YUM install -y $yum_working_pack
-!( test -f "$selinux_file" ) && echo "no selinux" || $SED -i "s/SELINUX=enforcing/SELINUX=disabled/g $selinux_file
+!( test -f "$selinux_file" ) && echo "no selinux" || $SED -i "s/SELINUX=enforcing/SELINUX=disabled/ $selinux_file
 $YUM install -y $yum_dev_pack
-$YUM upate -y
+#$YUM upgrade -y
