@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>me@four oh four - A New Item</title>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/coderay.css" media="screen">
+    <link href="/assets/favicon.ico" rel="shortcut icon">
+    <link href="/assets/favicon.ico" rel="icon">
+    <meta name="generator" content="nanoc 3.2.4">
+  </head>
+  <body>
+    <div id="main">
+        <div id="main-top-div">
+        
+        
+                <a href="/">i update me everyday</a> 
+                 |  
+                
+                 
+                 |  
+                
+                <a href="/doc/sandbox/">A New Item</a> 
+                 
+                
+        
+        <hr>
+        </div>
+
+      <p>Hi, I’m a new item!<br></p><pre><code class="language-ruby"><table class="CodeRay"><tr>
+<td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> <span class="function">foo</span>
+  <span class="string"><span class="delimiter">"</span><span class="content">asdf</span><span class="delimiter">"</span></span>
+<span class="keyword">end</span></pre></td>
+</tr></table></code></pre>
+<pre><code class="language-ruby"><table class="CodeRay"><tr>
+<td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> <span class="function">foo</span>
+  <span class="string"><span class="delimiter">"</span><span class="content">asdf</span><span class="delimiter">"</span></span>
+<span class="keyword">end</span></pre></td>
+</tr></table></code></pre>
+<pre><code class="language-ruby"><table class="CodeRay"><tr>
+<td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+</pre></td>
+  <td class="code"><pre> <span class="comment"># test:all</span>
+  desc <span class="string"><span class="delimiter">'</span><span class="content">Run all tests</span><span class="delimiter">'</span></span>
+  task <span class="symbol">:all</span> <span class="keyword">do</span>
+    <span class="predefined-constant">ENV</span>[<span class="string"><span class="delimiter">'</span><span class="content">QUIET</span><span class="delimiter">'</span></span>] ||= <span class="string"><span class="delimiter">'</span><span class="content">true</span><span class="delimiter">'</span></span>
+    <span class="global-variable">$VERBOSE</span> = (<span class="predefined-constant">ENV</span>[<span class="string"><span class="delimiter">'</span><span class="content">VERBOSE</span><span class="delimiter">'</span></span>] == <span class="string"><span class="delimiter">'</span><span class="content">true</span><span class="delimiter">'</span></span>)
+
+    <span class="global-variable">$LOAD_PATH</span>.unshift(<span class="constant">File</span>.expand_path(<span class="constant">File</span>.dirname(<span class="predefined-constant">__FILE__</span>) + <span class="string"><span class="delimiter">'</span><span class="content">/..</span><span class="delimiter">'</span></span>))
+
+    <span class="comment"># require our test helper so we don't have to in each individual test</span>
+    require <span class="string"><span class="delimiter">'</span><span class="content">test/helper</span><span class="delimiter">'</span></span>
+
+    test_files = <span class="constant">Dir</span>[<span class="string"><span class="delimiter">'</span><span class="content">test/**/*_spec.rb</span><span class="delimiter">'</span></span>] + <span class="constant">Dir</span>[<span class="string"><span class="delimiter">'</span><span class="content">test/**/test_*.rb</span><span class="delimiter">'</span></span>]
+    test_files.each { |f| require f }
+
+    <span class="constant">MiniTest</span>::<span class="constant">Unit</span>.new.run (<span class="global-variable">$VERBOSE</span> ? <span class="string"><span class="delimiter">%w(</span><span class="content"> --verbose </span><span class="delimiter">)</span></span> : <span class="string"><span class="delimiter">%w(</span><span class="delimiter">)</span></span>)
+  <span class="keyword">end</span></pre></td>
+</tr></table></code></pre>
+    </div>
+    <div id="sidebar">
+      <h2>Be there</h2>
+      <ul>
+        <li><a href="http://ttyn.me/">log</a></li>
+        <li><a href="/">home</a></li>
+      </ul>
+      <h2>Read it</h2>
+      <ul>
+        <li><a href="http://docs.python.org/library/index.html">python doc</a></li>
+        <li><a href="http://git-scm.com/documentation">git doc</a></li>
+        <li><a href="http://safaribooksonline.com/">safaribooks</a></li>
+        <li><a href="/ref/unixtoolbox.html">basic commands</a></li>
+      </ul>
+      <h2>Use tools</h2>
+      <ul>
+        <li><a href="http://goo.gl/">url shortener</a></li>
+        <li><a href="http://time.is/">localtime</a></li>
+        <li><a href="https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en">currency ex rate</a></li>
+        <li><a href="http://ttyn.github.com/InstaList/">checklist</a></li>
+        <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
+      </ul>
+
+    <div id="div_update">Thu Sep 27, 2012 @20:22:45 CST</div>
+    </div>
+<!-- BEGIN google analytics --> 
+<script type="text/javascript">  
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7206667-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- END google analytics -->
+  </body>
+</html>

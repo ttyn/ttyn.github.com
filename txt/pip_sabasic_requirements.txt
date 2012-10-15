@@ -1,0 +1,17 @@
+CLVault
+M2Crypto
+PyMOTW
+PyYAML
+SQLAlchemy
+keyring
+paramiko
+py-bcrypt
+pycrypto
+requests
+scriptine
+simplejson
+tweepy
+vault
+ipython
+Fabric
+yolk

@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>me@four oh four - so far</title>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/coderay.css" media="screen">
+    <link href="/assets/favicon.ico" rel="shortcut icon">
+    <link href="/assets/favicon.ico" rel="icon">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+    </script>
+    <script type="text/javascript">
+    var visualization;
+    function drawVisualization() {
+      var query = new google.visualization.Query('https://spreadsheets.google.com/spreadsheet/tq?key=0AhKNq5WDTG2_dGlTa2s3c0FEdzQtVWlYOVJjaFdXYnc&pub=1');
+      query.setQuery('SELECT A,B WHERE B>1');
+      query.send(handleQueryResponse);
+    }
+    function handleQueryResponse(response) {
+                if (response.isError()) {
+                    alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+                    return;
+                }
+                var options = {
+                  title: 'years to go',
+                  width: '100%',height: 400,
+                  colors: ['#c7cfc7', '#b2c8b2', '#d9e0de', '#cdded1'],
+                  chartArea: {left:50,top:30, width:"75%",height:"70%"},
+                  legendTextStyle: {color:'#d4eff6'},
+                  };
+                var data = response.getDataTable();
+                visualization = new google.visualization.ColumnChart(document.getElementById('visualization'));
+                visualization.draw(data,options);
+      }
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body>
+    <div id="visualization" style="height: 600px; width: 800px;"></div>
+<!-- BEGIN google analytics --> 
+<script type="text/javascript">  
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7206667-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- END google analytics -->
+  </body>
+</html>
