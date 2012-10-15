@@ -131,7 +131,7 @@
     <id>tag:ttyn.me,2012-07-20:/2012/07/20/dev_env_checklist.html</id>
     <title type="html">開發環境必備checklist</title>
     <published>2012-07-19T16:00:00Z</published>
-    <updated>2012-07-20T08:51:58Z</updated>
+    <updated>2012-08-21T10:14:22Z</updated>
     <link rel="alternate" href="http://ttyn.me/2012/07/20/dev_env_checklist.html"/>
     <content type="html">&lt;h2&gt;summary | 簡述&lt;/h2&gt;
 
@@ -255,6 +255,36 @@ mysql
 &lt;li&gt;☐ yum cleanup&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;operation | 运营&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;☐ backup | 备份&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;☐ public data | 公共数据&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ public repos: github&lt;/li&gt;
+&lt;li&gt;☐ databases&lt;/li&gt;
+&lt;li&gt;☐ dot files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ private data | 个人数据&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☐ ssh keys&lt;/li&gt;
+&lt;li&gt;☐ mac os keychains&lt;/li&gt;
+&lt;li&gt;☐ personal repos: bitbucket&lt;/li&gt;
+&lt;li&gt;☐ databases&lt;/li&gt;
+&lt;li&gt;☐ dot files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
