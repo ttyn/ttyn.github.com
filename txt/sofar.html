@@ -2,18 +2,25 @@
   <head>
     <meta charset="utf-8">
     <title>me@four oh four - so far</title>
-    <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/assets/coderay.css" media="screen">
+  <style>
+  p { margin:0; color:blue; }
+  div,p { margin-left:10px; }
+  span { color:red; }
+  </style>
     <link href="/assets/favicon.ico" rel="shortcut icon">
     <link href="/assets/favicon.ico" rel="icon">
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
     </script>
     <script type="text/javascript">
     var visualization;
+    var andy_datasrc='https://spreadsheets.google.com/spreadsheet/tq?key=0AhKNq5WDTG2_dGlTa2s3c0FEdzQtVWlYOVJjaFdXYnc&pub=1';
     function drawVisualization() {
-      var query = new google.visualization.Query('https://spreadsheets.google.com/spreadsheet/tq?key=0AhKNq5WDTG2_dGlTa2s3c0FEdzQtVWlYOVJjaFdXYnc&pub=1');
+      var query = new google.visualization.Query(andy_datasrc);
       query.setQuery('SELECT A,B WHERE B>1');
       query.send(handleQueryResponse);
     }
@@ -35,9 +42,35 @@
       }
       google.setOnLoadCallback(drawVisualization);
     </script>
+
   </head>
   <body>
     <div id="visualization" style="height: 600px; width: 800px;"></div>
+
+  <p>Gimme a datasource</p>
+  <form action="javascript:alert( $("input:first").val() );">
+    <div>
+      <input type="text" />
+      <input type="submit" />
+    </div>
+  </form>
+  <span></span>
+
+<script>
+
+    $("form").submit(function() {
+      if ($("input:first").val() == "correct") {
+        $("span").text("Fetching data...").show();
+        return true;
+      }
+      alert($("input:first").val());
+      var andy_datasrc=$("input:first").val();
+      $("span").text("Not valid!").show().fadeOut(1000);
+      return false;
+    });
+</script>
+
+
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
   var _gaq = _gaq || [];
