@@ -13,7 +13,6 @@ chardet==1.0.1
 clockin==0.1.5
 cloth==0.2
 cuisine==0.2.4
-daemonwatch==0.9.3
 elementtree==1.2.7-20070827-preview
 gdata==2.0.17
 googlecl==0.9.13
