@@ -58,41 +58,50 @@
     <h3>配置和使用ssh key auth驗證登陸</h3>
 
 <ul>
-<li><p>概念
-  客戶機器為 client_server
-  需要提供登陸的服務器為 host_server
-  在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</p></li>
+<li><p>概念</p>
+
+<ul>
+<li>客戶機器為 client_server</li>
+<li>需要提供登陸的服務器為 host_server</li>
+<li>在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</li>
+</ul>
+</li>
 <li><p>第一步 @client_server</p>
 
-<p>  local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P
-  [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</p>
+<pre><code>      local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P &#x000A;      [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]&#x000A;</code></pre>
 
 <ul>
 <li><p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub</p>
 
-<pre><code>        2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上&#x000A;        2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件&#x000A;</code></pre></li>
+<pre><code>    2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上&#x000A;    2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件&#x000A;</code></pre></li>
 <li><p>權限設置</p>
 
-<pre><code>        local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh&#x000A;        local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot&#x000A;</code></pre></li>
+<pre><code>    local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh&#x000A;    local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot&#x000A;</code></pre></li>
 </ul>
 </li>
 <li><p>第二步 @host_server</p>
 
-<pre><code>          local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh&#x000A;</code></pre>
+<pre><code>      local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh&#x000A;</code></pre>
 
 <ul>
 <li>粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys</li>
 <li><p>(如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行</p>
 
-<pre><code>      local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys&#x000A;      local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys&#x000A;</code></pre></li>
+<pre><code>    local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys&#x000A;    local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys&#x000A;</code></pre></li>
+<li><p>host_server的sshd配置 /etc/ssh/sshd_config_sample</p>
+
+<pre><code>        Port 26666&#x000A;        Port 22&#x000A;        #ListenAddress a.b.c.d&#x000A;        UseDNS no&#x000A;        RSAAuthentication yes&#x000A;        PubkeyAuthentication yes&#x000A;        AuthorizedKeysFile      .ssh/auth_keys&#x000A;</code></pre></li>
+<li><p>@host_server restart sshd</p>
+
+<pre><code>        service sshd restart&#x000A;</code></pre></li>
 </ul>
 </li>
 <li><p>第三步測試和dbug</p>
 
-<pre><code>          local_conn_bot@client_server$ ssh host_server uptime ### 測試&#x000A;          local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug&#x000A;</code></pre></li>
+<pre><code>      local_conn_bot@client_server$ ssh host_server uptime ### 測試&#x000A;      local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug&#x000A;</code></pre></li>
 <li><p>第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</p>
 
-<pre><code>  local_conn_bot@client_server$ cat ~/.ssh/config&#x000A;&#x000A;          ## --- start of sample ssh config&#x000A;          Host host_server_01&#x000A;                  Hostname 192.168.2.1&#x000A;          Host 30.20.10.0&#x000A;                  Port 28&#x000A;                  IdentityFile ~/.ssh/temp-local_conn_bot&#x000A;          Host *&#x000A;                  User local_conn_bot&#x000A;                  ForwardAgent yes&#x000A;                  Port 22&#x000A;                  IdentityFile ~/.ssh/2012-local_conn_bot&#x000A;                  UsePrivilegedPort no&#x000A;                  ServerAliveInterval 240&#x000A;                  ServerAliveCountMAx 9999&#x000A;          ## --- end of sample ssh config&#x000A;</code></pre></li>
+<pre><code>  local_conn_bot@client_server$ cat ~/.ssh/config&#x000A;&#x000A;          ## --- start of sample ssh config&#x000A;          Host host_server_01&#x000A;                  Hostname 192.168.2.1&#x000A;          Host 30.20.10.0&#x000A;                  Port 2888&#x000A;                  IdentityFile ~/.ssh/temp-local_conn_bot&#x000A;          Host *&#x000A;                  User local_conn_bot&#x000A;                  ForwardAgent yes&#x000A;                  Port 22&#x000A;                  IdentityFile ~/.ssh/2012-local_conn_bot&#x000A;                  UsePrivilegedPort no&#x000A;                  ServerAliveInterval 240&#x000A;                  ServerAliveCountMAx 9999&#x000A;          ## --- end of sample ssh config&#x000A;</code></pre></li>
 </ul>
   </div>
 </div>
