@@ -79,3 +79,40 @@ status: publish
                         ServerAliveCountMAx 9999
                 ## --- end of sample ssh config
 
+* 第五步 进阶 设置使用ssh local port forwarding & remote port forwarding
+        * 在本地使用的端口转发local port forwarding
+        user@local$ ssh dest_host_pub_ip -L local_port:dest_host:dest_port
+        #local_port is to be used @local
+        #dest_host usually is just localhost
+        #dest_port is the (@remote) port to be forwarded back to local_port
+        user@local$ telnet dest_host local_port
+
+            * local port forwarding use ~/.ssh/config @local
+          Host dest_host_pub_name
+          HostName dest_host_pub_ip
+          LocalForward local_port:dest_host:dest_port
+
+        user@local$ ssh dest_host_pub_name
+        user@local$ autossh -M monitor_port -N dest_host_pub_name
+
+
+        * 在远程使用的端口转发 remote port forwarding
+        user@local$ ssh dest_host_pub_ip -R remote_port:dest_host:dest_port
+        #remote_port is to be used @remote
+        #dest_host usually is just localhost
+        #dest_port is the (@local) port to be forwarded to remote_port
+        user@remote$ telnet dest_host remote_port
+
+            * remote port forwarding use ~/.ssh/config @local
+          Host dest_host_pub_name
+          HostName dest_host_pub_ip
+          LocalForward remote_port:dest_host:dest_port
+
+        user@local$ ssh dest_host_pub_name
+        user@local$ autossh -M monitor_port -N dest_host_pub_name
+
+
+        * 检查端口是否已经被转发check port
+                netstat -ltp
+                lsof -i -P
+
