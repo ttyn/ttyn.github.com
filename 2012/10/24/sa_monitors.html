@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>monitor systems</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content=', misc, doc' name='keywords' />
+    <meta content='draft documentation over monitor system for system admins' name='description' />
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div class='logo'>
+          <a href='/'>&laquo; me@fourohfour</a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li>
+              <li><a class='shadow' href='/about.html'>about</a></li>
+              <li><a class='shadow' href='/archives.html'>archives</a></li>
+              <li><a class='shadow' href='/tags.html'>tags</a></li>
+              <a class='shadow' href='/tags/doc/'>docs</a>
+            </li>
+            <li>
+              <a class='shadow' href='http://ttyn.github.me'>en</a>
+              <a class='shadow' href='/links.html'>links</a>
+              <a class='shadow' href='/license.html'>license</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='article'>
+        <h1>
+          monitor systems
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Oct 24, 2012</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/2012/10/24/sa_monitors.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/misc/'>
+                misc
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h2>The Server | 服務端</h2>
+          
+          <ul>
+          <li><p>Env | 環境</p>
+          
+          <ul>
+          <li>monitor by obfuscurity
+          
+          <ul>
+          <li>Good = rrdtool, collectd, graphite</li>
+          <li>Adequate = reconnoiter, munin, opentsdb, ganglia</li>
+          <li>Bad = zenoss, zabbix, groundworks</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li><p>graphite [plot]</p>
+          
+          <ul>
+          <li>http://graphite.wikidot.com</li>
+          <li>[doc] http://www.aosabook.org/en/graphite.html</li>
+          </ul>
+          </li>
+          <li>collectd [sensor]
+          
+          <ul>
+          <li>http://collectd.org</li>
+          </ul>
+          </li>
+          <li>coda hale`s metric lib @github [sensor]
+          
+          <ul>
+          <li>https://github.com/codahale/metrics</li>
+          </ul>
+          </li>
+          <li>etsy statsd @github [aggregator]
+          
+          <ul>
+          <li>https://github.com/etsy/statsd</li>
+          </ul>
+          </li>
+          <li>etsy logster @github [extract &amp; aggregate]
+          
+          <ul>
+          <li>https://github.com/etsy/logster</li>
+          </ul>
+          </li>
+          <li>logstash [log relay &amp; aggregate]
+          
+          <ul>
+          <li>http://logstash.net</li>
+          </ul>
+          </li>
+          <li>riemann monitor [external i/o sensor etc]
+          
+          <ul>
+          <li>http://aphyr.github.com/riemann/</li>
+          </ul>
+          </li>
+          <li>sensu [external i/o distributed]
+          
+          <ul>
+          <li>https://github.com/sensu</li>
+          </ul>
+          </li>
+          <li>heroku umpire @github [query]
+          
+          <ul>
+          <li>https://github.com/heroku/umpire</li>
+          </ul>
+          </li>
+          <li>comsat @github [notifier]
+          
+          <ul>
+          <li>https://github.com/asenchi/comsat</li>
+          </ul>
+          </li>
+          <li>kibana [dashboard for logstash]
+          
+          <ul>
+          <li>http://kibana.org</li>
+          <li>arch doc: http://kibana.org/infrastructure.html</li>
+          </ul>
+          </li>
+          <li>tasseo [dashboard for logstash/realtime]
+          
+          <ul>
+          <li>https://github.com/obfuscurity/tasseo</li>
+          <li>http://obfuscurity.com/2012/05/The-Story-Behind-Tasseo</li>
+          </ul>
+          </li>
+          <li><p>descartes [dashboard for logstash/convention]</p>
+          
+          <ul>
+          <li>https://github.com/obfuscurity/descartes</li>
+          </ul>
+          </li>
+          <li><p>via <a href="https://speakerdeck.com/u/obfuscurity/p/the-state-of-open-source-monitoring" title="obfuscurity keynote">original source - obfuscurity</a></p></li>
+          </ul>
+          
+          
+          <h3>The Ref | 參考文檔</h3>
+          
+          <h2>The End | 文檔終點</h2>
+          
+          <p>back to <a href="http://ttyn.me">home</a></p>
+        </div>
+      </div>
+      <div id='other-articles'>
+        <div class='older'>
+          <ul>
+          </ul>
+        </div>
+        <div class='newer'>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div class='comments'>
+        <div id='disqus_thread'></div>
+        <script src='http://disqus.com/forums/ttyn/embed.js' type='text/javascript'></script>
+        <noscript>
+          <a href='http://disqus.com/forums/ttyn/?url=ref'>
+            View the discussion thread
+          </a>
+        </noscript>
+      </div>
+      <!-- / disqus adds too much visual crap -->
+      <style type='text/css'>
+        .dsq-dc-logo {
+          display: none !important; }
+      </style>
+      <div class='clear'></div>
+    </div>
+    <script type='text/javascript'>
+  //<![CDATA[
+    (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+        if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+        }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+  //]]>
+</script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-7206667-1");
+          pageTracker._setDomainName(".ttyn.me");
+          pageTracker._setAllowHash(false);
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>

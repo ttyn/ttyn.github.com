@@ -20,6 +20,121 @@
     <summary type="html">this is ...</summary>
   </entry>
   <entry>
+    <id>tag:ttyn.me,2012-10-24:/2012/10/24/sa_monitors.html</id>
+    <title type="html">monitor systems</title>
+    <published>2012-10-23T16:00:00Z</published>
+    <updated>2012-10-24T06:50:01Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/10/24/sa_monitors.html"/>
+    <content type="html">&lt;h2&gt;The Server | 服務端&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Env | 環境&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;monitor by obfuscurity
+
+&lt;ul&gt;
+&lt;li&gt;Good = rrdtool, collectd, graphite&lt;/li&gt;
+&lt;li&gt;Adequate = reconnoiter, munin, opentsdb, ganglia&lt;/li&gt;
+&lt;li&gt;Bad = zenoss, zabbix, groundworks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;graphite [plot]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://graphite.wikidot.com&lt;/li&gt;
+&lt;li&gt;[doc] http://www.aosabook.org/en/graphite.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;collectd [sensor]
+
+&lt;ul&gt;
+&lt;li&gt;http://collectd.org&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;coda hale`s metric lib @github [sensor]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/codahale/metrics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;etsy statsd @github [aggregator]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/etsy/statsd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;etsy logster @github [extract &amp;amp; aggregate]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/etsy/logster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;logstash [log relay &amp;amp; aggregate]
+
+&lt;ul&gt;
+&lt;li&gt;http://logstash.net&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;riemann monitor [external i/o sensor etc]
+
+&lt;ul&gt;
+&lt;li&gt;http://aphyr.github.com/riemann/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sensu [external i/o distributed]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/sensu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;heroku umpire @github [query]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/heroku/umpire&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;comsat @github [notifier]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/asenchi/comsat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;kibana [dashboard for logstash]
+
+&lt;ul&gt;
+&lt;li&gt;http://kibana.org&lt;/li&gt;
+&lt;li&gt;arch doc: http://kibana.org/infrastructure.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tasseo [dashboard for logstash/realtime]
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/obfuscurity/tasseo&lt;/li&gt;
+&lt;li&gt;http://obfuscurity.com/2012/05/The-Story-Behind-Tasseo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;descartes [dashboard for logstash/convention]&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/obfuscurity/descartes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;via &lt;a href="https://speakerdeck.com/u/obfuscurity/p/the-state-of-open-source-monitoring" title="obfuscurity keynote"&gt;original source - obfuscurity&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;The Ref | 參考文檔&lt;/h3&gt;
+
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">draft documentation over monitor system for system admins</summary>
+  </entry>
+  <entry>
     <id>tag:ttyn.me,2012-08-03:/2012/08/02/quantified_self.html</id>
     <title type="html">quantify me</title>
     <published>2012-08-02T17:14:48Z</published>
@@ -431,249 +546,5 @@ mysql
 &lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
 </content>
     <summary type="html">draft about building a website using nanoc and other pub tools then maint it.</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.me,2012-07-09:/doc/perm/lots_of_tips.html</id>
-    <title type="html">lots of tips</title>
-    <published>2012-07-08T16:00:00Z</published>
-    <updated>2012-08-20T03:57:45Z</updated>
-    <link rel="alternate" href="http://ttyn.me/doc/perm/lots_of_tips.html"/>
-    <content type="html">&lt;h3&gt;&lt;strong&gt;cmd | 命令行&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;repeat last command argument
-
-&lt;pre&gt;&lt;code&gt;  !$ last argument
-  !* all argument
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;notify cmd line this is the end of options
-
-&lt;pre&gt;&lt;code&gt;  --
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;readline
-
-&lt;pre&gt;&lt;code&gt;  Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k
-  Ctrl-w  delete a word backwards
-  Ctrl-x Ctrl-e actually editing the command line
-  Esc-f/Esc-b
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;get public ip
-
-&lt;pre&gt;&lt;code&gt;  curl http://ip4.me 2&amp;gt;/dev/null | sed -e 's#&amp;lt;[^&amp;gt;]*&amp;gt;##g' | grep '^[0-9]'
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;http request and response using curl
-
-&lt;pre&gt;&lt;code&gt;  curl -iv ${url}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;lock tty
-
-&lt;pre&gt;&lt;code&gt;  clear &amp;amp;&amp;amp; vlock -c 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;real path
-
-&lt;pre&gt;&lt;code&gt;  pwd -P
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;grep and highlight finds in full file
-
-&lt;pre&gt;&lt;code&gt;  grep --color -E "test|$" yourfile
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;awk check characters at certain position
-
-&lt;pre&gt;&lt;code&gt;  awk -F '' '$25 == "a"' input &amp;gt;output
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;iptables
-
-&lt;pre&gt;&lt;code&gt;  sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT
-  sudo iptables-save
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;mysqld
-
-&lt;pre&gt;&lt;code&gt;  repair all the databases
-  mysqlcheck -Aor
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;text process | 文本處理&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;print a line in file
-
-&lt;pre&gt;&lt;code&gt;  $ sed -n 4p $file_name 
-  -n switch turns off default output
-  $ sed -n 3,60p $file_name
-  $ sed -n -e 3,60p -e 1p $file_name
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;vim | basic vim&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;directory and files
-
-&lt;pre&gt;&lt;code&gt;  - open directory listing in vim
-  :e.
-  - open file in this directory listing
-  o
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;fix sudo
-
-&lt;pre&gt;&lt;code&gt;  :w !sudo tee %
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;read outline from cmd
-
-&lt;pre&gt;&lt;code&gt;  :r!date
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;read content from another file
-
-&lt;pre&gt;&lt;code&gt;  :read other_file
-  :r other_file
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;edit and read the template
-
-&lt;pre&gt;&lt;code&gt;  :e newfile.cpp | r template.cpp
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;app | 應用&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;chrome
-
-&lt;pre&gt;&lt;code&gt;  - keybinding to next tab in chrome: Ctrl-Tab
-  - keybinding to next window in chrome: Cmd-`
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;curl&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - debug it: curl -vv https://s3.amazonaws.com/
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;tmux&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - [un]synchronize: setw synchronize-panes
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;tty&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;mac osx&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - screenshot screen capture ⌘ ⇧ 3
-  - networksetup 
-          -listallnetworkservices # 列表所有的interface/setup
-          -setautoproxyurl "Ethernet" http://ttyn.github.com/files/proxy.pac 
-          # 使用pacfile # need to disable "send all traffic over VPN connection" in VPN setup
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;combine two images (merge)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  $&amp;gt; convert +append a.png b.png c.png
-  $&amp;gt; montage -geometry 100% left.jpg right.jpg merged.jpg
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;git | just git&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;git checkout and track remote branch | git 檢出遠程的分支並track
-
-&lt;pre&gt;&lt;code&gt;  % git checkout -t origin/remote_feature
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;git remove deleted files | git rm 刪除物理刪除的文件
-
-&lt;pre&gt;&lt;code&gt;  % git status |grep deleted |awk '{print $3}' | xargs git rm
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;git setup upstream default (to origin/master) | git 設置缺省上行分支到 origin/master
-
-&lt;pre&gt;&lt;code&gt;  % git config branch.master.remote origin
-  % git config branch.master.merge refs/heads/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
-
-&lt;pre&gt;&lt;code&gt;  % git config --global push.default tracking
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;git find mod between local and remote | git 檢查本地和遠程mod
-
-&lt;pre&gt;&lt;code&gt;  % git fetch
-  % git log ..@{u} --stat
-  % git log @{u}..
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;tools | 工具箱&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;centos/yum&lt;/li&gt;
-&lt;li&gt;brew&lt;/li&gt;
-&lt;li&gt;python
-
-&lt;pre&gt;&lt;code&gt;  fabric
-  ipython
-  gunicorn
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;pip&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  curl -O http://python-distribute.org/distribute_setup.py
-  python distribute_setup.py
-  easy_install pip
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;virtualization&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  chef/puppet/vagrant/cucumber/aws/ec2/boto
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;rvm/bundle&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;ideas | 思路&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;http stack
-
-&lt;pre&gt;&lt;code&gt;  http request &amp;gt; web server &amp;gt; router &amp;gt; data handling &amp;gt; response
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;python webapp stack
-
-&lt;pre&gt;&lt;code&gt;  django + flask + nginx +uWSGI
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;spartan life hacks&lt;/strong&gt; (which i dont want to forget)&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;mental
-
-&lt;pre&gt;&lt;code&gt;  mental dicipline
-  modest and sincere
-  dont judge 不下結論
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;physical
-
-&lt;pre&gt;&lt;code&gt;  balance/cadence/flex
-  @sleeping crunch/lay-biking/ab round/ab breathe
-  @standing backkick/ab breathe 腹式呼吸
-  @running correct overstriding
-  @eating water/vegie
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;&lt;strong&gt;links | 總是有用的連接&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox"&gt;unix toolbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.colourlovers.com/" title="Title: colorlover"&gt;ex:coloer picking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.12factor.net/" title="Title: 12 factor"&gt;12 factor for devop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.python.org/dev/peps/" title="Title: python PEPs"&gt;pep&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.faqs.org/rfcs/" title="Title: RFC"&gt;rfc&lt;/a&gt; or &lt;a href="http://tools.ietf.org/html/" title="Title: RFC2"&gt;ietf version of rfc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements"&gt;my own devop requirements.txt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;go &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt; lets go back back to &lt;a href="http://ttyn.me" title="Title: HOME"&gt;home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</content>
-    <summary type="html">my own documentation of lots of tips</summary>
   </entry>
 </feed>
