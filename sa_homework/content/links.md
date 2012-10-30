@@ -32,9 +32,10 @@ _:
     * [git doc](http://git-scm.com/documentation)
     * [markdown doc](http://ttyn.me/perm/markdown_syntax.html)
     * [safaribooks online](http://safaribooksonline.com/)
-    * [aws documentation]()
+    * [aws documentation](http://docs.amazonwebservices.com/AWSEC2/latest/CommandLineReference/command-reference.html)
     * [pep][link_pep]
     * [rfc][link_rfc] or [ietf version of rfc][link_rfc2]
+    
 
 
 ---
