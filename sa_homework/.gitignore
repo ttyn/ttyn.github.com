@@ -2,7 +2,7 @@
 tmp
 .bundle
 .crash.log
-file_changes.yaml
+./file_changes.yaml
 
 .sass-cache
 vendor/ruby
