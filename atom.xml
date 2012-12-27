@@ -2,13 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://ttyn.me/</id>
   <title>ttyn Syndication</title>
-  <updated>2012-12-25T16:00:00Z</updated>
+  <updated>2012-12-26T16:00:00Z</updated>
   <link rel="alternate" href="http://ttyn.me/"/>
   <link rel="self" href="http://ttyn.me/atom.xml"/>
   <author>
     <name>andy</name>
     <uri>http://ttyn.me</uri>
   </author>
+  <entry>
+    <id>tag:ttyn.me,2012-12-27:/2012/12/27/2013_resolution.html</id>
+    <title type="html">2013 new year resolution</title>
+    <published>2012-12-26T16:00:00Z</published>
+    <updated>2012-12-27T06:22:20Z</updated>
+    <link rel="alternate" href="http://ttyn.me/2012/12/27/2013_resolution.html"/>
+    <content type="html">&lt;h1&gt;2013 new year resolution complete版&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run @2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☀ 50x26.1 mile&lt;/li&gt;
+&lt;li&gt;☀ 319@2013 cim&lt;/li&gt;
+&lt;li&gt;☀ 100km by myself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;live @2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;☀ getting up early 早起  (still have no 頭緒 for how early? how how how)&lt;/li&gt;
+&lt;li&gt;☀ nothing-new-year@2013.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;nono&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no amazoncn&lt;/li&gt;
+&lt;li&gt;no taobao&lt;/li&gt;
+&lt;li&gt;no amazon&lt;/li&gt;
+&lt;li&gt;no google play&lt;/li&gt;
+&lt;li&gt;no new book/ebook&lt;/li&gt;
+&lt;li&gt;no snack&lt;/li&gt;
+&lt;li&gt;no big/small appliance.&lt;/li&gt;
+&lt;li&gt;no lego and/or other toys&lt;/li&gt;
+&lt;li&gt;no runningwares&lt;/li&gt;
+&lt;li&gt;no no no animal products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;reduce&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;instance coffee&lt;/li&gt;
+&lt;li&gt;nuts and dark chocolate&lt;/li&gt;
+&lt;li&gt;daily transportation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;life essential&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pair of flght tickets to california (&amp;amp; cim 2013)&lt;/li&gt;
+&lt;li&gt;starbucks coffee&lt;/li&gt;
+&lt;li&gt;daily vegies/fruits&lt;/li&gt;
+&lt;li&gt;bread n beer&lt;/li&gt;
+&lt;li&gt;zigaretten&lt;/li&gt;
+&lt;li&gt;gift to family&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;i already have&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nexus 7&lt;/li&gt;
+&lt;li&gt;piles of lego, painting tools, running shoes.&lt;/li&gt;
+&lt;li&gt;thousands of books/ebooks&lt;/li&gt;
+&lt;li&gt;rented room to stay.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;The End | 文檔終點&lt;/h2&gt;
+
+&lt;p&gt;back to &lt;a href="http://ttyn.me"&gt;home&lt;/a&gt;&lt;/p&gt;
+</content>
+    <summary type="html">andy 2013 new year resolution</summary>
+  </entry>
   <entry>
     <id>tag:ttyn.me,2012-12-26:/2012/12/26/hello_world.html</id>
     <title type="html">Hello World</title>
@@ -406,145 +482,5 @@ mysql
 &lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
 </content>
     <summary type="html">my dev env checklist</summary>
-  </entry>
-  <entry>
-    <id>tag:ttyn.me,2012-07-19:/2012/07/19/nanoc_github_website_intro.html</id>
-    <title type="html">使用nanoc和github架設網站checklist</title>
-    <published>2012-07-18T16:00:00Z</published>
-    <updated>2012-07-19T11:02:03Z</updated>
-    <link rel="alternate" href="http://ttyn.me/2012/07/19/nanoc_github_website_intro.html"/>
-    <content type="html">&lt;h2&gt;summary | 簡述&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;文檔提供一個使用第三方服務建立簡單網站的checklist
-其中OPT標記的部分都可以省略。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2&gt;service | 服務&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;☐ domain via registrar | 域名註冊 [$][OPT]&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.namecheap.com"&gt;namecheap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.networksolutions.com"&gt;networksolutions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;或者通過 &lt;a href="https://www.google.com/a/cpanel/standard/new?hl=en"&gt;Google App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;或者使用github.com page功能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;☐ server | 服務器 [opt][$]&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.linode.com/"&gt;linode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://aws.amazon.com/ec2/"&gt;aws ec2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;☐ Google Service | Google 服務&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ &lt;a href="https://mail.google.com"&gt;Gmail&lt;/a&gt; [free]&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href="http://www.google.com/analytics/"&gt;Google Analytics&lt;/a&gt; [free]&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href="http://www.google.com/webmasters/"&gt;Google Webmasters&lt;/a&gt; [free]&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href="https://www.google.com/a/cpanel/standard/new?hl=en"&gt;Google App&lt;/a&gt; [free google app]&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href="http://www.google.com/enterprise/apps/business/pricing.html"&gt;Google App Paid&lt;/a&gt; [$]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;☐ github | github 放置代碼/網站&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ &lt;a href="https://github.com"&gt;github&lt;/a&gt; [free]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;☐ DNS | 域名配置 [free]&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ A紀錄 domain_name.com www.domain_name.com&lt;/li&gt;
-&lt;li&gt;☐ MX紀錄 使用&lt;a href="http://support.google.com/a/bin/answer.py?hl=en&amp;amp;answer=140034"&gt;Google App收郵件的配置&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;☐ TXT紀錄 使用Google 服務的部分verification (case by case)&lt;/li&gt;
-&lt;li&gt;☐ &lt;a href="http://sitelutions.com/"&gt;sitelutions&lt;/a&gt; (比較靈活的第三方域名解析) [free][OPT]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;☐ disqus | disqus 評論管理&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ &lt;a href="http://disqus.com/"&gt;disqus&lt;/a&gt; [free]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;Init | 初始化操作&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;這個步驟只操作一次
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ fork &lt;a href="https://github.com/mgutz/nanoc3_blog"&gt;nanoc3_blog 代碼&lt;/a&gt; 到本地的github帳號&lt;/li&gt;
-&lt;li&gt;☐ clone 到本地機器以備編輯和調試&lt;/li&gt;
-&lt;li&gt;☐ 配置nanoc3_blog 代碼加入網站信息
-
-&lt;ul&gt;
-&lt;li&gt;☐ website name 網站名稱&lt;/li&gt;
-&lt;li&gt;☐ disqus 帳號&lt;/li&gt;
-&lt;li&gt;☐ google analytics 帳號&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;☐ 在服務器上的 [OPT]
-
-&lt;ul&gt;
-&lt;li&gt;☐ 服務器基礎配置&lt;/li&gt;
-&lt;li&gt;☐ nginx 配置&lt;/li&gt;
-&lt;li&gt;☐ ruby/rvm 配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;Maintain | 運營操作&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;以後可以長期操作的步驟
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ 在本地進行內容更新和調試 [OPT]&lt;/li&gt;
-&lt;li&gt;☐ 透過Google Analytics/Webmaster進行訪問數據查看&lt;/li&gt;
-&lt;li&gt;☐ 透過Github發佈內容更新&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;Debug | 問題處理和其它&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;需要根據本地配置時常檢查的問題/部分問題自行補充
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;☐ domain name過期續費 YY-MM-DD ______&lt;/li&gt;
-&lt;li&gt;☐ 設置gmail郵件備份&lt;/li&gt;
-&lt;li&gt;☐ 其它付費服務的續費
-
-&lt;ul&gt;
-&lt;li&gt;☐ ______&lt;/li&gt;
-&lt;li&gt;☐ ______&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;☐ 其它延期服務的延期和有限制的服務的上限檢查
-
-&lt;ul&gt;
-&lt;li&gt;☐ ______&lt;/li&gt;
-&lt;li&gt;☐ ______&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;☐ 如果包括dev流程和/或自行運營 [OPT]
-
-&lt;ul&gt;
-&lt;li&gt;☐ 研發基本流程 [需求/開發/測試/發佈]&lt;/li&gt;
-&lt;li&gt;☐ 運營基本點 [配置管理/健康和安全監控/容量評估/CAPEX預算]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;The Ref | 參考文檔&lt;/h2&gt;
-</content>
-    <summary type="html">draft about building a website using nanoc and other pub tools then maint it.</summary>
   </entry>
 </feed>
