@@ -1,7 +1,7 @@
 *_output
 tmp
 .bundle
-.crash.log
+./crash.log
 ./file_changes.yaml
 
 .sass-cache
