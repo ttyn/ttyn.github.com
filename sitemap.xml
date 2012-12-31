@@ -27,67 +27,11 @@
       <p>&lt;?xml version=&#8220;1.0&#8221; encoding=&#8220;<span class="caps">UTF</span>-8&#8221;?&gt;<br />
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
-    <loc>http://me.local/</loc><br />
+    <loc>http://me.local/404/</loc><br />
     <lastmod>2012-12-28</lastmod></p>
 </url>
 <url>
-    <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/proxy.pac</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files.html</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/tools_init_test.sh</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/test_sudo_init.sh</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/tools_init_centos6.sh</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/tools_init.sh</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/files/tools_correct_timezone.sh</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/ref/unixtoolbox.html</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/txt/sofar.html</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/blog/</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/404/</loc>
-    <lastmod>2012-12-28</lastmod>
-</url>
-<url>
-    <loc>http://me.local/assets/stylesheet.css</loc>
+    <loc>http://me.local/assets/coderay.css</loc>
     <lastmod>2012-12-28</lastmod>
 </url>
 <url>
@@ -95,7 +39,15 @@
     <lastmod>2012-12-28</lastmod>
 </url>
 <url>
-    <loc>http://me.local/assets/coderay.css</loc>
+    <loc>http://me.local/assets/stylesheet.css</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/blog/</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/doc/help/</loc>
     <lastmod>2012-12-28</lastmod>
 </url>
 <url>
@@ -107,7 +59,55 @@
     <lastmod>2012-12-28</lastmod>
 </url>
 <url>
-    <loc>http://me.local/doc/help/</loc>
+    <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files.html</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/proxy.pac</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/test_sudo_init.sh</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/tools_correct_timezone.sh</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/tools_init.sh</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/tools_init_centos6.sh</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/files/tools_init_test.sh</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/</loc>
+    <lastmod>2012-12-31</lastmod>
+</url>
+<url>
+    <loc>http://me.local/ref/unixtoolbox.html</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/sitemap.xml</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
+    <lastmod>2012-12-28</lastmod>
+</url>
+<url>
+    <loc>http://me.local/txt/sofar.html</loc>
     <lastmod>2012-12-28</lastmod>
 </url>
 </urlset>
@@ -134,7 +134,7 @@
         <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Fri Dec 28, 2012 @01:31:37 EST</div>
+    <div id="div_update">Fri Dec 28, 2012 @16:00:05 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
