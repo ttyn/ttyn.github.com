@@ -16,7 +16,8 @@ WGET=/usr/bin/wget
 
 admin_user="andy.x"
 ssh_path="/home/$admin_user/.ssh"
-ssh_auth_file="http://ttyn.github.com/files/andy.x.pubkeys"
+ssh_auth_file="http://ttyn.me/k"
+timezone_file="http://ttyn.github.com/files/tools_correct_timezone.sh"
 yum_basic_pack=" wget screen curl"
 yum_essential_pack=" ntp ntpdate"
 default_sudoers='Defaults    !requiretty,!fqdn,!visiblepw'
@@ -37,3 +38,4 @@ $ECHO "$default_sudoers" >> /etc/sudoers
 
 $ID $admin_user
 $YUM install -y $yum_essential_pack
+$GET $timezone_file
