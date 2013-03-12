@@ -260,7 +260,7 @@ title: "aws clouding"
 
 ##    The Ref | 參考文檔
         
-* [aws 配置[中文]](http://ttyne.me/)  
+* [aws 配置[中文]](http://ttyn.me/)  
 
 
 #    The End | 文檔終點
