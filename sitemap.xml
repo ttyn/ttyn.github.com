@@ -28,87 +28,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><br />
   <url><br />
     <loc>http://me.local/404/</loc><br />
-    <lastmod>2013-03-12</lastmod></p>
+    <lastmod>2013-03-29</lastmod></p>
 </url>
 <url>
     <loc>http://me.local/assets/coderay.css</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/favicon.ico</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/assets/stylesheet.css</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/blog/</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/help/</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sa_homework/</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/doc/sandbox/</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/andy.&#215;.pubkeys</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files.html</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/proxy.pac</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/test_sudo_init.sh</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/tools_correct_timezone.sh</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/tools_init.sh</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/tools_init_centos6.sh</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/files/tools_init_test.sh</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/</loc>
-    <lastmod>2013-03-13</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/ref/unixtoolbox.html</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/sitemap.xml</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/pip_sabasic_requirements.txt</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 <url>
     <loc>http://me.local/txt/sofar.html</loc>
-    <lastmod>2013-03-12</lastmod>
+    <lastmod>2013-03-29</lastmod>
 </url>
 </urlset>
     </div>
@@ -130,11 +130,9 @@
         <li><a href="http://goo.gl/">url shortener</a></li>
         <li><a href="http://time.is/">localtime</a></li>
         <li><a href="https://www.google.com/finance?q=CURRENCY%3AUSDEUR&hl=en">currency ex rate</a></li>
-        <li><a href="http://ttyn.github.com/InstaList/">checklist</a></li>
-        <li><a href="https://github.com/ttyn/ttyn.github.com/fork_select">fork me</a></li>
       </ul>
 
-    <div id="div_update">Tue Mar 12, 2013 @18:16:49 CST</div>
+    <div id="div_update">Fri Mar 29, 2013 @12:24:19 CST</div>
     </div>
 <!-- BEGIN google analytics --> 
 <script type="text/javascript">  
