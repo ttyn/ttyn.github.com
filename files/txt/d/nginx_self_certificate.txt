@@ -15,7 +15,7 @@ openssl req -new -key ${key_prefix}.key -out ${key_prefix}.csr
 openssl x509 -req -days 365 -in ${key_prefix}.csr -signkey ${key_prefix}.key -out ${key_prefix}.crt
 
 
-common_name: *.litb-inc.com
+common_name: *.abcd-inc.com
 
 # --- nginx conf
 # --- include conf.d/ssl.conf
