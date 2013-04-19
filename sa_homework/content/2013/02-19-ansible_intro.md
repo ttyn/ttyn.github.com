@@ -3,7 +3,7 @@ created_at: 2013-02-19
 excerpt: a basic introduction of ansible in Chinese
 kind: article
 publish: true
-tags: [dev,tools]
+tags: [dev, tools]
 title: "开始使用配置和发布管理 with ansible"
 ---
 
