@@ -17,7 +17,7 @@ WGET=/usr/bin/wget
 admin_user="andy.x"
 ssh_path="/home/$admin_user/.ssh"
 ssh_auth_file="http://ttyn.github.com/files/andy.x.pubkeys"
-yum_basic_pack=" wget screen curl"
+yum_basic_pack=" wget screen curl oepnssh-client openssh-server openssh"
 yum_essential_pack=" ntp ntpdate"
 default_sudoers='Defaults    !requiretty,!fqdn,!visiblepw'
 $YUM install -y $yum_basic_pack
