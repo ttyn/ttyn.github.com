@@ -1,0 +1,19 @@
+.vertical_text {
+        -webkit-direction       : ltr;
+        -webkit-writing-mode    : vertical-rl;
+        writing-mode            : tb-rl;
+        height                  : 500px;
+        font-size               : 17px;
+}
+.vertical_text p {
+        margin-right            : 25px;
+}
+.horizontal_text {
+        -webkit-writing-mode    : horizontal-tb;
+}
+#vertical_mode {
+        line-height             : 190%;
+        width                   : auto;
+        margin                  : auto;
+        margin-top              : 25px;
+}
