@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ttyn.me/2008/09/03/eco.html</loc>
+    <lastmod>2013-05-09</lastmod>
+  </url>
+  <url>
+    <loc>http://ttyn.me/2009/09/09/no_story_any_more.html</loc>
+    <lastmod>2013-05-09</lastmod>
+  </url>
+  <url>
+    <loc>http://ttyn.me/2009/09/30/expensive_movies.html</loc>
+    <lastmod>2013-05-09</lastmod>
+  </url>
+  <url>
     <loc>http://ttyn.me/2010/07/30/story_dream_of_hill.html</loc>
     <lastmod>2013-04-19</lastmod>
   </url>
@@ -87,6 +99,10 @@
   <url>
     <loc>http://ttyn.me/about.html</loc>
     <lastmod>2013-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://ttyn.me/doc/perm/determination.html</loc>
+    <lastmod>2013-05-09</lastmod>
   </url>
   <url>
     <loc>http://ttyn.me/doc/perm/install_tmux_on_centos6.html</loc>
