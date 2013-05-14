@@ -14,9 +14,9 @@ ECHO=/bin/echo
 WGET=/usr/bin/wget
 
 
-admin_user="andy.x"
+admin_user="$1"
 ssh_path="/home/$admin_user/.ssh"
-ssh_auth_file="http://ttyn.github.com/files/andy.x.pubkeys"
+ssh_auth_file="http://ttyn.github.com/files/${admin_user}.pubkeys"
 timezone_file="http://ttyn.github.com/files/tools_correct_timezone.sh"
 yum_basic_pack=" wget screen curl"
 yum_essential_pack=" ntp ntpdate"
