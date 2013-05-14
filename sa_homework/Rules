@@ -15,7 +15,7 @@ compile '/txt/*' do
 end
 
 compile '/assets/css/*/' do
-  filter :sass
+  #filter :sass
 end
 
 compile '*' do
