@@ -3,5 +3,6 @@ Allow: /
 
 Disallow: /assets/
 Disallow: /files/
+Disallow: /txt/
 
 Sitemap: http://ttyn.me/sitemap.xml
