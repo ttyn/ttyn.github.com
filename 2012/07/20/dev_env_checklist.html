@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>開發環境必備checklist</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', doc, checklist' name='keywords' />
-    <meta content='my dev env checklist' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', doc, checklist' name='keywords'>
+    <meta content='my dev env checklist' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -36,177 +36,182 @@
       </div>
       <div class='clear'></div>
       <div class='article'>
-  <h1>
-    開發環境必備checklist
-  </h1>
-  <div class='meta'>
-    <ul class='tags'>
-      <li>Jul 20, 2012</li>
-      <li>
-        &middot;
-      </li>
-      <li>
-        <a href='/2012/07/20/dev_env_checklist.html#disqus_thread'></a>
-      </li>
-      <li>&middot;</li>
-      <li>
-        <a class='tag' href='/tags/checklist/'>
-          checklist
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/doc/'>
-          doc
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='body'>
-    <h2>summary | 簡述</h2>
-
-<pre><code>文檔提供基於linux/macosx環境下開發的個人必備配置&#x000A;</code></pre>
-
-<h2>TODO</h2>
-
-<pre><code>1. finish up the documentation&#x000A;2. get together the files linked and fix the links&#x000A;3. roll them together use chef or puppet or just shell.&#x000A;</code></pre>
-
-<h2>service | 服務</h2>
-
-<ul>
-<li>☐ dotfiles | 環境
-
-<ul>
-<li>☐ <a href="">${HOME}/.gitignore</a> [pub]</li>
-<li>☐ <a href="">${HOME}/.vimrc</a> [pub]</li>
-<li>☐ <a href="">${HOME}/.ssh/auth_keys</a> [pub]</li>
-<li>☐ <a href="">${HOME}/.wgetrc</a> [pub]</li>
-<li>☐ <a href="">${HOME}/.ssh/config</a> [pri]</li>
-<li>☐ <a href="">${HOME}/.ssh/</a> [pri]</li>
-<li>☐ <a href="">${HOME}/.bash_profile</a> [pri]</li>
-<li>☐ <a href="">${HOME}/.ec2</a> [pri]</li>
-</ul>
-</li>
-<li>☐ servers | 服務器
-
-<ul>
-<li>☐ <a href="http://www.linode.com/">linode</a></li>
-<li>☐ <a href="http://aws.amazon.com/ec2/">aws ec2</a></li>
-</ul>
-</li>
-<li>☐ auth | 權限
-
-<ul>
-<li>☐ <a href="${HOME}/etc/hosts">hosts</a> [var]</li>
-<li>☐ <a href="${HOME}/etc/ssh/sshd_config">sshd</a> [pri]</li>
-<li>☐ <a href="${HOME}/etc/sudoers">visudo</a> [pri]</li>
-</ul>
-</li>
-</ul>
-
-
-<h2>dev | 開發環境</h2>
-
-<ul>
-<li>☐ pip/distribute
-
-<ul>
-<li>☐ <a href="">pip_requirements.txt</a>
-
-<ul>
-<li>ipython, simplejson, boto, fabric</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>☐ rvm/bundle
-
-<ul>
-<li>☐ <a href="">Gemfile</a>
-
-<ul>
-<li>nanoc3</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>☐ service | 服務
-
-<ul>
-<li>☐ <a href="${HOME}/nginx/">nginx</a> [pub]</li>
-<li>☐ <a href="${HOME}/etc/spawn-fcgi">cgi</a> [pub]</li>
-<li>☐ <a href="${HOME}/my.cnf">mysql</a> [pub]</li>
-<li>☐ <a href="${HOME}/.my.cnf">mysql client</a> [pri]</li>
-</ul>
-</li>
-</ul>
-
-
-<h2>app | 應用</h2>
-
-<ul>
-<li>☐ iterm2</li>
-<li>☐ tmux
-
-<ul>
-<li>☐ gem install teamocil</li>
-<li>☐ <a href="">${HOME}/.teamocil</a></li>
-</ul>
-</li>
-<li><p>☐ brew</p>
-
-<ul>
-<li>☐ <a href="">install_brew.sh</a></li>
-<li>☐ <a href="">brew_pack.txt</a>
-
-<pre><code>ec2-api-tools ec2-ami-tools dict netcat nethack&#x000A;sysstat dstat ntop iotop screen nginx &#x000A;git curl rsync openssl python26 w3m elinks wget&#x000A;tree mutt dict spawn-fcgi autossh&#x000A;mysql&#x000A;</code></pre></li>
-</ul>
-</li>
-<li><p>☐ yum</p>
-
-<ul>
-<li>☐ install_yum_repo</li>
-<li>☐ <a href="">pip_requirements.txt</a>
-
-<pre><code>sysstat dstat ntop iotop screen nginx &#x000A;git-all rsync openssl python26 w3m elinks wget&#x000A;tree mutt dict spawn-fcgi autossh&#x000A;mysql&#x000A;</code></pre></li>
-<li>☐ yum cleanup</li>
-</ul>
-</li>
-</ul>
-
-
-<h2>operation | 运营</h2>
-
-<ul>
-<li><p>☐ backup | 备份</p>
-
-<ul>
-<li><p>☐ public data | 公共数据</p>
-
-<ul>
-<li>☐ public repos: github</li>
-<li>☐ databases</li>
-<li>☐ dot files</li>
-</ul>
-</li>
-<li><p>☐ private data | 个人数据</p>
-
-<ul>
-<li>☐ ssh keys</li>
-<li>☐ mac os keychains</li>
-<li>☐ personal repos: bitbucket</li>
-<li>☐ databases</li>
-<li>☐ dot files</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>☐</p></li>
-</ul>
-
-
-<h2>The Ref | 參考文檔</h2>
-  </div>
-</div>
+        <h1>
+          開發環境必備checklist
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Jul 20, 2012</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/2012/07/20/dev_env_checklist.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/checklist/'>
+                checklist
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h2>summary | 簡述</h2>
+          
+          <pre><code>文檔提供基於linux/macosx環境下開發的個人必備配置&#x000A;</code></pre>
+          
+          <h2>TODO</h2>
+          
+          <pre><code>1. finish up the documentation&#x000A;2. get together the files linked and fix the links&#x000A;3. roll them together use chef or puppet or just shell.&#x000A;</code></pre>
+          
+          <h2>service | 服務</h2>
+          
+          <ul>
+          <li>☐ dotfiles | 環境
+          
+          <ul>
+          <li>☐ <a href="">${HOME}/.gitignore</a> [pub]</li>
+          <li>☐ <a href="">${HOME}/.vimrc</a> [pub]</li>
+          <li>☐ <a href="">${HOME}/.ssh/auth_keys</a> [pub]</li>
+          <li>☐ <a href="">${HOME}/.wgetrc</a> [pub]</li>
+          <li>☐ <a href="">${HOME}/.ssh/config</a> [pri]</li>
+          <li>☐ <a href="">${HOME}/.ssh/</a> [pri]</li>
+          <li>☐ <a href="">${HOME}/.bash_profile</a> [pri]</li>
+          <li>☐ <a href="">${HOME}/.ec2</a> [pri]</li>
+          </ul>
+          </li>
+          <li>☐ servers | 服務器
+          
+          <ul>
+          <li>☐ <a href="http://www.linode.com/">linode</a></li>
+          <li>☐ <a href="http://aws.amazon.com/ec2/">aws ec2</a></li>
+          </ul>
+          </li>
+          <li>☐ auth | 權限
+          
+          <ul>
+          <li>☐ <a href="${HOME}/etc/hosts">hosts</a> [var]</li>
+          <li>☐ <a href="${HOME}/etc/ssh/sshd_config">sshd</a> [pri]</li>
+          <li>☐ <a href="${HOME}/etc/sudoers">visudo</a> [pri]</li>
+          </ul>
+          </li>
+          </ul>
+          
+          
+          <h2>dev | 開發環境</h2>
+          
+          <ul>
+          <li>☐ pip/distribute
+          
+          <ul>
+          <li>☐ <a href="">pip_requirements.txt</a>
+          
+          <ul>
+          <li>ipython, simplejson, boto, fabric</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li>☐ rvm/bundle
+          
+          <ul>
+          <li>☐ <a href="">Gemfile</a>
+          
+          <ul>
+          <li>nanoc3</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li>☐ service | 服務
+          
+          <ul>
+          <li>☐ <a href="${HOME}/nginx/">nginx</a> [pub]</li>
+          <li>☐ <a href="${HOME}/etc/spawn-fcgi">cgi</a> [pub]</li>
+          <li>☐ <a href="${HOME}/my.cnf">mysql</a> [pub]</li>
+          <li>☐ <a href="${HOME}/.my.cnf">mysql client</a> [pri]</li>
+          </ul>
+          </li>
+          </ul>
+          
+          
+          <h2>app | 應用</h2>
+          
+          <ul>
+          <li>☐ iterm2</li>
+          <li>☐ tmux
+          
+          <ul>
+          <li>☐ gem install teamocil</li>
+          <li>☐ <a href="">${HOME}/.teamocil</a></li>
+          </ul>
+          </li>
+          <li><p>☐ brew</p>
+          
+          <ul>
+          <li>☐ <a href="">install_brew.sh</a></li>
+          <li>☐ <a href="">brew_pack.txt</a>
+              ec2-api-tools ec2-ami-tools dict netcat nethack
+              sysstat dstat ntop iotop screen nginx
+              git curl rsync openssl python26 w3m elinks wget
+              tree mutt dict spawn-fcgi autossh
+              mysql</li>
+          </ul>
+          </li>
+          <li><p>☐ yum</p>
+          
+          <ul>
+          <li>☐ install_yum_repo</li>
+          <li>☐ <a href="">pip_requirements.txt</a>
+              sysstat dstat ntop iotop screen nginx
+              git-all rsync openssl python26 w3m elinks wget
+              tree mutt dict spawn-fcgi autossh
+              mysql</li>
+          <li>☐ yum cleanup</li>
+          </ul>
+          </li>
+          </ul>
+          
+          
+          <h2>operation | 运营</h2>
+          
+          <ul>
+          <li><p>☐ backup | 备份</p>
+          
+          <ul>
+          <li><p>☐ public data | 公共数据</p>
+          
+          <ul>
+          <li>☐ public repos: github</li>
+          <li>☐ databases</li>
+          <li>☐ dot files</li>
+          </ul>
+          </li>
+          <li><p>☐ private data | 个人数据</p>
+          
+          <ul>
+          <li>☐ ssh keys</li>
+          <li>☐ mac os keychains</li>
+          <li>☐ personal repos: bitbucket</li>
+          <li>☐ databases</li>
+          <li>☐ dot files</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li><p>☐</p></li>
+          </ul>
+          
+          
+          <h2>The Ref | 參考文檔</h2>
+        </div>
+      </div>
       <div id='other-articles'>
         <div class='older'>
           <ul>
@@ -229,40 +234,36 @@
       </div>
       <!-- / disqus adds too much visual crap -->
       <style type='text/css'>
-        .dsq-dc-logo {
-          display: none !important; }
+        <style>
+          .dsq-dc-logo {
+            display: none !important; }
+        </style>
       </style>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>

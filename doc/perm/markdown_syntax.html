@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>markdown syntax</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', doc, md, perm' name='keywords' />
-    <meta content='my own documentation for standard markdown syntax' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', doc, md, perm' name='keywords'>
+    <meta content='my own documentation for standard markdown syntax' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -36,114 +36,117 @@
       </div>
       <div class='clear'></div>
       <div class='article'>
-  <h1>
-    markdown syntax
-  </h1>
-  <div class='meta'>
-    <ul class='tags'>
-      <li>Jul 06, 2012</li>
-      <li>
-        &middot;
-      </li>
-      <li>
-        <a href='/doc/perm/markdown_syntax.html#disqus_thread'></a>
-      </li>
-      <li>&middot;</li>
-      <li>
-        <a class='tag' href='/tags/doc/'>
-          doc
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/md/'>
-          md
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/perm/'>
-          perm
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='body'>
-    <h3>Literal | 一些背景</h3>
-
-<ul>
-<li>created by: John Gruber &amp; Aaron Swartz</li>
-<li>target: easy to read AND easy to write plain text format</li>
-</ul>
-
-
-<h3>Syntax | 語法</h3>
-
-<ul>
-<li><p>Headings - hashes before text</p>
-
-<pre><code>  ### with hash made this my heading&#x000A;</code></pre></li>
-<li><p>Paragraphs - no indent</p>
-
-<pre><code>  without any indent this is just a paragraph &#x000A;</code></pre></li>
-<li><p>Paragraphs - two spaces to end the paragraphs <br/>
-<em>colon</em> after paragraphs doesnt work with my version</p>
-
-<pre><code>  here we have two spaces hidden behind    &#x000A;  so this is two paragraphs&#x000A;</code></pre></li>
-<li><p>Lists - bullted with * and enumerated with number</p>
-
-<pre><code>  * my list item 1&#x000A;  * my list item 2&#x000A;      * sublist item indent with four spaces&#x000A;</code></pre></li>
-<li><p>Code span - with backticks</p>
-
-<pre><code>  `&lt;code me blue&gt;`&#x000A;</code></pre>
-
-<p><code>&lt;code me blue&gt;</code></p></li>
-<li><p>Code block - formatted with four spaces prefixed</p>
-
-<pre><code>  In [2]: fabric?&#x000A;  Type:       module&#x000A;&#x000A;  Base Class: &lt;type 'module'&gt;&#x000A;  String Form:&lt;module 'fabric' from '/Users/ttyn/.virtualenvs/dailysa/lib/python2.7/site-packages/fabric/__init__.pyc'&gt;&#x000A;</code></pre></li>
-<li><p>Blockquotes</p>
-
-<pre><code>  &gt; this would flow everthing like this: Where past and future are gathered. Neither movement from nor towards,&#x000A;</code></pre></li>
-<li><p>Horizontal lines - triple stars, dashes</p>
-
-<pre><code>  ---&#x000A;  * * *&#x000A;  - - - -&#x000A;</code></pre></li>
-<li><p>Manual line breaks - two or more spaces hidden behind.</p>
-
-<pre><code>  i made a line break here /spaces/  &#x000A;  with two spaces&#x000A;</code></pre></li>
-<li><p>Phrase Emphasis - star or underscore</p>
-
-<pre><code>  *star me to be italic*&#x000A;  ** double star me to be bold **&#x000A;</code></pre></li>
-<li><p>Linkiefy - squarebracket the notation and bracket the link</p>
-
-<pre><code>  short: [home](http://ttyn.me)  &#x000A;  full: [home](http://ttyn.me "Title: HOME")  &#x000A;  use reference style: this is [home][linkid] yes it is&#x000A;  ref(put it lateR): [linkid]: http://ttyn.me "Title: HOME"  &#x000A;</code></pre></li>
-<li><p>Inline image - almost same as linkie with an "!" in front</p>
-
-<pre><code>  short: ![i am image](/files/img/tuxs.jpg)&#x000A;  full: ![alt shelter](/files/img/tuxs.jpg "Gimme shelter")&#x000A;  ref style: [thisimgid]: /files/img/tuxs.jpg "Title"&#x000A;  use the ref: this is ![an img][thisimid] yes it is&#x000A;</code></pre></li>
-</ul>
-
-
-<p>this is this <img src="/files/img/tuxs.jpg" title="Title" alt="alt" /> king!</p>
-
-<ul>
-<li>Shorthands to use linkies
-
-<pre><code>  autolink: &lt;http://example.com/&gt;&#x000A;&#x000A;  [google]: http://google.com/        "Google"&#x000A;  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"&#x000A;  [msn]:    http://search.msn.com/    "MSN Search"&#x000A;</code></pre></li>
-</ul>
-
-
-<h2>The Ref | 參考文檔</h2>
-
-<ul>
-<li><a href="http://daringfireball.net/projects/markdown/syntax/" title="original markdown sytax">original markdown syntax [EN]</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples">wikipedia markdown syntax [EN]</a></li>
-</ul>
-
-
-<h2>current status: DONE</h2>
-
-<h3>The End | 文檔終點</h3>
-
-<p>back to <a href="http://ttyn.me">home</a></p>
-  </div>
-</div>
+        <h1>
+          markdown syntax
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Jul 06, 2012</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/doc/perm/markdown_syntax.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/md/'>
+                md
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/perm/'>
+                perm
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h3>Literal | 一些背景</h3>
+          
+          <ul>
+          <li>created by: John Gruber &amp; Aaron Swartz</li>
+          <li>target: easy to read AND easy to write plain text format</li>
+          </ul>
+          
+          
+          <h3>Syntax | 語法</h3>
+          
+          <ul>
+          <li><p>Headings - hashes before text
+                ### with hash made this my heading</p></li>
+          <li><p>Paragraphs - no indent
+                without any indent this is just a paragraph</p></li>
+          <li><p>Paragraphs - two spaces to end the paragraphs <br/>
+          <em>colon</em> after paragraphs doesnt work with my version
+                here we have two spaces hidden behind  <br/>
+                so this is two paragraphs</p></li>
+          <li><p>Lists - bullted with * and enumerated with number</p>
+          
+          <pre><code>  * my list item 1&#x000A;  * my list item 2&#x000A;      * sublist item indent with four spaces&#x000A;</code></pre></li>
+          <li><p>Code span - with backticks
+                <code>&lt;code me blue&gt;</code>
+          <code>&lt;code me blue&gt;</code></p></li>
+          <li><p>Code block - formatted with four spaces prefixed
+                In [2]: fabric?
+                Type:       module</p>
+          
+          <pre><code>  Base Class: &lt;type 'module'&gt;&#x000A;  String Form:&lt;module 'fabric' from '/Users/ttyn/.virtualenvs/dailysa/lib/python2.7/site-packages/fabric/__init__.pyc'&gt;&#x000A;</code></pre></li>
+          <li><p>Blockquotes
+                > this would flow everthing like this: Where past and future are gathered. Neither movement from nor towards,</p></li>
+          <li><p>Horizontal lines - triple stars, dashes
+                ---</p>
+          
+          <pre><code>  * * *&#x000A;  - - - -&#x000A;</code></pre></li>
+          <li><p>Manual line breaks - two or more spaces hidden behind.
+                i made a line break here /spaces/<br/>
+                with two spaces</p></li>
+          <li><p>Phrase Emphasis - star or underscore
+                <em>star me to be italic</em>
+                <strong> double star me to be bold </strong></p></li>
+          <li><p>Linkiefy - squarebracket the notation and bracket the link
+                short: <a href="http://ttyn.me">home</a><br/>
+                full: <a href="http://ttyn.me" title="Title: HOME">home</a><br/>
+                use reference style: this is <a href="http://ttyn.me" title="Title: HOME">home</a> yes it is
+                ref(put it lateR): <a href="http://ttyn.me" title="Title: HOME">linkid</a>: http://ttyn.me "Title: HOME"</p></li>
+          <li><p>Inline image - almost same as linkie with an "!" in front
+                short: <img src="/files/img/tuxs.jpg" alt="i am image" />
+                full: <img src="/files/img/tuxs.jpg" title="Gimme shelter" alt="alt shelter" />
+                ref style: [thisimgid]: /files/img/tuxs.jpg "Title"
+                use the ref: this is ![an img][thisimid] yes it is</p></li>
+          </ul>
+          
+          
+          <p>this is this <img src="/files/img/tuxs.jpg" title="Title" alt="alt" /> king!</p>
+          
+          <ul>
+          <li><p>Shorthands to use linkies
+                autolink: <a href="http://example.com/">http://example.com/</a></p>
+          
+          <pre><code>  [google]: http://google.com/        "Google"&#x000A;  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"&#x000A;  [msn]:    http://search.msn.com/    "MSN Search"&#x000A;</code></pre></li>
+          </ul>
+          
+          
+          <h2>The Ref | 參考文檔</h2>
+          
+          <ul>
+          <li><a href="http://daringfireball.net/projects/markdown/syntax/" title="original markdown sytax">original markdown syntax [EN]</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples">wikipedia markdown syntax [EN]</a></li>
+          </ul>
+          
+          
+          <h2>current status: DONE</h2>
+          
+          <h3>The End | 文檔終點</h3>
+          
+          <p>back to <a href="http://ttyn.me">home</a></p>
+        </div>
+      </div>
       <div id='other-articles'>
         <div class='older'>
           <ul>
@@ -166,40 +169,36 @@
       </div>
       <!-- / disqus adds too much visual crap -->
       <style type='text/css'>
-        .dsq-dc-logo {
-          display: none !important; }
+        <style>
+          .dsq-dc-logo {
+            display: none !important; }
+        </style>
       </style>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>

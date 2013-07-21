@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>setup and use ssh key pairs auth</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', doc' name='keywords' />
-    <meta content='-zh_cn- ssh key setup' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', doc' name='keywords'>
+    <meta content='-zh_cn- ssh key setup' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -36,80 +36,78 @@
       </div>
       <div class='clear'></div>
       <div class='article'>
-  <h1>
-    setup and use ssh key pairs auth
-  </h1>
-  <div class='meta'>
-    <ul class='tags'>
-      <li>Jun 06, 2012</li>
-      <li>
-        &middot;
-      </li>
-      <li>
-        <a href='/2012/06/06/ssh_key.html#disqus_thread'></a>
-      </li>
-      <li>&middot;</li>
-      <li>
-        <a class='tag' href='/tags/doc/'>
-          doc
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='body'>
-    <h3>配置和使用ssh key auth驗證登陸</h3>
-
-<ul>
-<li><p>概念</p>
-
-<ul>
-<li>客戶機器為 client_server</li>
-<li>需要提供登陸的服務器為 host_server</li>
-<li>在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</li>
-</ul>
-</li>
-<li><p>第一步 @client_server</p>
-
-<pre><code>      local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P &#x000A;      [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]&#x000A;</code></pre>
-
-<ul>
-<li><p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub</p>
-
-<pre><code>    2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上&#x000A;    2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件&#x000A;</code></pre></li>
-<li><p>權限設置</p>
-
-<pre><code>    local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh&#x000A;    local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot&#x000A;</code></pre></li>
-</ul>
-</li>
-<li><p>第二步 @host_server</p>
-
-<pre><code>      local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh&#x000A;</code></pre>
-
-<ul>
-<li>粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys</li>
-<li><p>(如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行</p>
-
-<pre><code>    local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys&#x000A;    local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys&#x000A;</code></pre></li>
-<li><p>host_server的sshd配置 /etc/ssh/sshd_config_sample</p>
-
-<pre><code>        Port 26666&#x000A;        Port 22&#x000A;        #ListenAddress a.b.c.d&#x000A;        UseDNS no&#x000A;        RSAAuthentication yes&#x000A;        PubkeyAuthentication yes&#x000A;        AuthorizedKeysFile      .ssh/auth_keys&#x000A;</code></pre></li>
-<li><p>@host_server restart sshd</p>
-
-<pre><code>        service sshd restart&#x000A;</code></pre></li>
-</ul>
-</li>
-<li><p>第三步測試和dbug</p>
-
-<pre><code>      local_conn_bot@client_server$ ssh host_server uptime ### 測試&#x000A;      local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug&#x000A;</code></pre></li>
-<li><p>第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</p>
-
-<pre><code>  local_conn_bot@client_server$ cat ~/.ssh/config&#x000A;&#x000A;          ## --- start of sample ssh config&#x000A;          Host host_server_01&#x000A;                  Hostname 192.168.2.1&#x000A;          Host 30.20.10.0&#x000A;                  Port 2888&#x000A;                  IdentityFile ~/.ssh/temp-local_conn_bot&#x000A;          Host *&#x000A;                  User local_conn_bot&#x000A;                  ForwardAgent yes&#x000A;                  Port 22&#x000A;                  IdentityFile ~/.ssh/2012-local_conn_bot&#x000A;                  UsePrivilegedPort no&#x000A;                  ServerAliveInterval 240&#x000A;                  ServerAliveCountMAx 9999&#x000A;          ## --- end of sample ssh config&#x000A;</code></pre></li>
-<li><p>第五步 进阶 设置使用ssh local port forwarding &amp; remote port forwarding</p>
-
-<pre><code>  * 在本地使用的端口转发local port forwarding&#x000A;  user@local$ ssh dest_host_pub_ip -L local_port:dest_host:dest_port&#x000A;  #local_port is to be used @local&#x000A;  #dest_host usually is just localhost&#x000A;  #dest_port is the (@remote) port to be forwarded back to local_port&#x000A;  user@local$ telnet dest_host local_port&#x000A;&#x000A;      * local port forwarding use ~/.ssh/config @local&#x000A;    Host dest_host_pub_name&#x000A;    HostName dest_host_pub_ip&#x000A;    LocalForward local_port:dest_host:dest_port&#x000A;&#x000A;  user@local$ ssh dest_host_pub_name&#x000A;  user@local$ autossh -M monitor_port -N dest_host_pub_name&#x000A;&#x000A;&#x000A;  * 在远程使用的端口转发 remote port forwarding&#x000A;  user@local$ ssh dest_host_pub_ip -R remote_port:dest_host:dest_port&#x000A;  #remote_port is to be used @remote&#x000A;  #dest_host usually is just localhost&#x000A;  #dest_port is the (@local) port to be forwarded to remote_port&#x000A;  user@remote$ telnet dest_host remote_port&#x000A;&#x000A;      * remote port forwarding use ~/.ssh/config @local&#x000A;    Host dest_host_pub_name&#x000A;    HostName dest_host_pub_ip&#x000A;    LocalForward remote_port:dest_host:dest_port&#x000A;&#x000A;  user@local$ ssh dest_host_pub_name&#x000A;  user@local$ autossh -M monitor_port -N dest_host_pub_name&#x000A;&#x000A;&#x000A;  * 检查端口是否已经被转发check port&#x000A;          netstat -ltp&#x000A;          lsof -i -P&#x000A;</code></pre></li>
-</ul>
-  </div>
-</div>
+        <h1>
+          setup and use ssh key pairs auth
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Jun 06, 2012</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/2012/06/06/ssh_key.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h3>配置和使用ssh key auth驗證登陸</h3>
+          
+          <ul>
+          <li><p>概念</p>
+          
+          <ul>
+          <li>客戶機器為 client_server</li>
+          <li>需要提供登陸的服務器為 host_server</li>
+          <li>在client_server和 host_server 上都有 local_conn_bot 用戶，家目錄為${HOME}</li>
+          </ul>
+          </li>
+          <li><p>第一步 @client_server
+                    local_conn_bot@client_server $ ssh-keygen -t rsa -C local_conn_bot@localbox.me -f ${HOME}/.ssh/2012-local_conn_bot -P
+                    [如果為系統用戶，可以直接回車設置2012-local_conn_bot這個key的passphrase為空]</p>
+          
+          <ul>
+          <li><p>生成的key文件包括 2012-local_conn_bot 和 2012-local_conn_bot.pub</p>
+          
+          <pre><code>    2012-local_conn_bot 文件為私匙，必須安全保存，不要存放到任何公用服務器上&#x000A;    2012-local_conn_bot.pub 為公匙，是提供給host_server或者其它需要登陸的server的驗證文件&#x000A;</code></pre></li>
+          <li><p>權限設置</p>
+          
+          <pre><code>    local_conn_bot@client_server $ chmod 700 ${HOME}/.ssh&#x000A;    local_conn_bot#client_server $ chmod 400 ${HOME}/.ssh/2012-local_conn_bot&#x000A;</code></pre></li>
+          </ul>
+          </li>
+          <li><p>第二步 @host_server
+                    local_conn_bot@host_server $ mkdir -p ${HOME}/.ssh &amp;&amp; chmod 700 ${HOME}/.ssh</p>
+          
+          <ul>
+          <li>粘貼, scp或者其它方式append(追加)剛才的私匙 2012-local_conn_bot 內容到 ${HOME}/.ssh/auth_keys</li>
+          <li><p>(如果沒有${HOME}/.ssh/auth_keys) 可以直接 @client_server 執行</p>
+          
+          <pre><code>    local_conn_bot@client_server$ scp ${HOME}/.ssh/2012-local_conn_bot.pub host_server:${HOME}/.ssh/auth_keys&#x000A;    local_conn_bot@host_server$ chmod 400 ${HOME}/.ssh/auth_keys&#x000A;</code></pre></li>
+          <li><p>host_server的sshd配置 /etc/ssh/sshd_config_sample</p>
+          
+          <pre><code>        Port 26666&#x000A;        Port 22&#x000A;        #ListenAddress a.b.c.d&#x000A;        UseDNS no&#x000A;        RSAAuthentication yes&#x000A;        PubkeyAuthentication yes&#x000A;        AuthorizedKeysFile      .ssh/auth_keys&#x000A;</code></pre></li>
+          <li><p>@host_server restart sshd
+                      service sshd restart</p></li>
+          </ul>
+          </li>
+          <li><p>第三步測試和dbug</p>
+          
+          <pre><code>      local_conn_bot@client_server$ ssh host_server uptime ### 測試&#x000A;      local_conn_bot@client_server$ ssh -vvv host_server uptime ### debug&#x000A;</code></pre></li>
+          <li><p>第四步可選 設置 client_server用戶的 ssh_config以使用多套key and or 配置</p>
+          
+          <pre><code>  local_conn_bot@client_server$ cat ~/.ssh/config&#x000A;&#x000A;          ## --- start of sample ssh config&#x000A;          Host host_server_01&#x000A;                  Hostname 192.168.2.1&#x000A;          Host 30.20.10.0&#x000A;                  Port 2888&#x000A;                  IdentityFile ~/.ssh/temp-local_conn_bot&#x000A;          Host *&#x000A;                  User local_conn_bot&#x000A;                  ForwardAgent yes&#x000A;                  Port 22&#x000A;                  IdentityFile ~/.ssh/2012-local_conn_bot&#x000A;                  UsePrivilegedPort no&#x000A;                  ServerAliveInterval 240&#x000A;                  ServerAliveCountMAx 9999&#x000A;          ## --- end of sample ssh config&#x000A;</code></pre></li>
+          <li><p>第五步 进阶 设置使用ssh local port forwarding &amp; remote port forwarding</p>
+          
+          <pre><code>  * 在本地使用的端口转发local port forwarding&#x000A;  user@local$ ssh dest_host_pub_ip -L local_port:dest_host:dest_port&#x000A;  #local_port is to be used @local&#x000A;  #dest_host usually is just localhost&#x000A;  #dest_port is the (@remote) port to be forwarded back to local_port&#x000A;  user@local$ telnet dest_host local_port&#x000A;&#x000A;      * local port forwarding use ~/.ssh/config @local&#x000A;    Host dest_host_pub_name&#x000A;    HostName dest_host_pub_ip&#x000A;    LocalForward local_port:dest_host:dest_port&#x000A;&#x000A;  user@local$ ssh dest_host_pub_name&#x000A;  user@local$ autossh -M monitor_port -N dest_host_pub_name&#x000A;&#x000A;&#x000A;  * 在远程使用的端口转发 remote port forwarding&#x000A;  user@local$ ssh dest_host_pub_ip -R remote_port:dest_host:dest_port&#x000A;  #remote_port is to be used @remote&#x000A;  #dest_host usually is just localhost&#x000A;  #dest_port is the (@local) port to be forwarded to remote_port&#x000A;  user@remote$ telnet dest_host remote_port&#x000A;&#x000A;      * remote port forwarding use ~/.ssh/config @local&#x000A;    Host dest_host_pub_name&#x000A;    HostName dest_host_pub_ip&#x000A;    LocalForward remote_port:dest_host:dest_port&#x000A;&#x000A;  user@local$ ssh dest_host_pub_name&#x000A;  user@local$ autossh -M monitor_port -N dest_host_pub_name&#x000A;&#x000A;&#x000A;  * 检查端口是否已经被转发check port&#x000A;          netstat -ltp&#x000A;          lsof -i -P&#x000A;</code></pre></li>
+          </ul>
+        </div>
+      </div>
       <div id='other-articles'>
         <div class='older'>
           <ul>
@@ -132,40 +130,36 @@
       </div>
       <!-- / disqus adds too much visual crap -->
       <style type='text/css'>
-        .dsq-dc-logo {
-          display: none !important; }
+        <style>
+          .dsq-dc-logo {
+            display: none !important; }
+        </style>
       </style>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>

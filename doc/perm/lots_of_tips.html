@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>lots of tips</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', doc, tip, updating' name='keywords' />
-    <meta content='my own documentation of lots of tips' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', doc, tip, updating' name='keywords'>
+    <meta content='my own documentation of lots of tips' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -36,208 +36,203 @@
       </div>
       <div class='clear'></div>
       <div class='article'>
-  <h1>
-    lots of tips
-  </h1>
-  <div class='meta'>
-    <ul class='tags'>
-      <li>Jul 09, 2012</li>
-      <li>
-        &middot;
-      </li>
-      <li>
-        <a href='/doc/perm/lots_of_tips.html#disqus_thread'></a>
-      </li>
-      <li>&middot;</li>
-      <li>
-        <a class='tag' href='/tags/doc/'>
-          doc
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/tip/'>
-          tip
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/updating/'>
-          updating
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='body'>
-    <h3><strong>cmd | 命令行</strong></h3>
-
-<ul>
-<li>repeat last command argument
-
-<pre><code>  !$ last argument&#x000A;  !* all argument&#x000A;</code></pre></li>
-<li>notify cmd line this is the end of options
-
-<pre><code>  --&#x000A;</code></pre></li>
-<li>readline
-
-<pre><code>  Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k&#x000A;  Ctrl-w  delete a word backwards&#x000A;  Ctrl-x Ctrl-e actually editing the command line&#x000A;  Esc-f/Esc-b&#x000A;</code></pre></li>
-<li>get public ip
-
-<pre><code>  curl http://ip4.me 2&gt;/dev/null | sed -e 's#&lt;[^&gt;]*&gt;##g' | grep '^[0-9]'&#x000A;</code></pre></li>
-<li>http request and response using curl
-
-<pre><code>  curl -iv ${url}&#x000A;</code></pre></li>
-<li>lock tty
-
-<pre><code>  clear &amp;&amp; vlock -c &#x000A;</code></pre></li>
-<li>real path
-
-<pre><code>  pwd -P&#x000A;</code></pre></li>
-<li>grep and highlight finds in full file
-
-<pre><code>  grep --color -E "test|$" yourfile&#x000A;</code></pre></li>
-<li>awk check characters at certain position
-
-<pre><code>  awk -F '' '$25 == "a"' input &gt;output&#x000A;</code></pre></li>
-<li>iptables
-
-<pre><code>  sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT&#x000A;  sudo iptables-save&#x000A;</code></pre></li>
-<li>mysqld
-
-<pre><code>  repair all the databases&#x000A;  mysqlcheck -Aor&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>text process | 文本處理</strong></h3>
-
-<ul>
-<li>print a line in file
-
-<pre><code>  $ sed -n 4p $file_name &#x000A;  -n switch turns off default output&#x000A;  $ sed -n 3,60p $file_name&#x000A;  $ sed -n -e 3,60p -e 1p $file_name&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>vim | basic vim</strong></h3>
-
-<ul>
-<li>directory and files
-
-<pre><code>  - open directory listing in vim&#x000A;  :e.&#x000A;  - open file in this directory listing&#x000A;  o&#x000A;</code></pre></li>
-<li>fix sudo
-
-<pre><code>  :w !sudo tee %&#x000A;</code></pre></li>
-<li>read outline from cmd
-
-<pre><code>  :r!date&#x000A;</code></pre></li>
-<li>read content from another file
-
-<pre><code>  :read other_file&#x000A;  :r other_file&#x000A;</code></pre></li>
-<li>edit and read the template
-
-<pre><code>  :e newfile.cpp | r template.cpp&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>app | 應用</strong></h3>
-
-<ul>
-<li>chrome
-
-<pre><code>  - keybinding to next tab in chrome: Ctrl-Tab&#x000A;  - keybinding to next window in chrome: Cmd-`&#x000A;</code></pre></li>
-<li><p>curl</p>
-
-<pre><code>  - debug it: curl -vv https://s3.amazonaws.com/&#x000A;</code></pre></li>
-<li><p>tmux</p>
-
-<pre><code>  - [un]synchronize: setw synchronize-panes&#x000A;</code></pre></li>
-<li><p>tty</p></li>
-<li><p>mac osx</p>
-
-<pre><code>  - screenshot screen capture ⌘ ⇧ 3&#x000A;  - networksetup &#x000A;          -listallnetworkservices # 列表所有的interface/setup&#x000A;          -setautoproxyurl "Ethernet" http://ttyn.github.com/files/proxy.pac &#x000A;          # 使用pacfile # need to disable "send all traffic over VPN connection" in VPN setup&#x000A;</code></pre></li>
-<li><p>combine two images (merge)</p>
-
-<pre><code>  $&gt; convert +append a.png b.png c.png&#x000A;  $&gt; montage -geometry 100% left.jpg right.jpg merged.jpg&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>git | just git</strong></h3>
-
-<ul>
-<li>git checkout and track remote branch | git 檢出遠程的分支並track
-
-<pre><code>  % git checkout -t origin/remote_feature&#x000A;</code></pre></li>
-<li>git remove deleted files | git rm 刪除物理刪除的文件
-
-<pre><code>  % git status |grep deleted |awk '{print $3}' | xargs git rm&#x000A;</code></pre></li>
-<li>git setup upstream default (to origin/master) | git 設置缺省上行分支到 origin/master
-
-<pre><code>  % git config branch.master.remote origin&#x000A;  % git config branch.master.merge refs/heads/master&#x000A;</code></pre></li>
-<li>git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
-
-<pre><code>  % git config --global push.default tracking&#x000A;</code></pre></li>
-<li>git find mod between local and remote | git 檢查本地和遠程mod
-
-<pre><code>  % git fetch&#x000A;  % git log ..@{u} --stat&#x000A;  % git log @{u}..&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>tools | 工具箱</strong></h3>
-
-<ul>
-<li>centos/yum</li>
-<li>brew</li>
-<li>python
-
-<pre><code>  fabric&#x000A;  ipython&#x000A;  gunicorn&#x000A;</code></pre></li>
-<li><p>pip</p>
-
-<pre><code>  curl -O http://python-distribute.org/distribute_setup.py&#x000A;  python distribute_setup.py&#x000A;  easy_install pip&#x000A;</code></pre></li>
-<li><p>virtualization</p>
-
-<pre><code>  chef/puppet/vagrant/cucumber/aws/ec2/boto&#x000A;</code></pre></li>
-<li>rvm/bundle</li>
-</ul>
-
-
-<h3><strong>ideas | 思路</strong></h3>
-
-<ul>
-<li>http stack
-
-<pre><code>  http request &gt; web server &gt; router &gt; data handling &gt; response&#x000A;</code></pre></li>
-<li>python webapp stack
-
-<pre><code>  django + flask + nginx +uWSGI&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>spartan life hacks</strong> (which i dont want to forget)</h3>
-
-<ul>
-<li>mental
-
-<pre><code>  mental dicipline&#x000A;  modest and sincere&#x000A;  dont judge 不下結論&#x000A;</code></pre></li>
-<li>physical
-
-<pre><code>  balance/cadence/flex&#x000A;  @sleeping crunch/lay-biking/ab round/ab breathe&#x000A;  @standing backkick/ab breathe 腹式呼吸&#x000A;  @running correct overstriding&#x000A;  @eating water/vegie&#x000A;</code></pre></li>
-</ul>
-
-
-<h3><strong>links | 總是有用的連接</strong></h3>
-
-<ul>
-<li><a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox">unix toolbox</a></li>
-<li><a href="http://www.colourlovers.com/" title="Title: colorlover">ex:coloer picking</a></li>
-<li><a href="http://www.12factor.net/" title="Title: 12 factor">12 factor for devop</a></li>
-<li><a href="http://www.python.org/dev/peps/" title="Title: python PEPs">pep</a></li>
-<li><a href="http://www.faqs.org/rfcs/" title="Title: RFC">rfc</a> or <a href="http://tools.ietf.org/html/" title="Title: RFC2">ietf version of rfc</a></li>
-<li><a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements">my own devop requirements.txt</a></li>
-</ul>
-
-
-<hr />
-
-<p><strong>go <a href="http://ttyn.me" title="Title: HOME">home</a> lets go back back to <a href="http://ttyn.me" title="Title: HOME">home</a></strong></p>
-  </div>
-</div>
+        <h1>
+          lots of tips
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Jul 09, 2012</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/doc/perm/lots_of_tips.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/doc/'>
+                doc
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/tip/'>
+                tip
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/updating/'>
+                updating
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <h3><strong>cmd | 命令行</strong></h3>
+          
+          <ul>
+          <li>repeat last command argument
+                !$ last argument
+                !* all argument</li>
+          <li>notify cmd line this is the end of options
+                --</li>
+          <li>readline
+                Ctrl-a, Ctrl-e, Ctrl-u, Ctrl-k
+                Ctrl-w  delete a word backwards
+                Ctrl-x Ctrl-e actually editing the command line
+                Esc-f/Esc-b</li>
+          <li>get public ip
+                curl http://ip4.me 2>/dev/null | sed -e 's#&lt;[^>]*>##g' | grep '^[0-9]'</li>
+          <li>http request and response using curl
+                curl -iv ${url}</li>
+          <li>lock tty
+                clear &amp;&amp; vlock -c</li>
+          <li>real path
+                pwd -P</li>
+          <li>grep and highlight finds in full file
+                grep --color -E "test|$" yourfile</li>
+          <li>awk check characters at certain position
+                awk -F '' '$25 == "a"' input >output</li>
+          <li>iptables
+                sudo iptables -I INPUT -p tcp --dport 25 -j ACCEPT
+                sudo iptables-save</li>
+          <li>mysqld
+                repair all the databases
+                mysqlcheck -Aor</li>
+          </ul>
+          
+          
+          <h3><strong>text process | 文本處理</strong></h3>
+          
+          <ul>
+          <li>print a line in file
+                $ sed -n 4p $file_name
+                -n switch turns off default output
+                $ sed -n 3,60p $file_name
+                $ sed -n -e 3,60p -e 1p $file_name</li>
+          </ul>
+          
+          
+          <h3><strong>vim | basic vim</strong></h3>
+          
+          <ul>
+          <li>directory and files
+          
+          <pre><code>  - open directory listing in vim&#x000A;  :e.&#x000A;  - open file in this directory listing&#x000A;  o&#x000A;</code></pre></li>
+          <li>fix sudo
+                :w !sudo tee %</li>
+          <li>read outline from cmd
+                :r!date</li>
+          <li>read content from another file
+                :read other_file
+                :r other_file</li>
+          <li>edit and read the template
+                :e newfile.cpp | r template.cpp</li>
+          </ul>
+          
+          
+          <h3><strong>app | 應用</strong></h3>
+          
+          <ul>
+          <li>chrome
+          
+          <pre><code>  - keybinding to next tab in chrome: Ctrl-Tab&#x000A;  - keybinding to next window in chrome: Cmd-`&#x000A;</code></pre></li>
+          <li><p>curl</p>
+          
+          <pre><code>  - debug it: curl -vv https://s3.amazonaws.com/&#x000A;</code></pre></li>
+          <li><p>tmux</p>
+          
+          <pre><code>  - [un]synchronize: setw synchronize-panes&#x000A;</code></pre></li>
+          <li><p>tty</p></li>
+          <li><p>mac osx</p>
+          
+          <pre><code>  - screenshot screen capture ⌘ ⇧ 3&#x000A;  - networksetup &#x000A;          -listallnetworkservices # 列表所有的interface/setup&#x000A;          -setautoproxyurl "Ethernet" http://ttyn.github.com/files/proxy.pac &#x000A;          # 使用pacfile # need to disable "send all traffic over VPN connection" in VPN setup&#x000A;</code></pre></li>
+          <li><p>combine two images (merge)
+                $> convert +append a.png b.png c.png
+                $> montage -geometry 100% left.jpg right.jpg merged.jpg</p></li>
+          </ul>
+          
+          
+          <h3><strong>git | just git</strong></h3>
+          
+          <ul>
+          <li>git checkout and track remote branch | git 檢出遠程的分支並track
+                % git checkout -t origin/remote_feature</li>
+          <li>git remove deleted files | git rm 刪除物理刪除的文件
+                % git status |grep deleted |awk '{print $3}' | xargs git rm</li>
+          <li>git setup upstream default (to origin/master) | git 設置缺省上行分支到 origin/master
+                % git config branch.master.remote origin
+                % git config branch.master.merge refs/heads/master</li>
+          <li>git push to current tracking branch (instead of default all branches) | git push 推到目前的trakcing分支(而不是所有分支)
+                % git config --global push.default tracking</li>
+          <li>git find mod between local and remote | git 檢查本地和遠程mod
+                % git fetch
+                % git log ..@{u} --stat
+                % git log @{u}..</li>
+          </ul>
+          
+          
+          <h3><strong>tools | 工具箱</strong></h3>
+          
+          <ul>
+          <li>centos/yum</li>
+          <li>brew</li>
+          <li>python
+                fabric
+                ipython
+                gunicorn</li>
+          <li><p>pip
+                curl -O http://python-distribute.org/distribute_setup.py
+                python distribute_setup.py
+                easy_install pip</p></li>
+          <li><p>virtualization
+                chef/puppet/vagrant/cucumber/aws/ec2/boto</p></li>
+          <li>rvm/bundle</li>
+          </ul>
+          
+          
+          <h3><strong>ideas | 思路</strong></h3>
+          
+          <ul>
+          <li>http stack
+                http request > web server > router > data handling > response</li>
+          <li>python webapp stack
+                django + flask + nginx +uWSGI</li>
+          </ul>
+          
+          
+          <h3><strong>spartan life hacks</strong> (which i dont want to forget)</h3>
+          
+          <ul>
+          <li>mental
+                mental dicipline
+                modest and sincere
+                dont judge 不下結論</li>
+          <li>physical
+                balance/cadence/flex
+                @sleeping crunch/lay-biking/ab round/ab breathe
+                @standing backkick/ab breathe 腹式呼吸
+                @running correct overstriding
+                @eating water/vegie</li>
+          </ul>
+          
+          
+          <h3><strong>links | 總是有用的連接</strong></h3>
+          
+          <ul>
+          <li><a href="http://ttyn.github.com/ref/unixtoolbox.html" title="Title: unixtoolbox">unix toolbox</a></li>
+          <li><a href="http://www.colourlovers.com/" title="Title: colorlover">ex:coloer picking</a></li>
+          <li><a href="http://www.12factor.net/" title="Title: 12 factor">12 factor for devop</a></li>
+          <li><a href="http://www.python.org/dev/peps/" title="Title: python PEPs">pep</a></li>
+          <li><a href="http://www.faqs.org/rfcs/" title="Title: RFC">rfc</a> or <a href="http://tools.ietf.org/html/" title="Title: RFC2">ietf version of rfc</a></li>
+          <li><a href="http://ttyn.github.com/txt/pip_sabasic_requirements.txt" title="Title: pip basic requirements">my own devop requirements.txt</a></li>
+          </ul>
+          
+          
+          <hr />
+          
+          <p><strong>go <a href="http://ttyn.me" title="Title: HOME">home</a> lets go back back to <a href="http://ttyn.me" title="Title: HOME">home</a></strong></p>
+        </div>
+      </div>
       <div id='other-articles'>
         <div class='older'>
           <ul>
@@ -260,40 +255,36 @@
       </div>
       <!-- / disqus adds too much visual crap -->
       <style type='text/css'>
-        .dsq-dc-logo {
-          display: none !important; }
+        <style>
+          .dsq-dc-logo {
+            display: none !important; }
+        </style>
       </style>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>

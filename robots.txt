@@ -4,5 +4,5 @@ Allow: /
 Disallow: /assets/
 Disallow: /files/
 Disallow: /txt/
+Disallow: /ref/
 
-Sitemap: http://ttyn.me/sitemap.xml

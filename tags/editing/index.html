@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>Category: editing</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', ' name='keywords' />
-    <meta content='' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', ' name='keywords'>
+    <meta content='' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -49,35 +49,29 @@
       </div>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>

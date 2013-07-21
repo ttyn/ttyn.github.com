@@ -1,7 +1,0 @@
-*_output
-tmp
-.bundle
-
-.sass-cache
-vendor/ruby
-Gemfile.lock

@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>开始使用配置和发布管理 with ansible</title>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-    <meta content=', dev, tools' name='keywords' />
-    <meta content='a basic introduction of ansible in Chinese' name='description' />
-    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content=', dev, tools' name='keywords'>
+    <meta content='a basic introduction of ansible in Chinese' name='description'>
+    <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700&amp;subset=latin' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
   </head>
   <body>
     <div id='main'>
@@ -27,7 +27,7 @@
               <a class='shadow' href='/tags/doc/'>docs</a>
             </li>
             <li>
-              <a class='shadow' href='http://ttyn.github.com'>en</a>
+              <a class='shadow' href='http://ttyn.github.io'>en</a>
               <a class='shadow' href='/links.html'>links</a>
               <a class='shadow' href='/license.html'>license</a>
             </li>
@@ -36,115 +36,123 @@
       </div>
       <div class='clear'></div>
       <div class='article'>
-  <h1>
-    开始使用配置和发布管理 with ansible
-  </h1>
-  <div class='meta'>
-    <ul class='tags'>
-      <li>Feb 19, 2013</li>
-      <li>
-        &middot;
-      </li>
-      <li>
-        <a href='/2013/02/19/ansible_intro.html#disqus_thread'></a>
-      </li>
-      <li>&middot;</li>
-      <li>
-        <a class='tag' href='/tags/dev/'>
-          dev
-        </a>
-      </li>
-      <li>
-        <a class='tag' href='/tags/tools/'>
-          tools
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='body'>
-    <p>趁着假期研究了一下，发现ansible比以前讨论过的chef/puppet/capistrano
-和现在用的fabric等同类方便太多了</p>
-
-<ul>
-<li><p>Advantages</p>
-
-<ul>
-<li>好处1. 直接使用ssh协议(可以选择用openssh或者python封装的paramiko)</li>
-<li>client不需要安装软件或者开启端口。client需要安装一个python-simplejson包(提供json格式返回结果)就可以直接使用</li>
-<li>好处2. 适合从ad-hoc的紧急工作到有序部署的大型架构，
-因为ansible将系统的配置作为数据使用yaml格式保存，
-而不是python code，所以系统配置/架构可以非常清晰。
-对于复杂度高的多server和复杂度低的幂等架构都可以快速部署</li>
-<li>好处3. ansible源于开发了cobble的Michael DeHaan, 他也是puppet团队成员，
-对于配置管理/部署等工作非常熟悉，很靠谱。</li>
-<li>需要考虑的: 对于ssh keybased验证和sudo权限需要预先了解和部署</li>
-<li>需要纪录的: 即使使用 openssh连接，ansible也会忽略 ~/.ssh/config中的Port配置，必须在inventory文件定义中显示标注</li>
-</ul>
-</li>
-<li><p>特征</p>
-
-<ul>
-<li>特征1. 使用类似于chef的push发放配置</li>
-<li>特征2. ansible的配置管理叫做playbook</li>
-<li>特征3. 可以使用普通用户，加入 -s 参数或者相应配置在playbook文件中启用sudo授权</li>
-</ul>
-</li>
-<li><p>试用（假设 ~/.ssh/config 中已经有remote_webserver_01 配置ssh keybased连接)</p>
-
-<ul>
-<li> 安装：
-
-<ul>
-<li>使用python的virtualenv建立一个ansible环境 (可忽略although建议不)
-
-<pre><code>  mkvirtualenv ansi_env &#x000A;  workon ansi_env&#x000A;</code></pre></li>
-<li>安装依赖的包
-
-<pre><code>  pip install yolk paramiko jinja2 PyYAML&#x000A;  yolk -l&#x000A;</code></pre></li>
-<li>直接使用pip包，目前是1.0版本
-
-<pre><code>  pip install ansible&#x000A;</code></pre></li>
-<li>或者用git HEAD
-
-<pre><code>  cd ~/git_working&#x000A;  git clone https://github.com/ansible/ansible.git github.gen.ansible&#x000A;  cd !$&#x000A;  git checkout devel &#x000A;  # source ./hacking/env-setup  如果要使用缺省系统路径，就执行这一步&#x000A;</code></pre></li>
-</ul>
-</li>
-<li> 一个简单的ansible inventory文件
-
-<ul>
-<li>cat ./etc_ansible_hosts_sample
-
-<pre><code>   # -- ansible_hosts_sample 01 - webservers&#x000A;   ansible_sudo=root &#x000A;   ansible_ssh_port=225 &#x000A;&#x000A;   [rack01_phy]&#x000A;   192.168.66.91&#x000A;   192.168.66.209&#x000A;&#x000A;   [rack01_vm]&#x000A;   192.168.03.[201:206]&#x000A;&#x000A;   [idc01_new_initing]&#x000A;   192.168.06.44:23455&#x000A;&#x000A;   [idc02_db]&#x000A;   10.12.0.14:23455&#x000A;   10.12.0.16:23456&#x000A;&#x000A;   [aws_farm]&#x000A;   aws_06:22 ansible_python_interpreter=/usr/bin/python26&#x000A;</code></pre></li>
-<li>最基本的ansible操作
-
-<pre><code>  # -i 指定使用的inventory文件&#x000A;  ansible -i ./etc_ansible_hosts_sample --list-hosts all &#x000A;  ansible -i ./etc_ansible_hosts_sample --list-hosts rack01_vm &#x000A;&#x000A;  # ansible ping module会检查remote server是否有python的simplejson模块，&#x000A;  # 如果没有，会报错。-c ssh 指定连接方式为openssh&#x000A;  ansible -i ./etc_ansible_hosts_sample -c ssh -u remote_devuser idc02_db -m ping &#x000A;  # 使用raw模式安装ansible依赖的python-simplejson包, -s 是sudo &#x000A;  export JSON_PACKAGE='python-simplejson.x86_64'; &#x000A;  ansible -i ./etc_ansible_hosts_sample \&#x000A;  -c ssh -u remote_devuser idc01_new_initing \&#x000A;  -s -a "yum install -y $JSON_PACKAGE" &#x000A;</code></pre></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>☀ ansible中文名字叫做安塞波</p>
-
-<ul>
-<li>☀ 文档: http://ansible.cc/docs/</li>
-<li>☀ FAQ: http://ansible.cc/faq.html</li>
-<li>☀ playbooks sample: https://github.com/mpdehaan/ansible-examples</li>
-<li>reference links
-
-<ul>
-<li><a href="http://www.mail-archive.com/puppet-users@googlegroups.com/msg33389.html">compare with puppet(英文)</a></li>
-<li><a href="https://github.com/ansible/ansible/issues/1221">remote env in bashrc</a> # 远程环境变量问题应该不算是ansible的问题，不过最好提前考虑好</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h2>The End | 文檔終點</h2>
-
-<p>back to <a href="http://ttyn.me">home</a></p>
-  </div>
-</div>
+        <h1>
+          开始使用配置和发布管理 with ansible
+        </h1>
+        <div class='meta'>
+          <ul class='tags'>
+            <li>Feb 19, 2013</li>
+            <li>
+              &middot;
+            </li>
+            <li>
+              <a href='/2013/02/19/ansible_intro.html#disqus_thread'></a>
+            </li>
+            <li>&middot;</li>
+            <li>
+              <a class='tag' href='/tags/dev/'>
+                dev
+              </a>
+            </li>
+            <li>
+              <a class='tag' href='/tags/tools/'>
+                tools
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='body'>
+          <p>趁着假期研究了一下，发现ansible比以前讨论过的chef/puppet/capistrano
+          和现在用的fabric等同类方便太多了</p>
+          
+          <ul>
+          <li><p>Advantages</p>
+          
+          <ul>
+          <li>好处1. 直接使用ssh协议(可以选择用openssh或者python封装的paramiko)</li>
+          <li>client不需要安装软件或者开启端口。client需要安装一个python-simplejson包(提供json格式返回结果)就可以直接使用</li>
+          <li>好处2. 适合从ad-hoc的紧急工作到有序部署的大型架构，
+          因为ansible将系统的配置作为数据使用yaml格式保存，
+          而不是python code，所以系统配置/架构可以非常清晰。
+          对于复杂度高的多server和复杂度低的幂等架构都可以快速部署</li>
+          <li>好处3. ansible源于开发了cobble的Michael DeHaan, 他也是puppet团队成员，
+          对于配置管理/部署等工作非常熟悉，很靠谱。</li>
+          <li>需要考虑的: 对于ssh keybased验证和sudo权限需要预先了解和部署</li>
+          <li>需要纪录的: 即使使用 openssh连接，ansible也会忽略 ~/.ssh/config中的Port配置，必须在inventory文件定义中显示标注</li>
+          </ul>
+          </li>
+          <li><p>特征</p>
+          
+          <ul>
+          <li>特征1. 使用类似于chef的push发放配置</li>
+          <li>特征2. ansible的配置管理叫做playbook</li>
+          <li>特征3. 可以使用普通用户，加入 -s 参数或者相应配置在playbook文件中启用sudo授权</li>
+          </ul>
+          </li>
+          <li><p>试用（假设 ~/.ssh/config 中已经有remote_webserver_01 配置ssh keybased连接)</p>
+          
+          <ul>
+          <li> 安装：
+          
+          <ul>
+          <li>使用python的virtualenv建立一个ansible环境 (可忽略although建议不)
+                mkvirtualenv ansi_env
+                workon ansi_env</li>
+          <li>安装依赖的包
+                pip install yolk paramiko jinja2 PyYAML
+                yolk -l</li>
+          <li>直接使用pip包，目前是1.0版本
+                pip install ansible</li>
+          <li>或者用git HEAD
+                cd ~/git_working
+                git clone https://github.com/ansible/ansible.git github.gen.ansible
+                cd !$
+                git checkout devel
+                # source ./hacking/env-setup  如果要使用缺省系统路径，就执行这一步</li>
+          </ul>
+          </li>
+          <li> 一个简单的ansible inventory文件
+          
+          <ul>
+          <li><p>cat ./etc_ansible_hosts_sample
+                 # -- ansible_hosts_sample 01 - webservers
+                 ansible_sudo=root
+                 ansible_ssh_port=225</p>
+          
+          <pre><code>   [rack01_phy]&#x000A;   192.168.66.91&#x000A;   192.168.66.209&#x000A;&#x000A;   [rack01_vm]&#x000A;   192.168.03.[201:206]&#x000A;&#x000A;   [idc01_new_initing]&#x000A;   192.168.06.44:23455&#x000A;&#x000A;   [idc02_db]&#x000A;   10.12.0.14:23455&#x000A;   10.12.0.16:23456&#x000A;&#x000A;   [aws_farm]&#x000A;   aws_06:22 ansible_python_interpreter=/usr/bin/python26&#x000A;</code></pre></li>
+          <li><p>最基本的ansible操作
+                # -i 指定使用的inventory文件
+                ansible -i ./etc_ansible_hosts_sample --list-hosts all
+                ansible -i ./etc_ansible_hosts_sample --list-hosts rack01_vm</p>
+          
+          <pre><code>  # ansible ping module会检查remote server是否有python的simplejson模块，&#x000A;  # 如果没有，会报错。-c ssh 指定连接方式为openssh&#x000A;  ansible -i ./etc_ansible_hosts_sample -c ssh -u remote_devuser idc02_db -m ping &#x000A;  # 使用raw模式安装ansible依赖的python-simplejson包, -s 是sudo &#x000A;  export JSON_PACKAGE='python-simplejson.x86_64'; &#x000A;  ansible -i ./etc_ansible_hosts_sample \&#x000A;  -c ssh -u remote_devuser idc01_new_initing \&#x000A;  -s -a "yum install -y $JSON_PACKAGE" &#x000A;</code></pre></li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li><p>☀ ansible中文名字叫做安塞波</p>
+          
+          <ul>
+          <li>☀ 文档: http://ansible.cc/docs/</li>
+          <li>☀ FAQ: http://ansible.cc/faq.html</li>
+          <li>☀ playbooks sample: https://github.com/mpdehaan/ansible-examples</li>
+          <li>reference links
+          
+          <ul>
+          <li><a href="http://www.mail-archive.com/puppet-users@googlegroups.com/msg33389.html">compare with puppet(英文)</a></li>
+          <li><a href="https://github.com/ansible/ansible/issues/1221">remote env in bashrc</a> # 远程环境变量问题应该不算是ansible的问题，不过最好提前考虑好</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          
+          
+          <h2>The End | 文檔終點</h2>
+          
+          <p>back to <a href="http://ttyn.me">home</a></p>
+        </div>
+      </div>
       <div id='other-articles'>
         <div class='older'>
           <ul>
@@ -167,40 +175,36 @@
       </div>
       <!-- / disqus adds too much visual crap -->
       <style type='text/css'>
-        .dsq-dc-logo {
-          display: none !important; }
+        <style>
+          .dsq-dc-logo {
+            display: none !important; }
+        </style>
       </style>
       <div class='clear'></div>
     </div>
-    <script type='text/javascript'>
-  //<![CDATA[
-    (function() {
-      var links = document.getElementsByTagName('a');
-      var query = '?';
-      for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    <script>
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
         }
-      }
-      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-  //]]>
-</script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ttyn/get_num_replies.js' + query + '"></' + 'script>');
+      })();
     </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-          var pageTracker = _gat._getTracker("UA-7206667-1");
-          pageTracker._setDomainName(".ttyn.me");
-          pageTracker._setAllowHash(false);
-          pageTracker._trackPageview();
-        } catch(err) {}
-      //]]>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-7206667-1");
+        pageTracker._setDomainName(".ttyn.me");
+        pageTracker._setAllowHash(false);
+        pageTracker._trackPageview();
+      } catch(err) {}
     </script>
   </body>
 </html>
