@@ -34,7 +34,7 @@ compile '*' do
   end
 
   # use layouts with .html extension or layout specified in meta
-  item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
+  #item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
 
   layout 'default' unless item[:layout] == "none"
 end
