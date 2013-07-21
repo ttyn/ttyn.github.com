@@ -1,54 +1,57 @@
 #!/usr/bin/env ruby
-
 preprocess do
   # authors may unpublish items by setting meta attribute publish: false
   items.delete_if { |item| item[:publish] == false }
-
   copy_static
   create_tag_pages
   add_update_item_attributes
 end
-
-
-compile '/txt/*' do
-  item[:layout] = "none"
+BYPASS_FILES = %w(sitemap.xml crossdomain.xml humans.txt robots.txt) unless defined?(BYPASS_FILES)
+BYPASS_FILES.each do |file|
+  compile("/#{file.sub /\..+/, ''}/") do
+  end
 end
-
 compile '/assets/css/*/' do
-  #filter :sass
+end
+compile '/files/*/' do
 end
 
 compile '*' do
-  # item[:extension] returns 'html.erb' for multi-dotted filename
-  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
-
-  if ext == 'erb'
-    filter :erb
-  elsif ext == 'haml' || ext.nil?
-    filter :haml
-  elsif ext == 'md' || ext == 'markdown'
-    filter :erb
-    filter :rdiscount
+  if item.binary?
+    # don’t filter binary items
   else
-    raise "Filter is not configured for #{item.identifier} in Rules file."
+          case item[:extension]
+            when 'erb'
+              fileter :erb
+            when 'md', 'markdown'
+              filter :erb
+              filter :rdiscount
+            when 'haml'
+              filter :haml
+            else
+              filter :erb
+          end
   end
-
-  # use layouts with .html extension or layout specified in meta
-  #item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
-
-  layout 'default' unless item[:layout] == "none"
+  layout 'default' unless item[:layout] == "none" 
 end
 
-route '/txt/*' do
-  route_path(item)
+
+BYPASS_FILES.each do |file|
+  route("/#{file.sub /\..+/, ''}/") do
+    "/#{file}" # route bypass files as is
+  end
 end
 
 route '/assets/css/*/' do
   item.identifier.chop + '.css'
 end
+route '/files/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
 
 route '*' do
   route_path(item)
 end
 
-layout '*', :haml
+layout '*', :haml, :format => :html5

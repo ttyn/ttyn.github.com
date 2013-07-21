@@ -1,6 +1,3 @@
----
-is_hidden: true
----
 User-agent: *
 Allow: /
 
@@ -9,4 +6,3 @@ Disallow: /files/
 Disallow: /txt/
 Disallow: /ref/
 
-Sitemap: <%= "#{@config[:base_url]}/sitemap.xml" %>

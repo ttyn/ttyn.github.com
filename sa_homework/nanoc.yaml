@@ -1,0 +1,41 @@
+---
+output_dir:             sa_homework_output
+deploy:
+  default:
+    dst:                "./tmp/"
+    options:            ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
+
+base_url:               http://ttyn.me
+
+google_analytics:
+  domain:               ttyn.me
+  site_id:              UA-7206667-1
+
+site_name:              me@fourohfour
+featured_count:         1
+excerpt_count:          0
+other_articles_max:     0
+disqus_shortname:       ttyn
+
+text_extensions:        [ 'txt', 'xml', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'sass', 'scss', 'xhtml' ]
+
+index_filenames:        [ 'index.html' ]
+enable_output_diff:     false
+
+prune:
+  auto_prune:           yes
+  exclude:              [ '.git', '.hg', '.svn', 'CVS', 'files', 'assets', 'tags' ]
+
+data_sources:
+  -
+    type:               filesystem_unified
+    items_root:         /
+    layouts_root:       /
+
+    allow_periods_in_identifiers:       false
+
+watcher:
+  dirs_to_watch:                        [ 'content', 'layouts', 'lib','static' ]
+  files_to_watch:                       [ 'nanoc.yaml', 'Rules' ]
+  notify_on_compilation_success:        true
+  notify_on_compilation_failure:        true

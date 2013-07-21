@@ -42,9 +42,9 @@ _:
 
 __go [home][link_home] lets go back back to [home][link_home]__
 [link_home]: http://ttyn.me "Title: HOME"
-[link_toolbox]: http://ttyn.github.com/ref/unixtoolbox.html "Title: unixtoolbox"
+[link_toolbox]: http://ttyn.github.io/ref/unixtoolbox.html "Title: unixtoolbox"
 [link_colorlover]: http://www.colourlovers.com/ "Title: colorlover"
-[link_pipbasic]: http://ttyn.github.com/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
+[link_pipbasic]: http://ttyn.github.io/txt/pip_sabasic_requirements.txt "Title: pip basic requirements"
 [link_12fac]: http://www.12factor.net/ "Title: 12 factor"
 [link_pep]: http://www.python.org/dev/peps/ "Title: python PEPs"
 [link_rfc]: http://www.faqs.org/rfcs/ "Title: RFC"
