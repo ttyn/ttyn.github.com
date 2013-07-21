@@ -6,7 +6,7 @@ preprocess do
   create_tag_pages
   add_update_item_attributes
 end
-BYPASS_FILES = %w(sitemap.xml crossdomain.xml humans.txt robots.txt) unless defined?(BYPASS_FILES)
+BYPASS_FILES = %w(sitemap.xml crossdomain.xml humans.txt robots.txt google50ee0c7d896350a0.html) unless defined?(BYPASS_FILES)
 BYPASS_FILES.each do |file|
   compile("/#{file.sub /\..+/, ''}/") do
   end
