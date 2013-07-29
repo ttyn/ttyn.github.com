@@ -18,7 +18,7 @@ admin_user="$1"
 ssh_path="/home/$admin_user/.ssh"
 ssh_auth_file="http://ttyn.github.com/files/${admin_user}.pubkeys"
 timezone_file="http://ttyn.github.com/files/tools_correct_timezone.sh"
-yum_basic_pack=" wget screen curl"
+yum_basic_pack=" wget screen curl python*-simplejson"
 yum_essential_pack=" ntp ntpdate"
 default_sudoers='Defaults    !requiretty,!fqdn,!visiblepw'
 $YUM install -y $yum_basic_pack
