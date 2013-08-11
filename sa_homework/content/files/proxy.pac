@@ -55,8 +55,6 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".wordpress.com") || shExpMatch(host, "wordpress.com")) {
                 return proxy_yes;
-        } else if (dnsDomainIs(host, ".posterous.com") || shExpMatch(host, "posterous.com")) {
-                return proxy_yes;
         } else if (dnsDomainIs(host, ".readthedocs.org") || shExpMatch(host, "readthedocs.org")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".rtfd.org") || shExpMatch(host, "rtfd.org")) {
@@ -85,7 +83,7 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (shExpMatch(host, ".google.cn")) {
                 return proxy_yes;
-        } else if (dnsDomainIs(host, ".wordpress.com")) {
+        } else if (shExpMatch(host, "wordpress.com")) {
                 return proxy_yes;
         } else if (shExpMatch(host, "whatismyip.org")) {
                 return proxy_yes;
@@ -98,6 +96,8 @@ function FindProxyForURL(url, host) {
         } else if (shExpMatch(host, "j.mp")) {
                 return proxy_yes;
         } else if (shExpMatch(host, "dropbox")) {
+                return proxy_yes;
+        } else if (shExpMatch(host, "pastebin.com")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, "thepiratebay.se")) {
                 return proxy_yes;
