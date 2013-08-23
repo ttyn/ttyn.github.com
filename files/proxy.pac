@@ -1,6 +1,7 @@
 function FindProxyForURL(url, host) {
         var lhost = host.toLowerCase();
         var proxy_yes = "SOCKS5 127.0.0.1:18989";
+        var proxy_intra = "SOCKS5 127.0.0.1:18888";
         var proxy_no = "DIRECT";
         var blackhole = "PROXY 127.0.0.1:80";
         host = lhost; 
@@ -37,7 +38,7 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".runningahead.com") || shExpMatch(host, "runningahead.com")) {
                 return proxy_yes;
-        } else if (dnsDomainIs(host, ".git-scm.com") || shExpMatch(host, "git-scm.com")) {
+        } else if (dnsDomainIs(host, ".googlesource.com") || shExpMatch(host, "googlesource.com")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".t.co") || shExpMatch(host, "t.co")) {
                 return proxy_yes;
@@ -54,8 +55,6 @@ function FindProxyForURL(url, host) {
         } else if (dnsDomainIs(host, ".tumblr.com") || shExpMatch(host, "tumblr.com")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".wordpress.com") || shExpMatch(host, "wordpress.com")) {
-                return proxy_yes;
-        } else if (dnsDomainIs(host, ".posterous.com") || shExpMatch(host, "posterous.com")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".readthedocs.org") || shExpMatch(host, "readthedocs.org")) {
                 return proxy_yes;
@@ -85,7 +84,7 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (shExpMatch(host, ".google.cn")) {
                 return proxy_yes;
-        } else if (dnsDomainIs(host, ".wordpress.com")) {
+        } else if (shExpMatch(host, "wordpress.com")) {
                 return proxy_yes;
         } else if (shExpMatch(host, "whatismyip.org")) {
                 return proxy_yes;
@@ -99,8 +98,12 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (shExpMatch(host, "dropbox")) {
                 return proxy_yes;
+        } else if (shExpMatch(host, "pastebin.com")) {
+                return proxy_yes;
         } else if (dnsDomainIs(host, "thepiratebay.se")) {
                 return proxy_yes;
+        } else if (shExpMatch(host, "*.*box.me")) {
+                return proxy_intra;
         }
         return proxy_no;
 }
