@@ -16,7 +16,7 @@ rc_file=/etc/rc.local
 
 $CP /etc/localtime /etc/localtime.bak
 $RM -f /etc/localtime
-$LN -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+$CP /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
 $YUM install -y ntp ntpdate
 $SERVICE ntpd status
 $SERVICE ntpd stop
