@@ -3,7 +3,7 @@
   <head>
     <title>not a bit</title>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta content='dev, tools, doc, story, rant, draft, checklist, misc, editing, opensource, git, perm, tip, updating, md' name='keywords'>
+    <meta content='dev, tools, doc, misc, story, rant, draft, checklist, editing, opensource, git, perm, tip, updating, md' name='keywords'>
     <meta content='' name='description'>
     <link href='/assets/css/reset.css' rel='stylesheet' type='text/css'>
     <link href='/assets/css/vertical.css' rel='stylesheet' type='text/css'>
@@ -45,67 +45,27 @@
       <div class='featured'>
         <div class='article'>
           <h1>
-            <a class='permalink' href='/2013/11/06/gollum_intro.html' title='Full article'>quickly starting gollum wiki behind nginx</a>
+            <a class='permalink' href='/2014/06/16/restart.html' title='Full article'>2014 summer</a>
           </h1>
           <div class='meta'>
             <ul class='tags'>
-              <li>Nov 06, 2013</li>
+              <li>Jun 16, 2014</li>
               <li>
                 &middot;
               </li>
               <li>
-                <a href='/2013/11/06/gollum_intro.html#disqus_thread'></a>
+                <a href='/2014/06/16/restart.html#disqus_thread'></a>
               </li>
               <li>&middot;</li>
               <li>
-                <a class='tag' href='/tags/dev/'>
-                  dev
-                </a>
-              </li>
-              <li>
-                <a class='tag' href='/tags/doc/'>
-                  doc
-                </a>
-              </li>
-              <li>
-                <a class='tag' href='/tags/tools/'>
-                  tools
+                <a class='tag' href='/tags/misc/'>
+                  misc
                 </a>
               </li>
             </ul>
           </div>
           <div class='body'>
-            <p>gollum wiki 介绍</p>
-            
-            <pre><code>gem install gollum&#x000A;      (rbenv rehash)&#x000A;      mkdir -p /data/gollum_wiki&#x000A;      cd /data/gollum_wiki&#x000A;      git init&#x000A;      </code></pre>
-            
-            <ul>
-            <li>gollum /data/gollum_wiki --port 4567</li>
-            </ul>
-            
-            
-            <p>访问 localhost:5467 就可以开始编辑了！</p>
-            
-            <p>可以加个auth.rb 密码登录</p>
-            
-            <pre><code># auth.rb&#x000A;      module Precious&#x000A;        class App &lt; Sinatra::Base&#x000A;          use Rack::Auth::Basic, "not public Area" do |username, password|&#x000A;            [username, password] == ['adminname', '|------|']&#x000A;          end&#x000A;        end&#x000A;      end&#x000A;      </code></pre>
-            
-            <ul>
-            <li>gollum /data/gollum_wiki --port 4567 --config auth.rb</li>
-            </ul>
-            
-            
-            <p>nginx端口转发</p>
-            
-            <pre><code>server {&#x000A;          listen   192.168.16.21:80;&#x000A;          server_name 192.168.16.21 gollum.me.localhost;&#x000A;      &#x000A;          access_log  /var/log/nginx/gw.access.log;&#x000A;          error_log   /var/log/nginx/gw.error.log info;&#x000A;      &#x000A;          location /{&#x000A;              proxy_pass   http://127.0.0.1:4568/;&#x000A;              proxy_redirect off;&#x000A;              proxy_set_header   Host              $host;&#x000A;              proxy_set_header   X-Real-IP         $remote_addr;&#x000A;              proxy_set_header   X-Forwarded-For   $proxy_add_x_forwarded_for;&#x000A;              proxy_set_header   X-Forwarded-Proto $scheme;&#x000A;          }&#x000A;      }&#x000A;      </code></pre>
-            
-            <p>更多信息</p>
-            
-            <ul>
-            <li>语法帮助 https://github.com/gollum/</li>
-            <li>git库 https://github.com/gollum/gollum/wiki</li>
-            </ul>
-            
+            <p>keep it.</p>
             
             <h2>The End | 文檔終點</h2>
             
